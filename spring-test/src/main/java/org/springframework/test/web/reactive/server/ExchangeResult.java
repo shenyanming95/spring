@@ -16,6 +16,14 @@
 
 package org.springframework.test.web.reactive.server;
 
+import org.springframework.http.*;
+import org.springframework.http.client.reactive.ClientHttpRequest;
+import org.springframework.http.client.reactive.ClientHttpResponse;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.MultiValueMap;
+import reactor.core.publisher.Mono;
+
 import java.net.URI;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -23,19 +31,6 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import reactor.core.publisher.Mono;
-
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseCookie;
-import org.springframework.http.client.reactive.ClientHttpRequest;
-import org.springframework.http.client.reactive.ClientHttpResponse;
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.MultiValueMap;
 
 /**
  * Container for request and response details for exchanges performed through

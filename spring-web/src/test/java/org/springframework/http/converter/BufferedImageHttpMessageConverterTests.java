@@ -16,21 +16,19 @@
 
 package org.springframework.http.converter;
 
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.http.MockHttpInputMessage;
 import org.springframework.http.MockHttpOutputMessage;
 import org.springframework.util.FileCopyUtils;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

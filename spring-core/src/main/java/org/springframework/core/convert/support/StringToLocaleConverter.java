@@ -16,11 +16,11 @@
 
 package org.springframework.core.convert.support;
 
-import java.util.Locale;
-
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.util.Locale;
 
 /**
  * Converts from a String to a {@link java.util.Locale}.

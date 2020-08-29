@@ -16,13 +16,12 @@
 
 package org.springframework.test.context.jdbc;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;

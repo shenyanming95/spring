@@ -16,23 +16,16 @@
 
 package org.springframework.jdbc.core;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.List;
-import java.util.Map;
-
-import javax.sql.DataSource;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
+
+import javax.sql.DataSource;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.sql.*;
+import java.util.List;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

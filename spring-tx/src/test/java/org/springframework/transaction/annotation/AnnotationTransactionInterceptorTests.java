@@ -18,16 +18,12 @@ package org.springframework.transaction.annotation;
 
 import io.vavr.control.Try;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.transaction.interceptor.TransactionInterceptor;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.transaction.testfixture.CallCountingTransactionManager;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * @author Rob Harrop

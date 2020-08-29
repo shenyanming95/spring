@@ -17,7 +17,6 @@
 package org.springframework.web.servlet.theme;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.web.servlet.ThemeResolver;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;

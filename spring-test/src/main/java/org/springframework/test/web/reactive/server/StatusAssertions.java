@@ -16,13 +16,12 @@
 
 package org.springframework.test.web.reactive.server;
 
-import java.util.function.Consumer;
-
 import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.test.util.AssertionErrors;
+
+import java.util.function.Consumer;
 
 /**
  * Assertions on the response status.

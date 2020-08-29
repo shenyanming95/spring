@@ -16,16 +16,11 @@
 
 package org.springframework.beans;
 
-import java.beans.BeanInfo;
-import java.beans.IndexedPropertyDescriptor;
-import java.beans.IntrospectionException;
-import java.beans.Introspector;
-import java.beans.PropertyDescriptor;
-import java.math.BigDecimal;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.TestBean;
+
+import java.beans.*;
+import java.math.BigDecimal;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

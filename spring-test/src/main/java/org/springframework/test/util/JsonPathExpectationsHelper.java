@@ -16,19 +16,18 @@
 
 package org.springframework.test.util;
 
-import java.util.List;
-import java.util.Map;
-
 import com.jayway.jsonpath.JsonPath;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * A helper class for applying assertions via JSON path expressions.

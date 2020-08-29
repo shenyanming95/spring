@@ -16,16 +16,16 @@
 
 package org.springframework.cglib.core;
 
+import org.springframework.asm.ClassReader;
+import org.springframework.cglib.core.internal.Function;
+import org.springframework.cglib.core.internal.LoadingCache;
+
 import java.lang.ref.WeakReference;
 import java.security.ProtectionDomain;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.WeakHashMap;
-
-import org.springframework.asm.ClassReader;
-import org.springframework.cglib.core.internal.Function;
-import org.springframework.cglib.core.internal.LoadingCache;
 
 /**
  * Abstract class for all code-generating CGLIB utilities.

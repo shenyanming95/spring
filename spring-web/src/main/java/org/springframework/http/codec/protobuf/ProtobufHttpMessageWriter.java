@@ -16,17 +16,9 @@
 
 package org.springframework.http.codec.protobuf;
 
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ConcurrentMap;
-
 import com.google.protobuf.Descriptors;
 import com.google.protobuf.Message;
 import org.reactivestreams.Publisher;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.core.codec.DecodingException;
 import org.springframework.core.codec.Encoder;
@@ -36,6 +28,13 @@ import org.springframework.http.codec.EncoderHttpMessageWriter;
 import org.springframework.http.codec.HttpMessageEncoder;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ConcurrentReferenceHashMap;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * {@code HttpMessageWriter} that can write a protobuf {@link Message} and adds

@@ -17,7 +17,6 @@
 package org.springframework.orm.jpa.persistenceunit;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.testfixture.index.CandidateComponentsTestClassLoader;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.DefaultResourceLoader;

@@ -17,7 +17,6 @@
 package org.springframework.test.context.jdbc.merging;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlMergeMode;
 

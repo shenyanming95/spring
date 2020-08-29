@@ -16,6 +16,8 @@
 
 package org.springframework.util;
 
+import org.springframework.lang.Nullable;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -23,8 +25,6 @@ import java.security.MessageDigest;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
-
-import org.springframework.lang.Nullable;
 
 /**
  * A speedy alternative to {@link java.io.ByteArrayOutputStream}. Note that

@@ -16,17 +16,16 @@
 
 package org.springframework.beans.factory.config;
 
-import java.util.Properties;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+
+import java.util.Properties;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.beans.factory.support.BeanDefinitionBuilder.genericBeanDefinition;

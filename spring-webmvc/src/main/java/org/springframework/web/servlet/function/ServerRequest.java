@@ -16,24 +16,6 @@
 
 package org.springframework.web.servlet.function;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.URI;
-import java.nio.charset.Charset;
-import java.security.Principal;
-import java.time.Instant;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Optional;
-import java.util.OptionalLong;
-import java.util.function.Consumer;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpHeaders;
@@ -47,6 +29,19 @@ import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.util.UriBuilder;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.URI;
+import java.nio.charset.Charset;
+import java.security.Principal;
+import java.time.Instant;
+import java.util.*;
+import java.util.function.Consumer;
 
 /**
  * Represents a server-side HTTP request, as handled by a {@code HandlerFunction}.

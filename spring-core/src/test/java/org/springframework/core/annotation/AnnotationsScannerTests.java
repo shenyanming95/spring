@@ -16,6 +16,11 @@
 
 package org.springframework.core.annotation;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
+import org.springframework.lang.Nullable;
+import org.springframework.util.ReflectionUtils;
+
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
@@ -27,12 +32,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Stream;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
-import org.springframework.lang.Nullable;
-import org.springframework.util.ReflectionUtils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

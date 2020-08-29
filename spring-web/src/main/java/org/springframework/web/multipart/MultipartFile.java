@@ -16,16 +16,16 @@
 
 package org.springframework.web.multipart;
 
+import org.springframework.core.io.InputStreamSource;
+import org.springframework.core.io.Resource;
+import org.springframework.lang.Nullable;
+import org.springframework.util.FileCopyUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-
-import org.springframework.core.io.InputStreamSource;
-import org.springframework.core.io.Resource;
-import org.springframework.lang.Nullable;
-import org.springframework.util.FileCopyUtils;
 
 /**
  * A representation of an uploaded file received in a multipart request.

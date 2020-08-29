@@ -16,24 +16,9 @@
 
 package org.springframework.test.web.reactive.server;
 
-import java.net.URI;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.time.Duration;
-import java.time.ZonedDateTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.concurrent.atomic.AtomicLong;
-import java.util.function.Consumer;
-import java.util.function.Function;
-
 import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
 import org.reactivestreams.Publisher;
-import reactor.core.publisher.Flux;
-
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.http.HttpHeaders;
@@ -52,6 +37,20 @@ import org.springframework.web.reactive.function.BodyInserter;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.WebClient;
 import org.springframework.web.util.UriBuilder;
+import reactor.core.publisher.Flux;
+
+import java.net.URI;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.time.Duration;
+import java.time.ZonedDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 /**
  * Default implementation of {@link WebTestClient}.

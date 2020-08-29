@@ -16,11 +16,6 @@
 
 package org.springframework.web.accept;
 
-import java.util.Locale;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.http.MediaTypeFactory;
@@ -30,6 +25,10 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.UrlPathHelper;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Locale;
+import java.util.Map;
 
 /**
  * A {@code ContentNegotiationStrategy} that resolves the file extension in the

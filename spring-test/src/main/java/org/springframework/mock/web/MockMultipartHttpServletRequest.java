@@ -16,17 +16,6 @@
 
 package org.springframework.mock.web;
 
-import java.io.IOException;
-import java.util.Collections;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.Part;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.lang.Nullable;
@@ -35,6 +24,12 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.Part;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * Mock implementation of the

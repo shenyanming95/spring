@@ -16,12 +16,6 @@
 
 package org.springframework.web.servlet.function;
 
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Optional;
-import java.util.function.Function;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -31,6 +25,12 @@ import org.springframework.util.ResourceUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.util.pattern.PathPattern;
 import org.springframework.web.util.pattern.PathPatternParser;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.nio.charset.StandardCharsets;
+import java.util.Optional;
+import java.util.function.Function;
 
 /**
  * Lookup function used by {@link RouterFunctions#resources(String, Resource)}.

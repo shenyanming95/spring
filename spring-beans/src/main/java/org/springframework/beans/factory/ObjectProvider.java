@@ -16,13 +16,13 @@
 
 package org.springframework.beans.factory;
 
+import org.springframework.beans.BeansException;
+import org.springframework.lang.Nullable;
+
 import java.util.Iterator;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
-
-import org.springframework.beans.BeansException;
-import org.springframework.lang.Nullable;
 
 /**
  * A variant of {@link ObjectFactory} designed specifically for injection points,

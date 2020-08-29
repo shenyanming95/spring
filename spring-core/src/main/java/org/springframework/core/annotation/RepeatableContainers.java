@@ -16,16 +16,16 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Repeatable;
-import java.lang.reflect.Method;
-import java.util.Map;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ConcurrentReferenceHashMap;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.annotation.Annotation;
+import java.lang.annotation.Repeatable;
+import java.lang.reflect.Method;
+import java.util.Map;
 
 /**
  * Strategy used to determine annotations that act as containers for other

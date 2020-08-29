@@ -16,14 +16,6 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.AnnotatedElement;
-import java.lang.reflect.Member;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Arrays;
-import java.util.Map;
-
 import org.springframework.core.BridgeMethodResolver;
 import org.springframework.core.Ordered;
 import org.springframework.core.ResolvableType;
@@ -32,6 +24,14 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.ConcurrentReferenceHashMap;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedElement;
+import java.lang.reflect.Member;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Arrays;
+import java.util.Map;
 
 /**
  * Scanner to search for relevant annotations in the annotation hierarchy of an

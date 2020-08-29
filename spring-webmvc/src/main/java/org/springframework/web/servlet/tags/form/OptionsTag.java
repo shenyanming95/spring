@@ -16,14 +16,14 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import javax.servlet.jsp.JspException;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.support.BindStatus;
 import org.springframework.web.util.TagUtils;
+
+import javax.servlet.jsp.JspException;
 
 /**
  * The {@code <options>} tag renders a list of HTML 'option' tags.

@@ -16,28 +16,21 @@
 
 package org.springframework.transaction.interceptor;
 
-import java.io.Serializable;
-import java.util.Properties;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.core.testfixture.io.SerializationTestUtils;
 import org.springframework.lang.Nullable;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionDefinition;
-import org.springframework.transaction.TransactionException;
-import org.springframework.transaction.TransactionManager;
-import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.*;
+
+import java.io.Serializable;
+import java.util.Properties;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Mock object based tests for TransactionInterceptor.

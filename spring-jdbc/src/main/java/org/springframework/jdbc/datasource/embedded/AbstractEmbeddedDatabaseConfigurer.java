@@ -16,14 +16,13 @@
 
 package org.springframework.jdbc.datasource.embedded;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-import javax.sql.DataSource;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
  * Base class for {@link EmbeddedDatabaseConfigurer} implementations

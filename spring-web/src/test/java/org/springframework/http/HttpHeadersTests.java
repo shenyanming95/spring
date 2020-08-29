@@ -16,6 +16,8 @@
 
 package org.springframework.http;
 
+import org.junit.jupiter.api.Test;
+
 import java.net.InetSocketAddress;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -23,26 +25,11 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Base64;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.EnumSet;
-import java.util.GregorianCalendar;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
-import java.util.TimeZone;
-
-import org.junit.jupiter.api.Test;
 
 import static java.util.stream.Collectors.toList;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.entry;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Unit tests for {@link org.springframework.http.HttpHeaders}.

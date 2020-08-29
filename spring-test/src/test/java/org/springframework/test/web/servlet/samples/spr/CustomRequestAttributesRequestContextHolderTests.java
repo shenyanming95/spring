@@ -16,14 +16,9 @@
 
 package org.springframework.test.web.servlet.samples.spr;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletRequest;
-import javax.servlet.http.HttpServletRequest;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.annotation.AnnotatedBeanDefinitionReader;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -40,6 +35,10 @@ import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

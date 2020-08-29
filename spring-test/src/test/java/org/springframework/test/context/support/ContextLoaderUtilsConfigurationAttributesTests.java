@@ -16,14 +16,13 @@
 
 package org.springframework.test.context.support;
 
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.annotation.AnnotationConfigurationException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.ContextConfigurationAttributes;
 import org.springframework.test.context.ContextLoader;
+
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

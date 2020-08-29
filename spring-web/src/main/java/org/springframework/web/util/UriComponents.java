@@ -16,6 +16,10 @@
 
 package org.springframework.web.util;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.MultiValueMap;
+
 import java.io.Serializable;
 import java.net.URI;
 import java.nio.charset.Charset;
@@ -27,10 +31,6 @@ import java.util.Map;
 import java.util.function.UnaryOperator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.MultiValueMap;
 
 /**
  * Represents an immutable collection of URI components, mapping component type to

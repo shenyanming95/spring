@@ -16,17 +16,15 @@
 
 package org.springframework.orm.jpa.vendor;
 
-import java.lang.reflect.Method;
-
-import javax.persistence.EntityManagerFactory;
-
 import org.hibernate.SessionFactory;
-
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.lang.Nullable;
 import org.springframework.orm.jpa.EntityManagerFactoryAccessor;
 import org.springframework.util.Assert;
 import org.springframework.util.ReflectionUtils;
+
+import javax.persistence.EntityManagerFactory;
+import java.lang.reflect.Method;
 
 /**
  * Simple {@code FactoryBean} that exposes the underlying {@link SessionFactory}

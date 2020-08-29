@@ -16,9 +16,9 @@
 
 package org.springframework.test.web.reactive.server;
 
-import java.util.function.Consumer;
-
 import reactor.core.publisher.Flux;
+
+import java.util.function.Consumer;
 
 /**
  * {@code ExchangeResult} variant with the response body decoded as

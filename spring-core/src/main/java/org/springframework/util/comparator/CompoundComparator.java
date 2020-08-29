@@ -16,13 +16,13 @@
 
 package org.springframework.util.comparator;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
 
 /**
  * A comparator that chains a sequence of one or more Comparators.

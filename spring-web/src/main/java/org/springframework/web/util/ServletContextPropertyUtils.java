@@ -16,11 +16,11 @@
 
 package org.springframework.web.util;
 
-import javax.servlet.ServletContext;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.PropertyPlaceholderHelper;
 import org.springframework.util.SystemPropertyUtils;
+
+import javax.servlet.ServletContext;
 
 /**
  * Helper class for resolving placeholders in texts. Usually applied to file paths.

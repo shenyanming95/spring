@@ -16,6 +16,11 @@
 
 package org.springframework.util;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.springframework.core.testfixture.EnabledForTestGroups;
+import org.springframework.tests.sample.objects.TestObject;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -23,12 +28,6 @@ import java.rmi.ConnectException;
 import java.rmi.RemoteException;
 import java.util.LinkedList;
 import java.util.List;
-
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.testfixture.EnabledForTestGroups;
-import org.springframework.tests.sample.objects.TestObject;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

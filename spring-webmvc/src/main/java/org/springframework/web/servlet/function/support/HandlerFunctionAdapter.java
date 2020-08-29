@@ -16,11 +16,6 @@
 
 package org.springframework.web.servlet.function.support;
 
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.core.Ordered;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.lang.Nullable;
@@ -31,6 +26,10 @@ import org.springframework.web.servlet.function.HandlerFunction;
 import org.springframework.web.servlet.function.RouterFunctions;
 import org.springframework.web.servlet.function.ServerRequest;
 import org.springframework.web.servlet.function.ServerResponse;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * {@code HandlerAdapter} implementation that supports {@link HandlerFunction}s.

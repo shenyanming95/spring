@@ -16,18 +16,17 @@
 
 package org.springframework.orm.jpa.hibernate;
 
-import java.util.List;
-
 import org.hibernate.FlushMode;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.orm.jpa.AbstractContainerEntityManagerFactoryIntegrationTests;
 import org.springframework.orm.jpa.EntityManagerFactoryInfo;
 import org.springframework.orm.jpa.domain.Person;
+
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

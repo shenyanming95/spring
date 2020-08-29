@@ -16,11 +16,8 @@
 
 package org.springframework.transaction;
 
-import java.lang.reflect.Method;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.testfixture.beans.ITestBean;
 import org.springframework.context.ApplicationContext;
@@ -29,6 +26,8 @@ import org.springframework.transaction.interceptor.TransactionAttribute;
 import org.springframework.transaction.interceptor.TransactionAttributeSource;
 import org.springframework.transaction.interceptor.TransactionInterceptor;
 import org.springframework.transaction.testfixture.CallCountingTransactionManager;
+
+import java.lang.reflect.Method;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

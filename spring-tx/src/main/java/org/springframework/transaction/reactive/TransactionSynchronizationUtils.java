@@ -16,17 +16,16 @@
 
 package org.springframework.transaction.reactive;
 
-import java.util.Collection;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
 import org.springframework.aop.scope.ScopedObject;
 import org.springframework.core.InfrastructureProxy;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+import java.util.Collection;
 
 /**
  * Utility methods for triggering specific {@link TransactionSynchronization}

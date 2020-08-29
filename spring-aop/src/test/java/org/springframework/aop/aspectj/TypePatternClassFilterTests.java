@@ -17,7 +17,6 @@
 package org.springframework.aop.aspectj;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.testfixture.beans.CountingTestBean;
@@ -26,9 +25,7 @@ import org.springframework.beans.testfixture.beans.ITestBean;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.beans.testfixture.beans.subpkg.DeepBean;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Unit tests for the {@link TypePatternClassFilter} class.

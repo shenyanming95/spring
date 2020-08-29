@@ -16,22 +16,12 @@
 
 package org.springframework.web.servlet.view.freemarker;
 
-import java.io.FileWriter;
-import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletResponse;
-
 import freemarker.template.Configuration;
 import freemarker.template.SimpleHash;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
@@ -48,6 +38,14 @@ import org.springframework.web.servlet.view.DummyMacroRequestContext;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 import org.springframework.web.testfixture.servlet.MockServletContext;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletResponse;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

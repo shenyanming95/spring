@@ -16,13 +16,12 @@
 
 package org.springframework.web.servlet.view.script;
 
-import java.nio.charset.Charset;
-import java.util.function.Supplier;
+import org.springframework.lang.Nullable;
 
 import javax.script.Bindings;
 import javax.script.ScriptEngine;
-
-import org.springframework.lang.Nullable;
+import java.nio.charset.Charset;
+import java.util.function.Supplier;
 
 /**
  * Interface to be implemented by objects that configure and manage a

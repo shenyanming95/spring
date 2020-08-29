@@ -16,14 +16,13 @@
 
 package org.springframework.web.server.adapter;
 
-import java.net.URI;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.web.testfixture.http.server.reactive.MockServerHttpRequest;
+
+import java.net.URI;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

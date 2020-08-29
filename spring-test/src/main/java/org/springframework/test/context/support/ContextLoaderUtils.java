@@ -16,16 +16,8 @@
 
 package org.springframework.test.context.support;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.ContextConfigurationAttributes;
@@ -35,6 +27,8 @@ import org.springframework.test.util.MetaAnnotationUtils.AnnotationDescriptor;
 import org.springframework.test.util.MetaAnnotationUtils.UntypedAnnotationDescriptor;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.util.*;
 
 import static org.springframework.core.annotation.AnnotationUtils.getAnnotation;
 import static org.springframework.core.annotation.AnnotationUtils.isAnnotationDeclaredLocally;

@@ -16,11 +16,8 @@
 
 package org.springframework.web.servlet.support;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.filter.ForwardedHeaderFilter;
@@ -28,6 +25,8 @@ import org.springframework.web.testfixture.servlet.MockFilterChain;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 import org.springframework.web.util.UriComponents;
+
+import javax.servlet.http.HttpServletRequest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

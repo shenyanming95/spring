@@ -16,13 +16,13 @@
 
 package org.springframework.web.method.support;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.lang.Nullable;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Stub resolver for a fixed value type and/or value.

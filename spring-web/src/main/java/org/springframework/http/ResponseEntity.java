@@ -16,6 +16,11 @@
 
 package org.springframework.http;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.MultiValueMap;
+import org.springframework.util.ObjectUtils;
+
 import java.net.URI;
 import java.time.Instant;
 import java.time.ZonedDateTime;
@@ -24,11 +29,6 @@ import java.util.LinkedHashSet;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.MultiValueMap;
-import org.springframework.util.ObjectUtils;
 
 /**
  * Extension of {@link HttpEntity} that adds a {@link HttpStatus} status code.

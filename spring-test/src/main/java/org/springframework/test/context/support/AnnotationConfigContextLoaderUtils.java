@@ -16,19 +16,18 @@
 
 package org.springframework.test.context.support;
 
-import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.test.context.SmartContextLoader;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
+
+import java.lang.reflect.Modifier;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Utility methods for {@link SmartContextLoader SmartContextLoaders} that deal

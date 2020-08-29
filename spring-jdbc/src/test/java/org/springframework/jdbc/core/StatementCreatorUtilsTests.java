@@ -16,21 +16,14 @@
 
 package org.springframework.jdbc.core;
 
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.ParameterMetaData;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Types;
-import java.util.GregorianCalendar;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.sql.*;
+import java.util.GregorianCalendar;
+
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * @author Juergen Hoeller

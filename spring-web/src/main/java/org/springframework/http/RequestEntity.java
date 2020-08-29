@@ -16,6 +16,10 @@
 
 package org.springframework.http;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.MultiValueMap;
+import org.springframework.util.ObjectUtils;
+
 import java.lang.reflect.Type;
 import java.net.URI;
 import java.nio.charset.Charset;
@@ -23,10 +27,6 @@ import java.time.Instant;
 import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.function.Consumer;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.MultiValueMap;
-import org.springframework.util.ObjectUtils;
 
 /**
  * Extension of {@link HttpEntity} that adds a {@linkplain HttpMethod method} and

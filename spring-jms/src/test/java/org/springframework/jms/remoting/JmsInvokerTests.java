@@ -16,36 +16,24 @@
 
 package org.springframework.jms.remoting;
 
-import java.io.Serializable;
-import java.util.Arrays;
-import java.util.Enumeration;
-
-import javax.jms.CompletionListener;
-import javax.jms.Destination;
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageProducer;
-import javax.jms.ObjectMessage;
-import javax.jms.Queue;
-import javax.jms.QueueConnection;
-import javax.jms.QueueConnectionFactory;
-import javax.jms.QueueSession;
-import javax.jms.Session;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.ITestBean;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.jms.support.converter.MessageConversionException;
 import org.springframework.jms.support.converter.SimpleMessageConverter;
 import org.springframework.remoting.RemoteTimeoutException;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import javax.jms.*;
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Enumeration;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
+
+import java.lang.IllegalStateException;
 
 /**
  * @author Juergen Hoeller

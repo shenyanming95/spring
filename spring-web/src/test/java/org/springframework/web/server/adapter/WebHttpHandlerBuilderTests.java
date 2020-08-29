@@ -16,13 +16,7 @@
 
 package org.springframework.web.server.adapter;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Collections;
-
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,6 +30,11 @@ import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebHandler;
 import org.springframework.web.testfixture.http.server.reactive.MockServerHttpRequest;
 import org.springframework.web.testfixture.http.server.reactive.MockServerHttpResponse;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 
 import static java.time.Duration.ofMillis;
 import static org.assertj.core.api.Assertions.assertThat;

@@ -16,16 +16,8 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Consumer;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.EmitterProcessor;
-import reactor.core.publisher.Flux;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.core.ResolvableType;
 import org.springframework.http.ResponseEntity;
@@ -41,12 +33,17 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import org.springframework.web.testfixture.servlet.MockAsyncContext;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+import reactor.core.publisher.EmitterProcessor;
+import reactor.core.publisher.Flux;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.function.Consumer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 import static org.springframework.core.ResolvableType.forClassWithGenerics;
 import static org.springframework.web.testfixture.method.ResolvableMethod.on;
 

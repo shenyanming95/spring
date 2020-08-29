@@ -16,22 +16,15 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
+import org.junit.jupiter.api.Test;
+
+import java.lang.annotation.*;
 import java.lang.reflect.AnnotatedElement;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
-import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import static org.assertj.core.api.Assertions.*;
 import static org.springframework.core.annotation.AnnotatedElementUtils.findMergedRepeatableAnnotations;
 import static org.springframework.core.annotation.AnnotatedElementUtils.getMergedRepeatableAnnotations;
 

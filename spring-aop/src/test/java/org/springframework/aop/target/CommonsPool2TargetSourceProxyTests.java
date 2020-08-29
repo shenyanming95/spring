@@ -17,7 +17,6 @@
 package org.springframework.aop.target;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;

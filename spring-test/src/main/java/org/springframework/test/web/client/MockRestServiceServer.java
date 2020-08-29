@@ -16,9 +16,6 @@
 
 package org.springframework.test.web.client;
 
-import java.io.IOException;
-import java.net.URI;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.BufferingClientHttpRequestFactory;
 import org.springframework.http.client.ClientHttpRequest;
@@ -28,6 +25,9 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.client.support.RestGatewaySupport;
+
+import java.io.IOException;
+import java.net.URI;
 
 /**
  * <strong>Main entry point for client-side REST testing</strong>. Used for tests

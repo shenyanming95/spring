@@ -16,18 +16,17 @@
 
 package org.springframework.web.bind;
 
-import java.beans.PropertyEditorSupport;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.PropertyValue;
 import org.springframework.beans.PropertyValues;
 import org.springframework.beans.testfixture.beans.ITestBean;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
+
+import java.beans.PropertyEditorSupport;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

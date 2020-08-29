@@ -16,12 +16,11 @@
 
 package org.springframework.aop.aspectj;
 
-import java.lang.reflect.Method;
-
 import org.aspectj.lang.JoinPoint;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.aspectj.AspectJAdviceParameterNameDiscoverer.AmbiguousBindingException;
+
+import java.lang.reflect.Method;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

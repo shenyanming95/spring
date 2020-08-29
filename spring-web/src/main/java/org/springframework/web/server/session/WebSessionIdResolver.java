@@ -16,9 +16,9 @@
 
 package org.springframework.web.server.session;
 
-import java.util.List;
-
 import org.springframework.web.server.ServerWebExchange;
+
+import java.util.List;
 
 /**
  * Contract for session id resolution strategies. Allows for session id

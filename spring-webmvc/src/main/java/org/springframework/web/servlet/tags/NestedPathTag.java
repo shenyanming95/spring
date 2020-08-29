@@ -16,13 +16,13 @@
 
 package org.springframework.web.servlet.tags;
 
+import org.springframework.beans.PropertyAccessor;
+import org.springframework.lang.Nullable;
+
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.TagSupport;
 import javax.servlet.jsp.tagext.TryCatchFinally;
-
-import org.springframework.beans.PropertyAccessor;
-import org.springframework.lang.Nullable;
 
 /**
  * <p>The {@code <nestedPath>} tag supports and assists with nested beans or

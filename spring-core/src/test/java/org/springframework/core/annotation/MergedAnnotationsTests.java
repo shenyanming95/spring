@@ -16,29 +16,7 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import java.lang.reflect.AnnotatedElement;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import javax.annotation.Resource;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.MergedAnnotation.Adapt;
 import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
@@ -50,12 +28,16 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.MultiValueMap;
 import org.springframework.util.ReflectionUtils;
 
+import javax.annotation.Resource;
+import java.lang.annotation.*;
+import java.lang.reflect.AnnotatedElement;
+import java.lang.reflect.Method;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
-import static org.assertj.core.api.Assertions.entry;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Tests for {@link MergedAnnotations} and {@link MergedAnnotation}. These tests

@@ -16,16 +16,15 @@
 
 package org.springframework.http;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.support.ResourceRegion;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.io.ByteArrayResource;
-import org.springframework.core.io.InputStreamResource;
-import org.springframework.core.io.support.ResourceRegion;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

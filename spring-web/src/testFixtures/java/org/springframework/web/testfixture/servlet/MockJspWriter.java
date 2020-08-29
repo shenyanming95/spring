@@ -16,14 +16,13 @@
 
 package org.springframework.web.testfixture.servlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Writer;
+import org.springframework.lang.Nullable;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.JspWriter;
-
-import org.springframework.lang.Nullable;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.Writer;
 
 /**
  * Mock implementation of the {@link javax.servlet.jsp.JspWriter} class.

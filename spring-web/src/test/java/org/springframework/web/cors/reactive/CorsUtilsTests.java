@@ -16,15 +16,14 @@
 
 package org.springframework.web.cors.reactive;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Mono;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.web.testfixture.http.server.reactive.MockServerHttpRequest;
 import org.springframework.web.testfixture.server.MockServerWebExchange;
+import reactor.core.publisher.Mono;
+
+import java.util.concurrent.atomic.AtomicReference;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.web.testfixture.http.server.reactive.MockServerHttpRequest.get;

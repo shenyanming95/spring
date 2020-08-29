@@ -16,17 +16,16 @@
 
 package org.springframework.util.xml;
 
-import java.util.Map;
+import org.xml.sax.Attributes;
+import org.xml.sax.Locator;
+import org.xml.sax.SAXException;
+import org.xml.sax.ext.LexicalHandler;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
-
-import org.xml.sax.Attributes;
-import org.xml.sax.Locator;
-import org.xml.sax.SAXException;
-import org.xml.sax.ext.LexicalHandler;
+import java.util.Map;
 
 /**
  * SAX {@link org.xml.sax.ContentHandler} and {@link LexicalHandler}

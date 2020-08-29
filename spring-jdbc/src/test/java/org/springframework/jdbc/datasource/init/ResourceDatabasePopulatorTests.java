@@ -18,7 +18,6 @@ package org.springframework.jdbc.datasource.init;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-
 import org.springframework.core.io.Resource;
 
 import static org.assertj.core.api.Assertions.assertThat;

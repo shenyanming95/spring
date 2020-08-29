@@ -16,22 +16,19 @@
 
 package org.springframework.beans.factory.config;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.io.ByteArrayResource;
+import org.yaml.snakeyaml.constructor.ConstructorException;
+import org.yaml.snakeyaml.parser.ParserException;
+import org.yaml.snakeyaml.scanner.ScannerException;
+
 import java.net.URL;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
-import org.yaml.snakeyaml.constructor.ConstructorException;
-import org.yaml.snakeyaml.parser.ParserException;
-import org.yaml.snakeyaml.scanner.ScannerException;
-
-import org.springframework.core.io.ByteArrayResource;
-
 import static java.util.stream.Collectors.toList;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.entry;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Tests for {@link YamlProcessor}.

@@ -17,7 +17,6 @@
 package org.springframework.aop.scope;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

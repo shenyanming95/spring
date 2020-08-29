@@ -16,9 +16,9 @@
 
 package org.springframework.web.testfixture.servlet;
 
-import javax.servlet.SessionCookieConfig;
-
 import org.springframework.lang.Nullable;
+
+import javax.servlet.SessionCookieConfig;
 
 /**
  * Mock implementation of the {@link javax.servlet.SessionCookieConfig} interface.

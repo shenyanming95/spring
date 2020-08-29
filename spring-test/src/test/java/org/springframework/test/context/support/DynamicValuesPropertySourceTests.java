@@ -16,10 +16,10 @@
 
 package org.springframework.test.context.support;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.HashMap;
 import java.util.function.Supplier;
-
-import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

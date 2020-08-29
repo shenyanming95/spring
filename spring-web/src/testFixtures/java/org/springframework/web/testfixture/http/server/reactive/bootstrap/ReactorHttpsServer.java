@@ -16,14 +16,13 @@
 
 package org.springframework.web.testfixture.http.server.reactive.bootstrap;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
+import org.springframework.http.server.reactive.ReactorHttpHandlerAdapter;
 import reactor.netty.DisposableServer;
 import reactor.netty.tcp.SslProvider.DefaultConfigurationType;
 
-import org.springframework.http.server.reactive.ReactorHttpHandlerAdapter;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * @author Stephane Maldini

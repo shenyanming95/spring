@@ -16,12 +16,7 @@
 
 package org.springframework.web.server.handler;
 
-import java.util.Arrays;
-
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Mono;
-import reactor.test.StepVerifier;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.server.WebExceptionHandler;
@@ -29,6 +24,10 @@ import org.springframework.web.server.WebHandler;
 import org.springframework.web.server.adapter.HttpWebHandlerAdapter;
 import org.springframework.web.testfixture.http.server.reactive.MockServerHttpRequest;
 import org.springframework.web.testfixture.server.MockServerWebExchange;
+import reactor.core.publisher.Mono;
+import reactor.test.StepVerifier;
+
+import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

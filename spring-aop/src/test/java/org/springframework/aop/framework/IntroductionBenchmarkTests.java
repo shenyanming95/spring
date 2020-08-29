@@ -17,7 +17,6 @@
 package org.springframework.aop.framework;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.support.DelegatingIntroductionInterceptor;
 import org.springframework.beans.testfixture.beans.ITestBean;
 import org.springframework.beans.testfixture.beans.TestBean;

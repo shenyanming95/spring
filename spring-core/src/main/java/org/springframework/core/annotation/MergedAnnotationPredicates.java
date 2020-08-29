@@ -16,16 +16,16 @@
 
 package org.springframework.core.annotation;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.ObjectUtils;
+
 import java.lang.annotation.Annotation;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.ObjectUtils;
 
 /**
  * Predicate implementations that provide various test operations for

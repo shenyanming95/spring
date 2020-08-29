@@ -16,15 +16,14 @@
 
 package org.springframework.web.servlet.tags;
 
-import java.io.IOException;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.web.util.JavaScriptUtils;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.BodyContent;
 import javax.servlet.jsp.tagext.BodyTag;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.web.util.JavaScriptUtils;
+import java.io.IOException;
 
 /**
  * The {@code <escapeBody>} tag is used to escape its enclosed body content,

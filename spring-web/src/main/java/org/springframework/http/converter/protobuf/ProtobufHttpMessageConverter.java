@@ -16,17 +16,6 @@
 
 package org.springframework.http.converter.protobuf;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.lang.reflect.Method;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Map;
-
 import com.google.protobuf.CodedOutputStream;
 import com.google.protobuf.ExtensionRegistry;
 import com.google.protobuf.Message;
@@ -34,7 +23,6 @@ import com.google.protobuf.TextFormat;
 import com.google.protobuf.util.JsonFormat;
 import com.googlecode.protobuf.format.FormatFactory;
 import com.googlecode.protobuf.format.ProtobufFormatter;
-
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.MediaType;
@@ -47,10 +35,14 @@ import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ConcurrentReferenceHashMap;
 
-import static org.springframework.http.MediaType.APPLICATION_JSON;
-import static org.springframework.http.MediaType.APPLICATION_XML;
-import static org.springframework.http.MediaType.TEXT_HTML;
-import static org.springframework.http.MediaType.TEXT_PLAIN;
+import java.io.*;
+import java.lang.reflect.Method;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+import java.util.Map;
+
+import static org.springframework.http.MediaType.*;
 
 /**
  * An {@code HttpMessageConverter} that reads and writes

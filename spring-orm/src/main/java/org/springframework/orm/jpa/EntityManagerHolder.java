@@ -16,12 +16,12 @@
 
 package org.springframework.orm.jpa;
 
-import javax.persistence.EntityManager;
-
 import org.springframework.lang.Nullable;
 import org.springframework.transaction.SavepointManager;
 import org.springframework.transaction.support.ResourceHolderSupport;
 import org.springframework.util.Assert;
+
+import javax.persistence.EntityManager;
 
 /**
  * Resource holder wrapping a JPA {@link EntityManager}.

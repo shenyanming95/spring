@@ -16,15 +16,14 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import java.util.Collection;
-import java.util.Map;
-
-import javax.servlet.jsp.JspException;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.servlet.support.BindStatus;
+
+import javax.servlet.jsp.JspException;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * The {@code <select>} tag renders an HTML 'select' element.

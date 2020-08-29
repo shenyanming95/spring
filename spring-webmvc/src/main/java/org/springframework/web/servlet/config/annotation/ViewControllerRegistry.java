@@ -16,15 +16,15 @@
 
 package org.springframework.web.servlet.config.annotation;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpStatus;
 import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Assists with the registration of simple automated controllers pre-configured

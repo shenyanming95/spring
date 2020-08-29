@@ -16,12 +16,12 @@
 
 package org.springframework.test.web.client;
 
-import java.io.IOException;
-import java.util.Iterator;
-
 import org.springframework.http.client.ClientHttpRequest;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.io.IOException;
+import java.util.Iterator;
 
 /**
  * Simple {@code RequestExpectationManager} that matches requests to expectations

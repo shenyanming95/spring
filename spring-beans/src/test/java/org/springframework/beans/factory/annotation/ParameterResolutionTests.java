@@ -16,16 +16,15 @@
 
 package org.springframework.beans.factory.annotation;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
+import org.springframework.beans.factory.config.DependencyDescriptor;
+import org.springframework.util.ClassUtils;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Executable;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
-import org.springframework.beans.factory.config.DependencyDescriptor;
-import org.springframework.util.ClassUtils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

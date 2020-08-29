@@ -16,20 +16,16 @@
 
 package org.springframework.core.env;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.core.convert.ConverterNotFoundException;
+import org.springframework.core.testfixture.env.MockPropertySource;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.convert.ConverterNotFoundException;
-import org.springframework.core.testfixture.env.MockPropertySource;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * @author Chris Beams

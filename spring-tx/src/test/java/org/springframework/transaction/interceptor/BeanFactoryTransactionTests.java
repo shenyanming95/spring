@@ -16,15 +16,10 @@
 
 package org.springframework.transaction.interceptor;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.util.Map;
-
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.support.AopUtils;
 import org.springframework.aop.support.StaticMethodMatcherPointcut;
 import org.springframework.aop.target.HotSwappableTargetSource;
@@ -41,6 +36,10 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionException;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.testfixture.CallCountingTransactionManager;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

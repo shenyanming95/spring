@@ -18,14 +18,9 @@ package org.springframework.test.context.support;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.lang.Nullable;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.ContextConfigurationAttributes;
-import org.springframework.test.context.ContextLoader;
-import org.springframework.test.context.MergedContextConfiguration;
-import org.springframework.test.context.SmartContextLoader;
+import org.springframework.test.context.*;
 import org.springframework.util.Assert;
 
 /**

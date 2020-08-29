@@ -16,20 +16,8 @@
 
 package org.springframework.web.servlet;
 
-import java.io.IOException;
-import java.util.Locale;
-
-import javax.servlet.Servlet;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletRequestWrapper;
-import javax.servlet.http.HttpServletResponse;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.PropertyValue;
 import org.springframework.beans.testfixture.beans.TestBean;
@@ -37,12 +25,7 @@ import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.http.HttpHeaders;
-import org.springframework.web.context.ConfigurableWebApplicationContext;
-import org.springframework.web.context.ConfigurableWebEnvironment;
-import org.springframework.web.context.ContextLoader;
-import org.springframework.web.context.ServletConfigAwareBean;
-import org.springframework.web.context.ServletContextAwareBean;
-import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.*;
 import org.springframework.web.context.support.StandardServletEnvironment;
 import org.springframework.web.context.support.StaticWebApplicationContext;
 import org.springframework.web.multipart.MaxUploadSizeExceededException;
@@ -58,13 +41,19 @@ import org.springframework.web.testfixture.servlet.MockServletConfig;
 import org.springframework.web.testfixture.servlet.MockServletContext;
 import org.springframework.web.util.WebUtils;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import javax.servlet.Servlet;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequestWrapper;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Locale;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * @author Rod Johnson

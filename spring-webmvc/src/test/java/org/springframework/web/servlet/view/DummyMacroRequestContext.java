@@ -16,15 +16,14 @@
 
 package org.springframework.web.servlet.view;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.web.servlet.support.BindStatus;
 import org.springframework.web.servlet.support.RequestContext;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Dummy request context used for FreeMarker macro tests.

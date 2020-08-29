@@ -16,6 +16,13 @@
 
 package org.springframework.jdbc.core.simple;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.jdbc.core.SqlParameterValue;
+import org.springframework.jdbc.core.metadata.TableMetaDataContext;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
@@ -24,20 +31,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.sql.DataSource;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import org.springframework.jdbc.core.SqlParameterValue;
-import org.springframework.jdbc.core.metadata.TableMetaDataContext;
-import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Mock object based tests for TableMetaDataContext.

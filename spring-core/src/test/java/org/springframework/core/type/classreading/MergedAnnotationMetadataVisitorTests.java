@@ -16,19 +16,18 @@
 
 package org.springframework.core.type.classreading;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.asm.AnnotationVisitor;
 import org.springframework.asm.ClassReader;
 import org.springframework.asm.ClassVisitor;
 import org.springframework.asm.SpringAsmInfo;
 import org.springframework.core.annotation.MergedAnnotation;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

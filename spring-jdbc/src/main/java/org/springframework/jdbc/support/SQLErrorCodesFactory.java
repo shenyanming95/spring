@@ -16,14 +16,8 @@
 
 package org.springframework.jdbc.support;
 
-import java.util.Collections;
-import java.util.Map;
-
-import javax.sql.DataSource;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
@@ -34,6 +28,10 @@ import org.springframework.util.Assert;
 import org.springframework.util.ConcurrentReferenceHashMap;
 import org.springframework.util.PatternMatchUtils;
 import org.springframework.util.StringUtils;
+
+import javax.sql.DataSource;
+import java.util.Collections;
+import java.util.Map;
 
 /**
  * Factory for creating {@link SQLErrorCodes} based on the

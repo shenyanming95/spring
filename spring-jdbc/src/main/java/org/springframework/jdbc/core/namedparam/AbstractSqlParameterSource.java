@@ -16,14 +16,14 @@
 
 package org.springframework.jdbc.core.namedparam;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.StringJoiner;
-
 import org.springframework.jdbc.core.SqlParameterValue;
 import org.springframework.jdbc.support.JdbcUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.StringJoiner;
 
 /**
  * Abstract base class for {@link SqlParameterSource} implementations.

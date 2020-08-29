@@ -16,21 +16,18 @@
 
 package org.springframework.beans.factory.config;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.io.AbstractResource;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.FileSystemResource;
+import org.yaml.snakeyaml.constructor.DuplicateKeyException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
-import org.yaml.snakeyaml.constructor.DuplicateKeyException;
-
-import org.springframework.core.io.AbstractResource;
-import org.springframework.core.io.ByteArrayResource;
-import org.springframework.core.io.FileSystemResource;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Tests for {@link YamlMapFactoryBean}.

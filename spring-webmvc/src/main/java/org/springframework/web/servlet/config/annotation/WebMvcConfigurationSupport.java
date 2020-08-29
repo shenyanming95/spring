@@ -16,16 +16,6 @@
 
 package org.springframework.web.servlet.config.annotation;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.function.Predicate;
-
-import javax.servlet.ServletContext;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.beans.factory.BeanInitializationException;
@@ -41,11 +31,7 @@ import org.springframework.format.FormatterRegistry;
 import org.springframework.format.support.DefaultFormattingConversionService;
 import org.springframework.format.support.FormattingConversionService;
 import org.springframework.http.MediaType;
-import org.springframework.http.converter.ByteArrayHttpMessageConverter;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.ResourceHttpMessageConverter;
-import org.springframework.http.converter.ResourceRegionHttpMessageConverter;
-import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.http.converter.*;
 import org.springframework.http.converter.cbor.MappingJackson2CborHttpMessageConverter;
 import org.springframework.http.converter.feed.AtomFeedHttpMessageConverter;
 import org.springframework.http.converter.feed.RssChannelHttpMessageConverter;
@@ -81,26 +67,22 @@ import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.function.support.HandlerFunctionAdapter;
 import org.springframework.web.servlet.function.support.RouterFunctionMapping;
-import org.springframework.web.servlet.handler.AbstractHandlerMapping;
-import org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping;
-import org.springframework.web.servlet.handler.ConversionServiceExposingInterceptor;
-import org.springframework.web.servlet.handler.HandlerExceptionResolverComposite;
-import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
+import org.springframework.web.servlet.handler.*;
 import org.springframework.web.servlet.mvc.Controller;
 import org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter;
 import org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter;
 import org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver;
-import org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver;
-import org.springframework.web.servlet.mvc.method.annotation.JsonViewRequestBodyAdvice;
-import org.springframework.web.servlet.mvc.method.annotation.JsonViewResponseBodyAdvice;
-import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
-import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
+import org.springframework.web.servlet.mvc.method.annotation.*;
 import org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver;
 import org.springframework.web.servlet.resource.ResourceUrlProvider;
 import org.springframework.web.servlet.resource.ResourceUrlProviderExposingInterceptor;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.ViewResolverComposite;
 import org.springframework.web.util.UrlPathHelper;
+
+import javax.servlet.ServletContext;
+import java.util.*;
+import java.util.function.Predicate;
 
 /**
  * This is the main class providing the configuration behind the MVC Java config.

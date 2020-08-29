@@ -16,11 +16,11 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import javax.servlet.jsp.JspException;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import javax.servlet.jsp.JspException;
 
 /**
  * The {@code <label>} tag renders a form field label in an HTML 'label' tag.

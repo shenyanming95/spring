@@ -16,15 +16,7 @@
 
 package org.springframework.web.method.annotation;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-
-import javax.servlet.http.Part;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.convert.support.DefaultConversionService;
@@ -42,11 +34,13 @@ import org.springframework.web.multipart.MultipartException;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.support.MissingServletRequestPartException;
 import org.springframework.web.testfixture.method.ResolvableMethod;
-import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
-import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
-import org.springframework.web.testfixture.servlet.MockMultipartFile;
-import org.springframework.web.testfixture.servlet.MockMultipartHttpServletRequest;
-import org.springframework.web.testfixture.servlet.MockPart;
+import org.springframework.web.testfixture.servlet.*;
+
+import javax.servlet.http.Part;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

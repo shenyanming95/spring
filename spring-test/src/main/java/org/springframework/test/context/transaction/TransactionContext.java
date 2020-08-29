@@ -16,11 +16,8 @@
 
 package org.springframework.test.context.transaction;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.lang.Nullable;
 import org.springframework.test.context.TestContext;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -28,6 +25,8 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionException;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.util.Assert;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Transaction context for a specific {@link TestContext}.

@@ -16,20 +16,15 @@
 
 package org.springframework.core.annotation;
 
+import org.springframework.lang.Nullable;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Spliterator;
-import java.util.Spliterators;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
-
-import org.springframework.lang.Nullable;
 
 /**
  * {@link MergedAnnotations} implementation that searches for and adapts

@@ -16,12 +16,7 @@
 
 package org.springframework.web.context;
 
-import java.util.Locale;
-
-import javax.servlet.ServletException;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -36,6 +31,9 @@ import org.springframework.context.testfixture.beans.TestApplicationListener;
 import org.springframework.util.Assert;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.testfixture.servlet.MockServletContext;
+
+import javax.servlet.ServletException;
+import java.util.Locale;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

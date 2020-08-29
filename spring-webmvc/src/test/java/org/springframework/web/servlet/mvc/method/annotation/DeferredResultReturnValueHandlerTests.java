@@ -16,11 +16,8 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.util.concurrent.CompletableFuture;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.SettableListenableFuture;
@@ -33,6 +30,8 @@ import org.springframework.web.context.request.async.WebAsyncUtils;
 import org.springframework.web.method.support.ModelAndViewContainer;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import java.util.concurrent.CompletableFuture;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.web.testfixture.method.ResolvableMethod.on;

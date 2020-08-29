@@ -16,6 +16,10 @@
 
 package org.springframework.core.annotation;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.annotation.MergedAnnotation.Adapt;
+import org.springframework.util.MultiValueMap;
+
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Repeatable;
 import java.lang.annotation.Retention;
@@ -24,11 +28,6 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.stream.Stream;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.annotation.MergedAnnotation.Adapt;
-import org.springframework.util.MultiValueMap;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

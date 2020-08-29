@@ -16,11 +16,10 @@
 
 package org.springframework.util;
 
-import java.io.UnsupportedEncodingException;
+import org.junit.jupiter.api.Test;
 
 import javax.xml.bind.DatatypeConverter;
-
-import org.junit.jupiter.api.Test;
+import java.io.UnsupportedEncodingException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -16,18 +16,17 @@
 
 package org.springframework.aop.aspectj;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.aop.framework.ProxyFactory;
+import org.springframework.beans.testfixture.beans.TestBean;
+import test.annotation.EmptySpringAnnotation;
+import test.annotation.transaction.Tx;
+
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import test.annotation.EmptySpringAnnotation;
-import test.annotation.transaction.Tx;
-
-import org.springframework.aop.framework.ProxyFactory;
-import org.springframework.beans.testfixture.beans.TestBean;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

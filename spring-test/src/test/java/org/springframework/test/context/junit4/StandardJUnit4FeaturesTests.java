@@ -16,12 +16,12 @@
 
 package org.springframework.test.context.junit4;
 
-import java.util.ArrayList;
-
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.util.ArrayList;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;

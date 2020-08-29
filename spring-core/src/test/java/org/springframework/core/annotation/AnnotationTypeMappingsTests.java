@@ -16,28 +16,22 @@
 
 package org.springframework.core.annotation;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.annotation.AnnotationTypeMapping.MirrorSets;
+import org.springframework.core.annotation.AnnotationTypeMapping.MirrorSets.MirrorSet;
+import org.springframework.lang.UsesSunMisc;
+import org.springframework.util.ReflectionUtils;
+
+import javax.annotation.Nullable;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.*;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.IntStream;
-
-import javax.annotation.Nullable;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.annotation.AnnotationTypeMapping.MirrorSets;
-import org.springframework.core.annotation.AnnotationTypeMapping.MirrorSets.MirrorSet;
-import org.springframework.lang.UsesSunMisc;
-import org.springframework.util.ReflectionUtils;
 
 import static java.util.stream.Collectors.toList;
 import static org.assertj.core.api.Assertions.assertThat;

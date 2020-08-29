@@ -16,17 +16,7 @@
 
 package org.springframework.web.servlet.function;
 
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.Cookie;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -35,6 +25,14 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import javax.servlet.http.Cookie;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

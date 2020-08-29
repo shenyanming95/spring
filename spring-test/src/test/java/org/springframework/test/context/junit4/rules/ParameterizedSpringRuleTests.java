@@ -16,23 +16,18 @@
 
 package org.springframework.test.context.junit4.rules;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.ClassRule;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.testfixture.beans.Employee;
 import org.springframework.beans.testfixture.beans.Pet;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

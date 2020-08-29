@@ -16,14 +16,12 @@
 
 package org.springframework.oxm.jibx;
 
-import java.io.ByteArrayInputStream;
-
-import javax.xml.transform.stream.StreamSource;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnJre;
-
 import org.springframework.oxm.AbstractUnmarshallerTests;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.condition.JRE.JAVA_8;

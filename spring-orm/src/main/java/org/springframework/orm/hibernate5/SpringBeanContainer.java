@@ -16,15 +16,11 @@
 
 package org.springframework.orm.hibernate5;
 
-import java.util.Map;
-import java.util.function.Consumer;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.resource.beans.container.spi.BeanContainer;
 import org.hibernate.resource.beans.container.spi.ContainedBean;
 import org.hibernate.resource.beans.spi.BeanInstanceProducer;
-
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
@@ -32,6 +28,9 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ConcurrentReferenceHashMap;
+
+import java.util.Map;
+import java.util.function.Consumer;
 
 /**
  * Spring's implementation of Hibernate 5.3's {@link BeanContainer} SPI,

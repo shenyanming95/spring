@@ -16,25 +16,23 @@
 
 package org.springframework.http.converter.xml;
 
-import java.lang.reflect.Type;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.MockHttpInputMessage;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.stream.XMLInputFactory;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-import org.springframework.http.MockHttpInputMessage;
-import org.springframework.http.converter.HttpMessageNotReadableException;
+import java.lang.reflect.Type;
+import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

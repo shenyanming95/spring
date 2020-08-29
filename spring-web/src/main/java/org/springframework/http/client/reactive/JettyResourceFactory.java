@@ -17,9 +17,6 @@
 package org.springframework.http.client.reactive;
 
 
-import java.nio.ByteBuffer;
-import java.util.concurrent.Executor;
-
 import org.eclipse.jetty.io.ByteBufferPool;
 import org.eclipse.jetty.io.MappedByteBufferPool;
 import org.eclipse.jetty.util.ProcessorUtils;
@@ -28,11 +25,13 @@ import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.util.thread.ScheduledExecutorScheduler;
 import org.eclipse.jetty.util.thread.Scheduler;
 import org.eclipse.jetty.util.thread.ThreadPool;
-
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.nio.ByteBuffer;
+import java.util.concurrent.Executor;
 
 /**
  * Factory to manage Jetty resources, i.e. {@link Executor}, {@link ByteBufferPool} and

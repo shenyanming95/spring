@@ -18,7 +18,6 @@ package org.springframework.http.codec.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.smile.SmileFactory;
-
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.util.Assert;
 import org.springframework.util.MimeType;

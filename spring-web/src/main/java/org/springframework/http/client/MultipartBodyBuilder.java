@@ -16,13 +16,7 @@
 
 package org.springframework.http.client;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.function.Consumer;
-
 import org.reactivestreams.Publisher;
-
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.ResolvableType;
 import org.springframework.core.ResolvableTypeProvider;
@@ -37,6 +31,11 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Consumer;
 
 /**
  * Prepare the body of a multipart request, resulting in a

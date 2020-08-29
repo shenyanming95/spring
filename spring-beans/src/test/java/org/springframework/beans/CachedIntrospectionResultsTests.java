@@ -16,14 +16,13 @@
 
 package org.springframework.beans;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.testfixture.beans.TestBean;
+import org.springframework.core.OverridingClassLoader;
+
 import java.beans.BeanInfo;
 import java.beans.PropertyDescriptor;
 import java.util.ArrayList;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.beans.testfixture.beans.TestBean;
-import org.springframework.core.OverridingClassLoader;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

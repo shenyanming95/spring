@@ -16,19 +16,17 @@
 
 package org.springframework.jdbc.config;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.sql.DataSource;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.BadSqlGrammarException;
 import org.springframework.jdbc.core.JdbcTemplate;
+
+import javax.sql.DataSource;
+import java.util.List;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

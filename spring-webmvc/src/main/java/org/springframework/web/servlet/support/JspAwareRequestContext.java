@@ -16,16 +16,15 @@
 
 package org.springframework.web.servlet.support;
 
-import java.util.Locale;
-import java.util.Map;
-import java.util.TimeZone;
+import org.springframework.lang.Nullable;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.jstl.core.Config;
-
-import org.springframework.lang.Nullable;
+import java.util.Locale;
+import java.util.Map;
+import java.util.TimeZone;
 
 /**
  * JSP-aware (and JSTL-aware) subclass of RequestContext, allowing for

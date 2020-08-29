@@ -16,11 +16,11 @@
 
 package org.springframework.core.env;
 
-import java.util.Arrays;
-
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

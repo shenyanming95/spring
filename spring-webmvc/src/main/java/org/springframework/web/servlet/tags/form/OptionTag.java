@@ -16,13 +16,13 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.tagext.BodyContent;
-import javax.servlet.jsp.tagext.BodyTag;
-
 import org.springframework.lang.Nullable;
 import org.springframework.web.servlet.support.BindStatus;
 import org.springframework.web.util.TagUtils;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.BodyContent;
+import javax.servlet.jsp.tagext.BodyTag;
 
 /**
  * The {@code <option>} tag renders a single HTML 'option'. Sets 'selected' as

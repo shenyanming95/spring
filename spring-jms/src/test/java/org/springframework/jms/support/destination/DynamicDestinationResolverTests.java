@@ -16,18 +16,11 @@
 
 package org.springframework.jms.support.destination;
 
-import javax.jms.Destination;
-import javax.jms.JMSException;
-import javax.jms.Queue;
-import javax.jms.QueueSession;
-import javax.jms.Session;
-import javax.jms.Topic;
-import javax.jms.TopicSession;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.jms.StubQueue;
 import org.springframework.jms.StubTopic;
+
+import javax.jms.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;

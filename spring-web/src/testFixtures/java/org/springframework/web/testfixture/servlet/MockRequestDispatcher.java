@@ -16,15 +16,14 @@
 
 package org.springframework.web.testfixture.servlet;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.util.Assert;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import org.springframework.util.Assert;
 
 /**
  * Mock implementation of the {@link javax.servlet.RequestDispatcher} interface.

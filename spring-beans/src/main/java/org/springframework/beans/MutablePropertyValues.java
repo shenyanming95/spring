@@ -16,20 +16,12 @@
 
 package org.springframework.beans;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Spliterator;
-import java.util.Spliterators;
-import java.util.stream.Stream;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.io.Serializable;
+import java.util.*;
+import java.util.stream.Stream;
 
 /**
  * The default implementation of the {@link PropertyValues} interface.

@@ -16,22 +16,21 @@
 
 package org.springframework.test.context.junit4;
 
-import java.io.IOException;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runner.Runner;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
-
 import org.springframework.test.annotation.Repeat;
 import org.springframework.test.annotation.Timed;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.util.ClassUtils;
+
+import java.io.IOException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.context.junit4.JUnitTestingUtils.runTestsAndAssertCounters;

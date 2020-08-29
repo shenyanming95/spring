@@ -16,28 +16,20 @@
 
 package org.springframework.transaction.annotation;
 
-import java.util.Collection;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AdviceMode;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ConditionContext;
-import org.springframework.context.annotation.Conditional;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ConfigurationCondition;
-import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.*;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.config.TransactionManagementConfigUtils;
 import org.springframework.transaction.event.TransactionalEventListenerFactory;
 import org.springframework.transaction.testfixture.CallCountingTransactionManager;
+
+import java.util.Collection;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

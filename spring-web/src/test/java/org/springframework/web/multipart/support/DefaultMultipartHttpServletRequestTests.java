@@ -15,15 +15,14 @@
  */
 package org.springframework.web.multipart.support;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

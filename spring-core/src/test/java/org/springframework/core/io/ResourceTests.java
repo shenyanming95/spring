@@ -16,12 +16,10 @@
 
 package org.springframework.core.io;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import org.junit.jupiter.api.Test;
+import org.springframework.util.FileCopyUtils;
+
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.ByteBuffer;
@@ -29,10 +27,6 @@ import java.nio.channels.ReadableByteChannel;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashSet;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.util.FileCopyUtils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

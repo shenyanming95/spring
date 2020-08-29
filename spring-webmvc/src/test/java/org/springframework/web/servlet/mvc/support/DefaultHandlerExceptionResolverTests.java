@@ -16,12 +16,8 @@
 
 package org.springframework.web.servlet.mvc.support;
 
-import java.lang.reflect.Method;
-import java.util.Collections;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.beans.testfixture.beans.TestBean;
@@ -44,6 +40,9 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import java.lang.reflect.Method;
+import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

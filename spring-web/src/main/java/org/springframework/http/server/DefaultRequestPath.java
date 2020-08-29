@@ -16,11 +16,11 @@
 
 package org.springframework.http.server;
 
-import java.net.URI;
-import java.util.List;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.net.URI;
+import java.util.List;
 
 /**
  * Default implementation of {@link RequestPath}.

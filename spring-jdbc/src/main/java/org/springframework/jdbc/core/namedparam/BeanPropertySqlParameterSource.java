@@ -16,10 +16,6 @@
 
 package org.springframework.jdbc.core.namedparam;
 
-import java.beans.PropertyDescriptor;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.NotReadablePropertyException;
 import org.springframework.beans.PropertyAccessor;
@@ -28,6 +24,10 @@ import org.springframework.jdbc.core.StatementCreatorUtils;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.beans.PropertyDescriptor;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * {@link SqlParameterSource} implementation that obtains parameter values

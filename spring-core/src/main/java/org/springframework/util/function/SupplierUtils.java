@@ -16,9 +16,9 @@
 
 package org.springframework.util.function;
 
-import java.util.function.Supplier;
-
 import org.springframework.lang.Nullable;
+
+import java.util.function.Supplier;
 
 /**
  * Convenience utilities for {@link java.util.function.Supplier} handling.

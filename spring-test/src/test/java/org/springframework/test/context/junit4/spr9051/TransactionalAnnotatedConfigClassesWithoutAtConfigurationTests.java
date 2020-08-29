@@ -16,10 +16,7 @@
 
 package org.springframework.test.context.junit4.spr9051;
 
-import javax.sql.DataSource;
-
 import org.junit.Before;
-
 import org.springframework.beans.testfixture.beans.Employee;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,6 +27,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.transaction.AfterTransaction;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import javax.sql.DataSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

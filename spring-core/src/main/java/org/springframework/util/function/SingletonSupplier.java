@@ -16,10 +16,10 @@
 
 package org.springframework.util.function;
 
-import java.util.function.Supplier;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.function.Supplier;
 
 /**
  * A {@link java.util.function.Supplier} decorator that caches a singleton result and

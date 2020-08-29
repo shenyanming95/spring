@@ -16,12 +16,12 @@
 
 package org.springframework.web.jsf;
 
-import javax.faces.application.NavigationHandler;
-import javax.faces.context.FacesContext;
-
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.lang.Nullable;
 import org.springframework.web.context.WebApplicationContext;
+
+import javax.faces.application.NavigationHandler;
+import javax.faces.context.FacesContext;
 
 /**
  * JSF NavigationHandler implementation that delegates to a NavigationHandler

@@ -16,12 +16,9 @@
 
 package org.springframework.test.context.junit4;
 
-import javax.sql.DataSource;
-
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -32,6 +29,8 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 import org.springframework.test.context.support.DirtiesContextTestExecutionListener;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.springframework.transaction.annotation.Transactional;
+
+import javax.sql.DataSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.transaction.TransactionAssert.assertThatTransaction;

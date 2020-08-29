@@ -16,10 +16,6 @@
 
 package org.springframework.core.type;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Map;
-
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.core.annotation.MergedAnnotations;
 import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
@@ -27,6 +23,10 @@ import org.springframework.core.annotation.RepeatableContainers;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.MultiValueMap;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Map;
 
 /**
  * {@link MethodMetadata} implementation that uses standard reflection

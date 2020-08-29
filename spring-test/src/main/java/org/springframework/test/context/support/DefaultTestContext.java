@@ -16,10 +16,6 @@
 
 package org.springframework.test.context.support;
 
-import java.lang.reflect.Method;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.style.ToStringCreator;
@@ -30,6 +26,10 @@ import org.springframework.test.context.MergedContextConfiguration;
 import org.springframework.test.context.TestContext;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.lang.reflect.Method;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Default implementation of the {@link TestContext} interface.

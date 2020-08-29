@@ -16,21 +16,8 @@
 
 package org.springframework.web.method.annotation;
 
-import java.beans.ConstructorProperties;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.core.DefaultParameterNameDiscoverer;
@@ -39,11 +26,7 @@ import org.springframework.core.ParameterNameDiscoverer;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
-import org.springframework.validation.BindException;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.Errors;
-import org.springframework.validation.SmartValidator;
-import org.springframework.validation.Validator;
+import org.springframework.validation.*;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -53,6 +36,12 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
 import org.springframework.web.method.support.ModelAndViewContainer;
+
+import java.beans.ConstructorProperties;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.util.*;
 
 /**
  * Resolve {@code @ModelAttribute} annotated method arguments and handle

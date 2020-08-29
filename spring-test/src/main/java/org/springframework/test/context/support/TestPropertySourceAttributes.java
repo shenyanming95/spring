@@ -16,23 +16,18 @@
 
 package org.springframework.test.context.support;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.annotation.MergedAnnotation;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.log.LogMessage;
 import org.springframework.core.style.ToStringCreator;
 import org.springframework.test.context.TestPropertySource;
-import org.springframework.util.Assert;
-import org.springframework.util.ClassUtils;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.ResourceUtils;
-import org.springframework.util.StringUtils;
+import org.springframework.util.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * {@code TestPropertySourceAttributes} encapsulates attributes declared

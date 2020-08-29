@@ -16,11 +16,11 @@
 
 package org.springframework.core.log;
 
-import java.util.List;
-import java.util.function.Predicate;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.impl.NoOpLog;
+
+import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * Implementation of {@link Log} that wraps a list of loggers and delegates

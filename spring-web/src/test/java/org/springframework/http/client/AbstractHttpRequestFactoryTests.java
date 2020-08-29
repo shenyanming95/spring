@@ -16,15 +16,9 @@
 
 package org.springframework.http.client;
 
-import java.net.URI;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Locale;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.http.HttpMethod;
@@ -33,9 +27,12 @@ import org.springframework.http.StreamingHttpOutputMessage;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.util.StreamUtils;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import java.net.URI;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+import java.util.Locale;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * @author Arjen Poutsma

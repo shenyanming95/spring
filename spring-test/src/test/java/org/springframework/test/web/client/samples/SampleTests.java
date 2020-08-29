@@ -15,12 +15,8 @@
  */
 package org.springframework.test.web.client.samples;
 
-import java.io.IOException;
-import java.util.Collections;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpMethod;
@@ -34,11 +30,12 @@ import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
+import java.util.Collections;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.springframework.test.web.client.ExpectedCount.manyTimes;
-import static org.springframework.test.web.client.ExpectedCount.never;
-import static org.springframework.test.web.client.ExpectedCount.once;
+import static org.springframework.test.web.client.ExpectedCount.*;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.method;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;

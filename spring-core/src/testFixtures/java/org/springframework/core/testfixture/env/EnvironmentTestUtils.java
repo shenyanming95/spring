@@ -16,11 +16,11 @@
 
 package org.springframework.core.testfixture.env;
 
+import org.springframework.core.env.StandardEnvironment;
+
 import java.lang.reflect.Field;
 import java.util.Collections;
 import java.util.Map;
-
-import org.springframework.core.env.StandardEnvironment;
 
 /**
  * Test utilities for {@link StandardEnvironment}.

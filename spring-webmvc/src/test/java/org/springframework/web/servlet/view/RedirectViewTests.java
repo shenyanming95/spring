@@ -16,16 +16,8 @@
 
 package org.springframework.web.servlet.view;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.ModelMap;
@@ -41,6 +33,8 @@ import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 import org.springframework.web.testfixture.servlet.MockServletContext;
 import org.springframework.web.util.WebUtils;
+
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

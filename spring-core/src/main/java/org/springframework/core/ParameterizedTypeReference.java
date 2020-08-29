@@ -17,11 +17,11 @@
 
 package org.springframework.core;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
 /**
  * The purpose of this class is to enable capturing and passing a generic

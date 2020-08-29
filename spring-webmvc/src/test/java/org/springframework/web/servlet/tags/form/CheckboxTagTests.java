@@ -16,29 +16,22 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import java.beans.PropertyEditorSupport;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.tagext.Tag;
-
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.beans.testfixture.beans.Colour;
 import org.springframework.beans.testfixture.beans.Pet;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.validation.BindingResult;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.Tag;
+import java.beans.PropertyEditorSupport;
+import java.io.StringReader;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

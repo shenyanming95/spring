@@ -16,17 +16,16 @@
 
 package org.springframework.aop.aspectj.annotation;
 
-import java.io.Serializable;
-import java.util.Arrays;
-
 import org.apache.commons.logging.LogFactory;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.junit.jupiter.api.Test;
+import org.springframework.core.testfixture.io.SerializationTestUtils;
 import test.aop.PerThisAspect;
 
-import org.springframework.core.testfixture.io.SerializationTestUtils;
+import java.io.Serializable;
+import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

@@ -16,16 +16,7 @@
 
 package org.springframework.web.util;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServletServerHttpRequest;
@@ -34,6 +25,9 @@ import org.springframework.web.filter.ForwardedHeaderFilter;
 import org.springframework.web.testfixture.servlet.MockFilterChain;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

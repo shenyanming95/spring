@@ -16,17 +16,9 @@
 
 package org.springframework.http.converter;
 
-import java.io.ByteArrayInputStream;
-import java.lang.reflect.Type;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
-
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -36,6 +28,13 @@ import org.springframework.http.HttpRange;
 import org.springframework.http.MediaType;
 import org.springframework.http.MockHttpOutputMessage;
 import org.springframework.util.StringUtils;
+
+import java.io.ByteArrayInputStream;
+import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -16,15 +16,10 @@
 
 package org.springframework.core.env;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.util.*;
 
 /**
  * Composite {@link PropertySource} implementation that iterates over a set of

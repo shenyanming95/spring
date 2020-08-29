@@ -16,13 +16,13 @@
 
 package org.springframework.transaction.support;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.config.Scope;
 import org.springframework.lang.Nullable;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A simple transaction-backed {@link Scope} implementation, delegating to

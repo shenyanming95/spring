@@ -16,16 +16,8 @@
 
 package org.springframework.web.servlet.tags;
 
-import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-
-import javax.servlet.jsp.tagext.Tag;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.env.MapPropertySource;
 import org.springframework.format.annotation.NumberFormat;
@@ -35,6 +27,12 @@ import org.springframework.format.support.FormattingConversionServiceFactoryBean
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 import org.springframework.web.testfixture.servlet.MockPageContext;
+
+import javax.servlet.jsp.tagext.Tag;
+import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

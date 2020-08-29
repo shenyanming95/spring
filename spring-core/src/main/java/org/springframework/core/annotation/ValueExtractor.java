@@ -16,11 +16,11 @@
 
 package org.springframework.core.annotation;
 
+import org.springframework.lang.Nullable;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.Map;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Strategy API for extracting a value for an annotation attribute from a given

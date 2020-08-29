@@ -16,12 +16,11 @@
 
 package org.springframework.jdbc.support;
 
-import java.sql.SQLException;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.jdbc.BadSqlGrammarException;
 import org.springframework.jdbc.UncategorizedSQLException;
+
+import java.sql.SQLException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

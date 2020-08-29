@@ -16,18 +16,18 @@
 
 package org.springframework.web.server.adapter;
 
-import java.net.URI;
-import java.util.Collections;
-import java.util.Locale;
-import java.util.Set;
-import java.util.function.Function;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.lang.Nullable;
 import org.springframework.util.LinkedCaseInsensitiveMap;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
+import java.util.Collections;
+import java.util.Locale;
+import java.util.Set;
+import java.util.function.Function;
 
 /**
  * Extract values from "Forwarded" and "X-Forwarded-*" headers to override

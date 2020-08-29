@@ -16,14 +16,14 @@
 
 package org.springframework.core.annotation;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Array;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.function.Predicate;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
 
 /**
  * Abstract base class for {@link MergedAnnotation} implementations.

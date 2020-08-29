@@ -16,18 +16,17 @@
 
 package org.springframework.test.context.junit.jupiter;
 
-import java.lang.reflect.Method;
-import java.util.Optional;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ConditionEvaluationResult;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ExtensionContext.Store;
-
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.TestContextManager;
 import org.springframework.test.context.junit.SpringJUnitJupiterTestSuite;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.reflect.Method;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

@@ -16,20 +16,6 @@
 
 package org.springframework.web.servlet.resource;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.StringTokenizer;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -38,6 +24,14 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.context.support.ServletContextResource;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.UrlPathHelper;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
 
 /**
  * A simple {@code ResourceResolver} that tries to find a resource under the given

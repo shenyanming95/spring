@@ -16,13 +16,7 @@
 
 package org.springframework.test.context.support;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.Set;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.StaticApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -31,9 +25,12 @@ import org.springframework.test.context.MergedContextConfiguration;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.ReflectionUtils;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
 /**

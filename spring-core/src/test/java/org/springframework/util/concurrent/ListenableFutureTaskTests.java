@@ -16,18 +16,14 @@
 
 package org.springframework.util.concurrent;
 
+import org.junit.jupiter.api.Test;
+
 import java.io.IOException;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
-import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.fail;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoInteractions;
+import static org.assertj.core.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 /**
  * @author Arjen Poutsma

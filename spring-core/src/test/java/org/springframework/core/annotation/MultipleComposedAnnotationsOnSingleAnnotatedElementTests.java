@@ -16,18 +16,14 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+import java.lang.annotation.*;
 import java.lang.reflect.AnnotatedElement;
 import java.lang.reflect.Method;
 import java.util.Iterator;
 import java.util.Set;
-
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.core.annotation.AnnotatedElementUtils.findAllMergedAnnotations;

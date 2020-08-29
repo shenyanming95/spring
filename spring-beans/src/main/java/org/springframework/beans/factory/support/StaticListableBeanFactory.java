@@ -16,25 +16,8 @@
 
 package org.springframework.beans.factory.support;
 
-import java.lang.annotation.Annotation;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Stream;
-
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanCreationException;
-import org.springframework.beans.factory.BeanFactoryUtils;
-import org.springframework.beans.factory.BeanIsNotAFactoryException;
-import org.springframework.beans.factory.BeanNotOfRequiredTypeException;
-import org.springframework.beans.factory.FactoryBean;
-import org.springframework.beans.factory.ListableBeanFactory;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
-import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
-import org.springframework.beans.factory.ObjectProvider;
-import org.springframework.beans.factory.SmartFactoryBean;
+import org.springframework.beans.factory.*;
 import org.springframework.core.OrderComparator;
 import org.springframework.core.ResolvableType;
 import org.springframework.core.annotation.AnnotatedElementUtils;
@@ -42,6 +25,10 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
+
+import java.lang.annotation.Annotation;
+import java.util.*;
+import java.util.stream.Stream;
 
 /**
  * Static {@link org.springframework.beans.factory.BeanFactory} implementation

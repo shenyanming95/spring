@@ -16,12 +16,11 @@
 
 package org.springframework.util.xml;
 
-import java.util.NoSuchElementException;
+import org.springframework.util.ClassUtils;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLStreamException;
-
-import org.springframework.util.ClassUtils;
+import java.util.NoSuchElementException;
 
 /**
  * Abstract base class for {@code XMLEventReader}s.

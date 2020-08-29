@@ -16,19 +16,8 @@
 
 package org.springframework.web.context.request.async;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Future;
-import java.util.concurrent.RejectedExecutionException;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.task.AsyncTaskExecutor;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.SyncTaskExecutor;
@@ -36,6 +25,15 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.async.DeferredResult.DeferredResultHandler;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+import java.util.concurrent.RejectedExecutionException;
 
 /**
  * The central class for managing asynchronous request processing, mainly intended

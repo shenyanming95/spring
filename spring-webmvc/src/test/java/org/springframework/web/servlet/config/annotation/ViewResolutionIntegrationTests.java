@@ -16,12 +16,7 @@
 
 package org.springframework.web.servlet.config.annotation;
 
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
@@ -38,6 +33,9 @@ import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 import org.springframework.web.testfixture.servlet.MockServletConfig;
 import org.springframework.web.testfixture.servlet.MockServletContext;
+
+import javax.servlet.ServletException;
+import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

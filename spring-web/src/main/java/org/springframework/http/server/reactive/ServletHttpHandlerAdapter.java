@@ -16,35 +16,24 @@
 
 package org.springframework.http.server.reactive;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.Collection;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import javax.servlet.AsyncContext;
-import javax.servlet.AsyncEvent;
-import javax.servlet.AsyncListener;
-import javax.servlet.DispatcherType;
-import javax.servlet.Servlet;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.logging.Log;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
-
 import org.springframework.core.io.buffer.DataBufferFactory;
 import org.springframework.core.io.buffer.DefaultDataBufferFactory;
 import org.springframework.http.HttpLogging;
 import org.springframework.http.HttpMethod;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import javax.servlet.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.Collection;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Adapt {@link HttpHandler} to an {@link HttpServlet} using Servlet Async support

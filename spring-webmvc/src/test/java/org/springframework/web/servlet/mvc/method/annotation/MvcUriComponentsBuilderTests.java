@@ -16,23 +16,11 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.joda.time.DateTime;
 import org.joda.time.format.ISODateTimeFormat;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
@@ -40,12 +28,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.MultiValueMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -62,14 +45,15 @@ import org.springframework.web.testfixture.servlet.MockServletContext;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.servlet.http.HttpServletRequest;
+import java.lang.annotation.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
-import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.fromController;
-import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.fromMappingName;
-import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.fromMethodCall;
-import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.fromMethodName;
-import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.on;
-import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.relativeTo;
+import static org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder.*;
 
 /**
  * Unit tests for {@link MvcUriComponentsBuilder}.

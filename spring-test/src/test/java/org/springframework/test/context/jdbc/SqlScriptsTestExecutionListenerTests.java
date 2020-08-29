@@ -18,7 +18,6 @@ package org.springframework.test.context.jdbc;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
-
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.annotation.AnnotationConfigurationException;

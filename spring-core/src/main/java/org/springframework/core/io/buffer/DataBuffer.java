@@ -16,6 +16,8 @@
 
 package org.springframework.core.io.buffer;
 
+import org.springframework.util.Assert;
+
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.ByteBuffer;
@@ -25,8 +27,6 @@ import java.nio.charset.CharsetEncoder;
 import java.nio.charset.CoderResult;
 import java.nio.charset.CodingErrorAction;
 import java.util.function.IntPredicate;
-
-import org.springframework.util.Assert;
 
 /**
  * Basic abstraction over byte buffers.

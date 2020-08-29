@@ -16,10 +16,22 @@
 
 package org.springframework.http.converter.xml;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.nio.charset.StandardCharsets;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.core.testfixture.xml.XmlContent;
+import org.springframework.http.MediaType;
+import org.springframework.http.MockHttpInputMessage;
+import org.springframework.http.MockHttpOutputMessage;
+import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.util.FileCopyUtils;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+import org.xml.sax.helpers.DefaultHandler;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.stream.XMLStreamException;
@@ -29,24 +41,10 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stax.StAXSource;
 import javax.xml.transform.stream.StreamSource;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.DefaultHandler;
-
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-import org.springframework.core.testfixture.xml.XmlContent;
-import org.springframework.http.MediaType;
-import org.springframework.http.MockHttpInputMessage;
-import org.springframework.http.MockHttpOutputMessage;
-import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.util.FileCopyUtils;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

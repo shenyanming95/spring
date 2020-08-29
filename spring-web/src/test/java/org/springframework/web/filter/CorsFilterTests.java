@@ -16,20 +16,18 @@
 
 package org.springframework.web.filter;
 
-import java.io.IOException;
-import java.util.Arrays;
-
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import java.io.IOException;
+import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;

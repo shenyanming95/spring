@@ -16,14 +16,7 @@
 
 package org.springframework.test.web.client.match;
 
-import java.net.URI;
-import java.util.List;
-import java.util.Map;
-
-import javax.xml.xpath.XPathExpressionException;
-
 import org.hamcrest.Matcher;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.ClientHttpRequest;
 import org.springframework.test.web.client.MockRestServiceServer;
@@ -31,6 +24,11 @@ import org.springframework.test.web.client.RequestMatcher;
 import org.springframework.util.Assert;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import javax.xml.xpath.XPathExpressionException;
+import java.net.URI;
+import java.util.List;
+import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.springframework.test.util.AssertionErrors.assertEquals;

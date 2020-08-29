@@ -16,13 +16,13 @@
 
 package org.springframework.beans.propertyeditors;
 
-import java.beans.PropertyEditorSupport;
-import java.util.StringJoiner;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
+
+import java.beans.PropertyEditorSupport;
+import java.util.StringJoiner;
 
 /**
  * Property editor for an array of {@link Class Classes}, to enable

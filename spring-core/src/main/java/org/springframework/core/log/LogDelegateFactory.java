@@ -16,12 +16,12 @@
 
 package org.springframework.core.log;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
  * Factory for common {@link Log} delegates with Spring's logging conventions.

@@ -16,14 +16,14 @@
 
 package org.springframework.web.cors;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Utility class for CORS request handling based on the

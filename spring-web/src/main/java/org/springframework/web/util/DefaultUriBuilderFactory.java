@@ -16,16 +16,16 @@
 
 package org.springframework.web.util;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.MultiValueMap;
+import org.springframework.util.ObjectUtils;
+import org.springframework.util.StringUtils;
+
 import java.net.URI;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.MultiValueMap;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
 
 /**
  * {@code UriBuilderFactory} that relies on {@link UriComponentsBuilder} for

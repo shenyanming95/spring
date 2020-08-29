@@ -16,15 +16,15 @@
 
 package org.springframework.cglib.core;
 
-import java.lang.reflect.Method;
-import java.security.ProtectionDomain;
-import java.util.Collections;
-import java.util.List;
-
 import org.springframework.asm.ClassVisitor;
 import org.springframework.asm.Label;
 import org.springframework.asm.Type;
 import org.springframework.cglib.core.internal.CustomizerRegistry;
+
+import java.lang.reflect.Method;
+import java.security.ProtectionDomain;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Generates classes to handle multi-valued keys, for use in things such as Maps and Sets.

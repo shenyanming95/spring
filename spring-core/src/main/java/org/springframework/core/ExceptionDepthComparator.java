@@ -16,12 +16,12 @@
 
 package org.springframework.core;
 
+import org.springframework.util.Assert;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
-
-import org.springframework.util.Assert;
 
 /**
  * Comparator capable of sorting exceptions based on their depth from the thrown exception type.

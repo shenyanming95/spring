@@ -16,18 +16,17 @@
 
 package org.springframework.http.client.reactive;
 
-import java.time.Duration;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
-
-import reactor.netty.http.HttpResources;
-import reactor.netty.resources.ConnectionProvider;
-import reactor.netty.resources.LoopResources;
-
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+import reactor.netty.http.HttpResources;
+import reactor.netty.resources.ConnectionProvider;
+import reactor.netty.resources.LoopResources;
+
+import java.time.Duration;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 /**
  * Factory to manage Reactor Netty resources, i.e. {@link LoopResources} for

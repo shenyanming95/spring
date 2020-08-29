@@ -16,11 +16,6 @@
 
 package org.springframework.http.server.reactive;
 
-import java.io.File;
-import java.net.URI;
-
-import reactor.core.publisher.Mono;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
@@ -32,6 +27,10 @@ import org.springframework.web.testfixture.http.server.reactive.bootstrap.Abstra
 import org.springframework.web.testfixture.http.server.reactive.bootstrap.HttpServer;
 import org.springframework.web.testfixture.http.server.reactive.bootstrap.ReactorHttpServer;
 import org.springframework.web.testfixture.http.server.reactive.bootstrap.UndertowHttpServer;
+import reactor.core.publisher.Mono;
+
+import java.io.File;
+import java.net.URI;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;

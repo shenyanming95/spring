@@ -16,12 +16,11 @@
 
 package org.springframework.mock.http.server.reactive;
 
-import java.util.Arrays;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseCookie;
+
+import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

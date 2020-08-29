@@ -16,11 +16,11 @@
 
 package org.springframework.core.testfixture;
 
-import java.io.InputStream;
-import java.util.logging.LogManager;
-
 import org.junit.platform.launcher.TestExecutionListener;
 import org.junit.platform.launcher.TestPlan;
+
+import java.io.InputStream;
+import java.util.logging.LogManager;
 
 /**
  * JUnit Platform {@link TestExecutionListener} that configures Java Util Logging

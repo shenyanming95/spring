@@ -16,33 +16,20 @@
 
 package org.springframework.transaction.interceptor;
 
-import java.lang.reflect.Method;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.ITestBean;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.dao.OptimisticLockingFailureException;
-import org.springframework.transaction.CannotCreateTransactionException;
-import org.springframework.transaction.MockCallbackPreferringTransactionManager;
-import org.springframework.transaction.NoTransactionException;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionDefinition;
-import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.TransactionSystemException;
-import org.springframework.transaction.UnexpectedRollbackException;
+import org.springframework.transaction.*;
 import org.springframework.transaction.interceptor.TransactionAspectSupport.TransactionInfo;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.fail;
+import java.lang.reflect.Method;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.willThrow;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.Mockito.*;
 
 /**
  * Mock object based tests for transaction aspects. A true unit test in that it

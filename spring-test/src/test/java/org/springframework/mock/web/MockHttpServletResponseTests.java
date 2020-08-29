@@ -16,25 +16,19 @@
 
 package org.springframework.mock.web;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.web.util.WebUtils;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collection;
 
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.web.util.WebUtils;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.springframework.http.HttpHeaders.CONTENT_LENGTH;
-import static org.springframework.http.HttpHeaders.CONTENT_TYPE;
-import static org.springframework.http.HttpHeaders.LAST_MODIFIED;
-import static org.springframework.http.HttpHeaders.LOCATION;
-import static org.springframework.http.HttpHeaders.SET_COOKIE;
+import static org.springframework.http.HttpHeaders.*;
 
 /**
  * Unit tests for {@link MockHttpServletResponse}.

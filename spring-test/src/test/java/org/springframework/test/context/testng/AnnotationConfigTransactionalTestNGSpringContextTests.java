@@ -16,14 +16,6 @@
 
 package org.springframework.test.context.testng;
 
-import javax.sql.DataSource;
-
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.testfixture.beans.Employee;
 import org.springframework.beans.testfixture.beans.Pet;
@@ -37,6 +29,9 @@ import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.testng.annotations.*;
+
+import javax.sql.DataSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.transaction.TransactionAssert.assertThatTransaction;

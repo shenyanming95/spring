@@ -16,12 +16,11 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import java.io.Writer;
+import org.junit.jupiter.api.Test;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.Tag;
-
-import org.junit.jupiter.api.Test;
+import java.io.Writer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

@@ -16,13 +16,6 @@
 
 package org.springframework.web.filter.reactive;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
-
-import reactor.core.publisher.Mono;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.util.Assert;
@@ -30,6 +23,12 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebFilterChain;
+import reactor.core.publisher.Mono;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
 
 /**
  * Reactive {@link WebFilter} that converts posted method parameters into HTTP methods,

@@ -16,11 +16,10 @@
 
 package org.springframework.web.servlet.function;
 
-import java.util.Optional;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
+
+import java.util.Optional;
 
 import static java.util.Collections.emptyList;
 import static org.assertj.core.api.Assertions.assertThat;

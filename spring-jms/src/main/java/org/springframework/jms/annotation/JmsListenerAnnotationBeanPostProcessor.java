@@ -16,28 +16,13 @@
 
 package org.springframework.jms.annotation;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.aop.framework.AopInfrastructureBean;
 import org.springframework.aop.framework.AopProxyUtils;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.BeanFactoryAware;
-import org.springframework.beans.factory.BeanInitializationException;
-import org.springframework.beans.factory.ListableBeanFactory;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
-import org.springframework.beans.factory.SmartInitializingSingleton;
+import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.beans.factory.config.EmbeddedValueResolver;
 import org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor;
@@ -47,11 +32,7 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.jms.config.JmsListenerConfigUtils;
-import org.springframework.jms.config.JmsListenerContainerFactory;
-import org.springframework.jms.config.JmsListenerEndpointRegistrar;
-import org.springframework.jms.config.JmsListenerEndpointRegistry;
-import org.springframework.jms.config.MethodJmsListenerEndpoint;
+import org.springframework.jms.config.*;
 import org.springframework.lang.Nullable;
 import org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory;
 import org.springframework.messaging.handler.annotation.support.MessageHandlerMethodFactory;
@@ -59,6 +40,11 @@ import org.springframework.messaging.handler.invocation.InvocableHandlerMethod;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 import org.springframework.util.StringValueResolver;
+
+import java.lang.reflect.Method;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Bean post-processor that registers methods annotated with {@link JmsListener}

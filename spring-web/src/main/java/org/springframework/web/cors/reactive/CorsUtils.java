@@ -16,8 +16,6 @@
 
 package org.springframework.web.cors.reactive;
 
-import java.net.URI;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.server.reactive.ServerHttpRequest;
@@ -25,6 +23,8 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
 
 /**
  * Utility class for CORS reactive request handling based on the

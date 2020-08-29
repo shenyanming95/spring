@@ -16,16 +16,15 @@
 
 package org.springframework.web.servlet.function;
 
-import java.util.Collection;
-import java.util.Map;
-import java.util.function.Consumer;
-
-import javax.servlet.http.Cookie;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.lang.Nullable;
 import org.springframework.util.MultiValueMap;
+
+import javax.servlet.http.Cookie;
+import java.util.Collection;
+import java.util.Map;
+import java.util.function.Consumer;
 
 /**
  * Rendering-specific subtype of {@link ServerResponse} that exposes model and template data.

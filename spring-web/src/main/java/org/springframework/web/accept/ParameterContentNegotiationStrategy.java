@@ -16,12 +16,12 @@
 
 package org.springframework.web.accept;
 
-import java.util.Map;
-
 import org.springframework.http.MediaType;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.web.context.request.NativeWebRequest;
+
+import java.util.Map;
 
 /**
  * Strategy that resolves the requested content type from a query parameter.

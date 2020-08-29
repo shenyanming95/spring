@@ -16,14 +16,14 @@
 
 package org.springframework.core.type;
 
+import org.springframework.core.annotation.MergedAnnotation;
+import org.springframework.core.annotation.MergedAnnotations;
+import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
+
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import org.springframework.core.annotation.MergedAnnotation;
-import org.springframework.core.annotation.MergedAnnotations;
-import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
 
 /**
  * Interface that defines abstract access to the annotations of a specific

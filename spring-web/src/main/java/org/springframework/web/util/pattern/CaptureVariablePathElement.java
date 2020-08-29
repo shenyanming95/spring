@@ -16,11 +16,11 @@
 
 package org.springframework.web.util.pattern;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.springframework.http.server.PathContainer.PathSegment;
 import org.springframework.lang.Nullable;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * A path element representing capturing a piece of the path as a variable. In the pattern

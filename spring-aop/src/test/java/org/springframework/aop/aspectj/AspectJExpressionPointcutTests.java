@@ -16,8 +16,6 @@
 
 package org.springframework.aop.aspectj;
 
-import java.lang.reflect.Method;
-
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.aspectj.weaver.tools.PointcutExpression;
@@ -25,7 +23,6 @@ import org.aspectj.weaver.tools.PointcutPrimitive;
 import org.aspectj.weaver.tools.UnsupportedPointcutPrimitiveException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.ClassFilter;
 import org.springframework.aop.MethodMatcher;
 import org.springframework.aop.Pointcut;
@@ -36,10 +33,9 @@ import org.springframework.beans.testfixture.beans.ITestBean;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.beans.testfixture.beans.subpkg.DeepBean;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import java.lang.reflect.Method;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * @author Rob Harrop

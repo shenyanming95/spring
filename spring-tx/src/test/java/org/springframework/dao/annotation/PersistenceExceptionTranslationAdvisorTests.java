@@ -16,21 +16,19 @@
 
 package org.springframework.dao.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
-import javax.persistence.PersistenceException;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.dao.InvalidDataAccessApiUsageException;
 import org.springframework.dao.support.DataAccessUtilsTests.MapPersistenceExceptionTranslator;
 import org.springframework.dao.support.PersistenceExceptionTranslator;
 import org.springframework.stereotype.Repository;
+
+import javax.persistence.PersistenceException;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 

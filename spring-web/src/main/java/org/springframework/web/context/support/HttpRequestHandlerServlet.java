@@ -16,13 +16,6 @@
 
 package org.springframework.web.context.support;
 
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
@@ -30,6 +23,12 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.HttpRequestHandler;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.context.WebApplicationContext;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * Simple HttpServlet that delegates to an {@link HttpRequestHandler} bean defined

@@ -16,21 +16,14 @@
 
 package org.springframework.transaction.support;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.NamedThreadLocal;
 import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.*;
 
 /**
  * Central delegate that manages resources and transaction synchronizations per thread.

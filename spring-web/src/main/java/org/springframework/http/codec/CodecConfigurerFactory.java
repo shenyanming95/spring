@@ -16,15 +16,15 @@
 
 package org.springframework.http.codec;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.support.PropertiesLoaderUtils;
 import org.springframework.util.ClassUtils;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * Internal delegate for loading the default codec configurer class names.

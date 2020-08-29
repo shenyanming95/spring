@@ -16,28 +16,22 @@
 
 package org.springframework.transaction.annotation;
 
+import groovy.lang.GroovyObject;
+import groovy.lang.MetaClass;
+import org.junit.jupiter.api.Test;
+import org.springframework.aop.framework.Advised;
+import org.springframework.aop.framework.ProxyFactory;
+import org.springframework.core.annotation.AnnotationUtils;
+import org.springframework.core.testfixture.io.SerializationTestUtils;
+import org.springframework.transaction.interceptor.*;
+import org.springframework.transaction.testfixture.CallCountingTransactionManager;
+
+import javax.ejb.TransactionAttributeType;
 import java.io.IOException;
 import java.io.Serializable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
-
-import javax.ejb.TransactionAttributeType;
-
-import groovy.lang.GroovyObject;
-import groovy.lang.MetaClass;
-import org.junit.jupiter.api.Test;
-
-import org.springframework.aop.framework.Advised;
-import org.springframework.aop.framework.ProxyFactory;
-import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.core.testfixture.io.SerializationTestUtils;
-import org.springframework.transaction.interceptor.NoRollbackRuleAttribute;
-import org.springframework.transaction.interceptor.RollbackRuleAttribute;
-import org.springframework.transaction.interceptor.RuleBasedTransactionAttribute;
-import org.springframework.transaction.interceptor.TransactionAttribute;
-import org.springframework.transaction.interceptor.TransactionInterceptor;
-import org.springframework.transaction.testfixture.CallCountingTransactionManager;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

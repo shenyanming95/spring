@@ -16,19 +16,18 @@
 
 package org.springframework.test.context.support;
 
-import java.util.stream.Stream;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.ContextLoader;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ObjectUtils;
+
+import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.params.provider.Arguments.arguments;

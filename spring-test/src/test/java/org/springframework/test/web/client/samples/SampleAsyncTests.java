@@ -17,7 +17,6 @@
 package org.springframework.test.web.client.samples;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpMethod;

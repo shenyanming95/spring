@@ -16,11 +16,10 @@
 
 package org.springframework.core.io;
 
-import java.beans.PropertyEditor;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.env.StandardEnvironment;
+
+import java.beans.PropertyEditor;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

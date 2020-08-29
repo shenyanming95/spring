@@ -16,10 +16,10 @@
 
 package org.springframework.core.log;
 
-import java.util.function.Supplier;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.function.Supplier;
 
 /**
  * A simple log message type for use with Commons Logging, allowing

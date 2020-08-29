@@ -16,8 +16,6 @@
 
 package org.springframework.web.servlet.support;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
@@ -27,6 +25,8 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.UrlPathHelper;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * UriComponentsBuilder with additional static factory methods to create links

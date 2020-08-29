@@ -16,13 +16,12 @@
 
 package org.springframework.test.web.servlet.result;
 
-import java.nio.charset.StandardCharsets;
-
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.web.servlet.StubMvcResult;
+
+import java.nio.charset.StandardCharsets;
 
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 

@@ -16,26 +16,14 @@
 
 package org.springframework.jms.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import java.lang.reflect.Method;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jms.config.AbstractJmsListenerEndpoint;
-import org.springframework.jms.config.JmsListenerContainerTestFactory;
-import org.springframework.jms.config.JmsListenerEndpoint;
-import org.springframework.jms.config.JmsListenerEndpointRegistry;
-import org.springframework.jms.config.MessageListenerTestContainer;
-import org.springframework.jms.config.MethodJmsListenerEndpoint;
+import org.springframework.jms.config.*;
 import org.springframework.jms.listener.SimpleMessageListenerContainer;
 import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -44,6 +32,12 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import java.lang.reflect.Method;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

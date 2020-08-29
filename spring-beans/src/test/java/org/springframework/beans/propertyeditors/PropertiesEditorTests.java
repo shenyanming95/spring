@@ -16,11 +16,11 @@
 
 package org.springframework.beans.propertyeditors;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-
-import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -19,24 +19,12 @@ package org.springframework.test.util;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.aop.support.AopUtils;
-import org.springframework.test.util.subpackage.Component;
-import org.springframework.test.util.subpackage.LegacyEntity;
-import org.springframework.test.util.subpackage.Person;
-import org.springframework.test.util.subpackage.PersonEntity;
-import org.springframework.test.util.subpackage.StaticFields;
-import org.springframework.test.util.subpackage.StaticMethods;
+import org.springframework.test.util.subpackage.*;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
-import static org.springframework.test.util.ReflectionTestUtils.getField;
-import static org.springframework.test.util.ReflectionTestUtils.invokeGetterMethod;
-import static org.springframework.test.util.ReflectionTestUtils.invokeMethod;
-import static org.springframework.test.util.ReflectionTestUtils.invokeSetterMethod;
-import static org.springframework.test.util.ReflectionTestUtils.setField;
+import static org.assertj.core.api.Assertions.*;
+import static org.springframework.test.util.ReflectionTestUtils.*;
 
 /**
  * Unit tests for {@link ReflectionTestUtils}.

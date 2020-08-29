@@ -16,13 +16,12 @@
 
 package org.springframework.test.web.client;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.ClientHttpRequest;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

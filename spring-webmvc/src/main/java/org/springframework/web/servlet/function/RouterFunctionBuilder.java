@@ -16,17 +16,13 @@
 
 package org.springframework.web.servlet.function;
 
+import org.springframework.core.io.Resource;
+import org.springframework.util.Assert;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
-
-import org.springframework.core.io.Resource;
-import org.springframework.util.Assert;
+import java.util.function.*;
 
 /**
  * Default implementation of {@link RouterFunctions.Builder}.

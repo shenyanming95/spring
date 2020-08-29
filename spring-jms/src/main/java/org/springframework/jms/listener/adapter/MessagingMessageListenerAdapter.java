@@ -16,9 +16,6 @@
 
 package org.springframework.jms.listener.adapter;
 
-import javax.jms.JMSException;
-import javax.jms.Session;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.jms.support.JmsHeaderMapper;
 import org.springframework.jms.support.converter.MessageConversionException;
@@ -29,6 +26,9 @@ import org.springframework.messaging.core.AbstractMessageSendingTemplate;
 import org.springframework.messaging.handler.invocation.InvocableHandlerMethod;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.util.Assert;
+
+import javax.jms.JMSException;
+import javax.jms.Session;
 
 /**
  * A {@link javax.jms.MessageListener} adapter that invokes a configurable

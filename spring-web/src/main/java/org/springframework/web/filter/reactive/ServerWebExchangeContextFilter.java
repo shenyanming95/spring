@@ -16,14 +16,13 @@
 
 package org.springframework.web.filter.reactive;
 
-import java.util.Optional;
-
-import reactor.core.publisher.Mono;
-import reactor.util.context.Context;
-
 import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebFilterChain;
+import reactor.core.publisher.Mono;
+import reactor.util.context.Context;
+
+import java.util.Optional;
 
 /**
  * Inserts an attribute in the Reactor {@link Context} that makes the current

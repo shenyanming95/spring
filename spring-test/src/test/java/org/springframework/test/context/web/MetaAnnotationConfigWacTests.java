@@ -16,16 +16,15 @@
 
 package org.springframework.test.context.web;
 
-import java.io.File;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mock.web.MockServletContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.web.context.WebApplicationContext;
+
+import java.io.File;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

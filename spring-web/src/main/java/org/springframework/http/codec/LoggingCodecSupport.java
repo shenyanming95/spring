@@ -17,7 +17,6 @@
 package org.springframework.http.codec;
 
 import org.apache.commons.logging.Log;
-
 import org.springframework.http.HttpLogging;
 
 /**

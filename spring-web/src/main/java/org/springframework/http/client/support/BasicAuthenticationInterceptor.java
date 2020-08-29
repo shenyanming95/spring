@@ -16,15 +16,15 @@
 
 package org.springframework.http.client.support;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.lang.Nullable;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
 
 /**
  * {@link ClientHttpRequestInterceptor} to apply a given HTTP Basic Authentication

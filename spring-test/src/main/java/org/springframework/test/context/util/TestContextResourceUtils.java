@@ -16,18 +16,18 @@
 
 package org.springframework.test.context.util;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.core.io.support.ResourcePatternUtils;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ResourceUtils;
 import org.springframework.util.StringUtils;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Utility methods for working with resources within the <em>Spring TestContext

@@ -16,14 +16,6 @@
 
 package org.springframework.http.server.reactive;
 
-import java.net.URI;
-import java.time.Duration;
-
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Scheduler;
-import reactor.core.scheduler.Schedulers;
-
 import org.springframework.core.io.buffer.DataBufferFactory;
 import org.springframework.core.io.buffer.DefaultDataBufferFactory;
 import org.springframework.http.RequestEntity;
@@ -31,6 +23,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.testfixture.http.server.reactive.bootstrap.AbstractHttpHandlerIntegrationTests;
 import org.springframework.web.testfixture.http.server.reactive.bootstrap.HttpServer;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
+
+import java.net.URI;
+import java.time.Duration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

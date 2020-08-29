@@ -16,19 +16,17 @@
 
 package org.springframework.beans.factory.config;
 
-import java.util.Date;
-
-import javax.inject.Provider;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.testfixture.io.SerializationTestUtils;
+
+import javax.inject.Provider;
+import java.util.Date;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

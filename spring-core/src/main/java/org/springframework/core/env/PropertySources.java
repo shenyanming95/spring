@@ -16,10 +16,10 @@
 
 package org.springframework.core.env;
 
+import org.springframework.lang.Nullable;
+
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Holder containing one or more {@link PropertySource} objects.

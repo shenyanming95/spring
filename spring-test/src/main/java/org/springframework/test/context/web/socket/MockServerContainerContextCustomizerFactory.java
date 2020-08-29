@@ -16,8 +16,6 @@
 
 package org.springframework.test.context.web.socket;
 
-import java.util.List;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.lang.Nullable;
@@ -25,6 +23,8 @@ import org.springframework.test.context.ContextConfigurationAttributes;
 import org.springframework.test.context.ContextCustomizer;
 import org.springframework.test.context.ContextCustomizerFactory;
 import org.springframework.util.ClassUtils;
+
+import java.util.List;
 
 /**
  * {@link ContextCustomizerFactory} which creates a {@link MockServerContainerContextCustomizer}

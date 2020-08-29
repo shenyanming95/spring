@@ -18,7 +18,6 @@ package org.springframework.http.converter.protobuf;
 
 import com.google.protobuf.ExtensionRegistry;
 import com.google.protobuf.util.JsonFormat;
-
 import org.springframework.lang.Nullable;
 
 /**

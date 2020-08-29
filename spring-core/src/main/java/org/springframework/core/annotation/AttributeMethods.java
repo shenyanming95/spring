@@ -16,16 +16,16 @@
 
 package org.springframework.core.annotation;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.ConcurrentReferenceHashMap;
+import org.springframework.util.ReflectionUtils;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Map;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.ConcurrentReferenceHashMap;
-import org.springframework.util.ReflectionUtils;
 
 /**
  * Provides a quick way to access the attribute methods of an {@link Annotation}

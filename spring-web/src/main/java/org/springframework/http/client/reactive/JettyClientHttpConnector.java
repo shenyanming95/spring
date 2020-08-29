@@ -16,21 +16,20 @@
 
 package org.springframework.http.client.reactive;
 
-import java.net.URI;
-import java.util.function.Consumer;
-import java.util.function.Function;
-
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.reactive.client.ContentChunk;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.io.buffer.DataBufferFactory;
 import org.springframework.core.io.buffer.DefaultDataBufferFactory;
 import org.springframework.http.HttpMethod;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+import java.net.URI;
+import java.util.function.Consumer;
+import java.util.function.Function;
 
 /**
  * {@link ClientHttpConnector} for the Jetty Reactive Streams HttpClient.

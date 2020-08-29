@@ -16,11 +16,11 @@
 
 package org.springframework.util.comparator;
 
-import java.io.Serializable;
-import java.util.Comparator;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.io.Serializable;
+import java.util.Comparator;
 
 /**
  * A decorator for a comparator, with an "ascending" flag denoting

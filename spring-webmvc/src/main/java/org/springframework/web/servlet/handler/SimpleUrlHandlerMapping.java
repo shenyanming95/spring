@@ -16,14 +16,10 @@
 
 package org.springframework.web.servlet.handler;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-
 import org.springframework.beans.BeansException;
 import org.springframework.util.CollectionUtils;
+
+import java.util.*;
 
 /**
  * Implementation of the {@link org.springframework.web.servlet.HandlerMapping}

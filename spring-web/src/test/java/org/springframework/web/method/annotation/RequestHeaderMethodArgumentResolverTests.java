@@ -16,17 +16,9 @@
 
 package org.springframework.web.method.annotation;
 
-import java.lang.reflect.Method;
-import java.time.Instant;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.Map;
-import java.util.UUID;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.SynthesizingMethodParameter;
 import org.springframework.format.support.DefaultFormattingConversionService;
@@ -41,6 +33,13 @@ import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import java.lang.reflect.Method;
+import java.time.Instant;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Map;
+import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

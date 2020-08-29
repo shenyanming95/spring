@@ -18,7 +18,6 @@ package org.springframework.web.servlet.handler;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.web.context.ConfigurableWebApplicationContext;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 import org.springframework.web.servlet.HandlerExecutionChain;

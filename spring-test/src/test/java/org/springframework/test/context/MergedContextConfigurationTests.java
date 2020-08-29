@@ -16,16 +16,15 @@
 
 package org.springframework.test.context;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.test.context.support.GenericXmlContextLoader;
+
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;

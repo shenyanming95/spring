@@ -16,19 +16,13 @@
 
 package org.springframework.web.util.pattern;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.server.PathContainer;
 import org.springframework.http.server.PathContainer.Element;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.web.util.pattern.PathPattern.PathRemainingMatchInfo;
+
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

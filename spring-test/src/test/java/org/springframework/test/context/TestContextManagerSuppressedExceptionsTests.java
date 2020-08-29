@@ -16,13 +16,11 @@
 
 package org.springframework.test.context;
 
-import java.lang.reflect.Method;
-
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.fail;
+import java.lang.reflect.Method;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * JUnit 4 based unit tests for {@link TestContextManager}, which verify proper

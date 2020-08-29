@@ -16,34 +16,8 @@
 
 package org.springframework.web.servlet.function;
 
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.net.URI;
-import java.time.Instant;
-import java.time.ZonedDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.EnumSet;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.CacheControl;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
+import org.springframework.http.*;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
@@ -51,6 +25,20 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.net.URI;
+import java.time.Instant;
+import java.time.ZonedDateTime;
+import java.util.*;
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 /**
  * Default {@link ServerResponse.BodyBuilder} implementation.

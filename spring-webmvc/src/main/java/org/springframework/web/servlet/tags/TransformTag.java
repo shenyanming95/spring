@@ -16,14 +16,13 @@
 
 package org.springframework.web.servlet.tags;
 
-import java.beans.PropertyEditor;
-import java.io.IOException;
+import org.springframework.lang.Nullable;
+import org.springframework.web.util.TagUtils;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
-
-import org.springframework.lang.Nullable;
-import org.springframework.web.util.TagUtils;
+import java.beans.PropertyEditor;
+import java.io.IOException;
 
 /**
  * The {@code <transform>} tag provides transformation for reference data values

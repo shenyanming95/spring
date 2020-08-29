@@ -16,35 +16,21 @@
 
 package org.springframework.web.util;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.net.URI;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.TreeMap;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletRequestWrapper;
-import javax.servlet.ServletResponse;
-import javax.servlet.ServletResponseWrapper;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.server.ServletServerHttpRequest;
 import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.CollectionUtils;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
-import org.springframework.util.ObjectUtils;
-import org.springframework.util.StringUtils;
+import org.springframework.util.*;
+
+import javax.servlet.*;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.net.URI;
+import java.util.*;
 
 /**
  * Miscellaneous utilities for web applications.

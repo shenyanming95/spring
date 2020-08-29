@@ -16,29 +16,24 @@
 
 package org.springframework.test.web.reactive.server;
 
+import org.reactivestreams.Publisher;
+import org.springframework.core.io.buffer.DataBuffer;
+import org.springframework.core.io.buffer.DataBufferFactory;
+import org.springframework.core.io.buffer.DefaultDataBufferFactory;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.client.reactive.*;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.publisher.MonoProcessor;
+
 import java.net.URI;
 import java.time.Duration;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Function;
-
-import org.reactivestreams.Publisher;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.core.publisher.MonoProcessor;
-
-import org.springframework.core.io.buffer.DataBuffer;
-import org.springframework.core.io.buffer.DataBufferFactory;
-import org.springframework.core.io.buffer.DefaultDataBufferFactory;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.client.reactive.ClientHttpConnector;
-import org.springframework.http.client.reactive.ClientHttpRequest;
-import org.springframework.http.client.reactive.ClientHttpRequestDecorator;
-import org.springframework.http.client.reactive.ClientHttpResponse;
-import org.springframework.http.client.reactive.ClientHttpResponseDecorator;
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
 
 /**
  * Decorate another {@link ClientHttpConnector} with the purpose of

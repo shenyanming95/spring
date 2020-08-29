@@ -16,14 +16,6 @@
 
 package org.springframework.web.servlet.resource;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.core.io.Resource;
@@ -31,6 +23,13 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * A {@link org.springframework.web.servlet.resource.ResourceResolver} that

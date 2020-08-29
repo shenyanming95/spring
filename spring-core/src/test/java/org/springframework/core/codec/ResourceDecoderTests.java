@@ -16,13 +16,7 @@
 
 package org.springframework.core.codec;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Collections;
-
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Flux;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.InputStreamResource;
@@ -31,6 +25,11 @@ import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.testfixture.codec.AbstractDecoderTests;
 import org.springframework.util.MimeTypeUtils;
 import org.springframework.util.StreamUtils;
+import reactor.core.publisher.Flux;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.core.ResolvableType.forClass;

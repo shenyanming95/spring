@@ -16,22 +16,15 @@
 
 package org.springframework.jdbc.support;
 
-import java.sql.BatchUpdateException;
-import java.sql.DataTruncation;
-import java.sql.SQLException;
-
 import org.junit.jupiter.api.Test;
-
-import org.springframework.dao.CannotAcquireLockException;
-import org.springframework.dao.CannotSerializeTransactionException;
-import org.springframework.dao.DataAccessException;
-import org.springframework.dao.DataAccessResourceFailureException;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.dao.DeadlockLoserDataAccessException;
-import org.springframework.dao.DuplicateKeyException;
+import org.springframework.dao.*;
 import org.springframework.jdbc.BadSqlGrammarException;
 import org.springframework.jdbc.InvalidResultSetAccessException;
 import org.springframework.lang.Nullable;
+
+import java.sql.BatchUpdateException;
+import java.sql.DataTruncation;
+import java.sql.SQLException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

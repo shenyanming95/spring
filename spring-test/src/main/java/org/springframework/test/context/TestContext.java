@@ -16,15 +16,15 @@
 
 package org.springframework.test.context;
 
-import java.io.Serializable;
-import java.lang.reflect.Method;
-import java.util.function.Function;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.core.AttributeAccessor;
 import org.springframework.lang.Nullable;
 import org.springframework.test.annotation.DirtiesContext.HierarchyMode;
+
+import java.io.Serializable;
+import java.lang.reflect.Method;
+import java.util.function.Function;
 
 /**
  * {@code TestContext} encapsulates the context in which a test is executed,

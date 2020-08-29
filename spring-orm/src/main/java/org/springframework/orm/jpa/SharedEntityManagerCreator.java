@@ -16,6 +16,15 @@
 
 package org.springframework.orm.jpa;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.lang.Nullable;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
+import org.springframework.util.ClassUtils;
+import org.springframework.util.CollectionUtils;
+import org.springframework.util.ConcurrentReferenceHashMap;
+
+import javax.persistence.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
@@ -27,22 +36,6 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.ParameterMode;
-import javax.persistence.Query;
-import javax.persistence.StoredProcedureQuery;
-import javax.persistence.TransactionRequiredException;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import org.springframework.lang.Nullable;
-import org.springframework.transaction.support.TransactionSynchronizationManager;
-import org.springframework.util.ClassUtils;
-import org.springframework.util.CollectionUtils;
-import org.springframework.util.ConcurrentReferenceHashMap;
 
 /**
  * Delegate for creating a shareable JPA {@link javax.persistence.EntityManager}

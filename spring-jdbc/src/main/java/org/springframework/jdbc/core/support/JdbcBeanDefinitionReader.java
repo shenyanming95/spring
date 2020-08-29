@@ -16,15 +16,14 @@
 
 package org.springframework.jdbc.core.support;
 
-import java.util.Properties;
-
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.PropertiesBeanDefinitionReader;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import javax.sql.DataSource;
+import java.util.Properties;
 
 /**
  * Bean definition reader that reads values from a database table,

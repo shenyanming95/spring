@@ -16,17 +16,16 @@
 
 package org.springframework.util.xml;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
 
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.XMLEvent;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * Implementation of {@code XMLEventReader} based on a {@link List}

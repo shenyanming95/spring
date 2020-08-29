@@ -16,23 +16,11 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.EnumSet;
-import java.util.List;
-
-import javax.servlet.ServletException;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.core.MethodParameter;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.converter.HttpMessageNotWritableException;
 import org.springframework.http.server.ServletServerHttpRequest;
@@ -59,6 +47,12 @@ import org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolv
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 import org.springframework.web.testfixture.servlet.MockServletConfig;
+
+import javax.servlet.ServletException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.EnumSet;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;

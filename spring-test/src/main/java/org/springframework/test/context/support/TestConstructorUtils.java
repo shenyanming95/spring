@@ -16,17 +16,16 @@
 
 package org.springframework.test.context.support;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Executable;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.SpringProperties;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.test.context.TestConstructor;
 import org.springframework.test.context.TestConstructor.AutowireMode;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Executable;
 
 /**
  * Utility methods for working with {@link TestConstructor @TestConstructor}.

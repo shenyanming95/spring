@@ -16,6 +16,14 @@
 
 package org.springframework.core.type.classreading;
 
+import org.springframework.asm.AnnotationVisitor;
+import org.springframework.asm.SpringAsmInfo;
+import org.springframework.asm.Type;
+import org.springframework.core.annotation.AnnotationFilter;
+import org.springframework.core.annotation.MergedAnnotation;
+import org.springframework.lang.Nullable;
+import org.springframework.util.ClassUtils;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -24,14 +32,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
-import org.springframework.asm.AnnotationVisitor;
-import org.springframework.asm.SpringAsmInfo;
-import org.springframework.asm.Type;
-import org.springframework.core.annotation.AnnotationFilter;
-import org.springframework.core.annotation.MergedAnnotation;
-import org.springframework.lang.Nullable;
-import org.springframework.util.ClassUtils;
 
 /**
  * {@link AnnotationVisitor} that can be used to construct a

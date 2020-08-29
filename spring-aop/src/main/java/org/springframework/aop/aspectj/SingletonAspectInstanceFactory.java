@@ -16,11 +16,11 @@
 
 package org.springframework.aop.aspectj;
 
-import java.io.Serializable;
-
 import org.springframework.core.Ordered;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.io.Serializable;
 
 /**
  * Implementation of {@link AspectInstanceFactory} that is backed by a

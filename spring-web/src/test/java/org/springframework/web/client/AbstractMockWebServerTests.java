@@ -16,11 +16,6 @@
 
 package org.springframework.web.client;
 
-import java.io.EOFException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.Collections;
-
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
@@ -28,13 +23,15 @@ import okhttp3.mockwebserver.RecordedRequest;
 import okio.Buffer;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-
 import org.springframework.http.MediaType;
 
+import java.io.EOFException;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.Collections;
+
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.springframework.http.HttpHeaders.CONTENT_LENGTH;
-import static org.springframework.http.HttpHeaders.CONTENT_TYPE;
-import static org.springframework.http.HttpHeaders.LOCATION;
+import static org.springframework.http.HttpHeaders.*;
 import static org.springframework.http.MediaType.MULTIPART_FORM_DATA;
 import static org.springframework.http.MediaType.MULTIPART_MIXED;
 

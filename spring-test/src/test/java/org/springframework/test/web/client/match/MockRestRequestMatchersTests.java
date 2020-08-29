@@ -16,15 +16,14 @@
 
 package org.springframework.test.web.client.match;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpMethod;
+import org.springframework.mock.http.client.MockClientHttpRequest;
+
 import java.net.URI;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.http.HttpMethod;
-import org.springframework.mock.http.client.MockClientHttpRequest;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.hamcrest.Matchers.containsString;

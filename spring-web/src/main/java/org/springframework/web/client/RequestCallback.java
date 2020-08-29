@@ -16,10 +16,10 @@
 
 package org.springframework.web.client;
 
+import org.springframework.http.client.ClientHttpRequest;
+
 import java.io.IOException;
 import java.lang.reflect.Type;
-
-import org.springframework.http.client.ClientHttpRequest;
 
 /**
  * Callback interface for code that operates on a {@link ClientHttpRequest}.

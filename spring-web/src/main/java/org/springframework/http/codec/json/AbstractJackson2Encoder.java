@@ -16,15 +16,6 @@
 
 package org.springframework.http.codec.json;
 
-import java.io.IOException;
-import java.lang.annotation.Annotation;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -35,9 +26,6 @@ import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.SequenceWriter;
 import com.fasterxml.jackson.databind.exc.InvalidDefinitionException;
 import org.reactivestreams.Publisher;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.core.ResolvableType;
 import org.springframework.core.codec.CodecException;
@@ -53,6 +41,13 @@ import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.MimeType;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+import java.io.IOException;
+import java.lang.annotation.Annotation;
+import java.nio.charset.Charset;
+import java.util.*;
 
 /**
  * Base class providing support methods for Jackson 2.9 encoding. For non-streaming use

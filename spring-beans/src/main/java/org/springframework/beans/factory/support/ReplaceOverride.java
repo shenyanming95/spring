@@ -16,13 +16,13 @@
 
 package org.springframework.beans.factory.support;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ObjectUtils;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Extension of MethodOverride that represents an arbitrary

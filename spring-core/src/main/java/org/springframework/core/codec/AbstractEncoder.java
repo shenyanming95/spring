@@ -16,15 +16,14 @@
 
 package org.springframework.core.codec;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
 import org.springframework.util.MimeType;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Abstract base class for {@link Decoder} implementations.

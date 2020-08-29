@@ -16,17 +16,16 @@
 
 package org.springframework.web.servlet.tags.form;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.PageContext;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.ArrayDeque;
 import java.util.Deque;
-
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.PageContext;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.StringUtils;
 
 /**
  * Utility class for writing HTML content to a {@link Writer} instance.

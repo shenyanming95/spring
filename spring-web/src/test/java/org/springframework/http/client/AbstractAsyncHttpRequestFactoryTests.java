@@ -16,16 +16,9 @@
 
 package org.springframework.http.client;
 
-import java.io.IOException;
-import java.net.URI;
-import java.util.Arrays;
-import java.util.Locale;
-import java.util.concurrent.Future;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.http.HttpMethod;
@@ -36,9 +29,13 @@ import org.springframework.util.StreamUtils;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import java.io.IOException;
+import java.net.URI;
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.concurrent.Future;
+
+import static org.assertj.core.api.Assertions.*;
 
 @SuppressWarnings("deprecation")
 public abstract class AbstractAsyncHttpRequestFactoryTests extends AbstractMockWebServerTests {

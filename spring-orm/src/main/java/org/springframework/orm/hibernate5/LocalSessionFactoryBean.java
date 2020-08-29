@@ -16,12 +16,6 @@
 
 package org.springframework.orm.hibernate5;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Properties;
-
-import javax.sql.DataSource;
-
 import org.hibernate.Interceptor;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -34,12 +28,7 @@ import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider;
 import org.hibernate.integrator.spi.Integrator;
 import org.hibernate.service.ServiceRegistry;
-
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.BeanFactoryAware;
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.FactoryBean;
-import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.core.io.ClassPathResource;
@@ -52,6 +41,11 @@ import org.springframework.core.task.AsyncTaskExecutor;
 import org.springframework.core.type.filter.TypeFilter;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
+
+import javax.sql.DataSource;
+import java.io.File;
+import java.io.IOException;
+import java.util.Properties;
 
 /**
  * {@link FactoryBean} that creates a Hibernate {@link SessionFactory}. This is the usual

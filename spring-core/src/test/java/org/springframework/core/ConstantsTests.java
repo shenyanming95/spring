@@ -16,14 +16,12 @@
 
 package org.springframework.core;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Locale;
 import java.util.Set;
 
-import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * @author Rod Johnson

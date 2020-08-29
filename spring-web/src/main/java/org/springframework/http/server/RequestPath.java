@@ -15,9 +15,9 @@
  */
 package org.springframework.http.server;
 
-import java.net.URI;
-
 import org.springframework.lang.Nullable;
+
+import java.net.URI;
 
 /**
  * Represents the complete path for a request.

@@ -17,7 +17,6 @@
 package org.springframework.test.context.support;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.test.context.MergedContextConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;

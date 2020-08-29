@@ -16,26 +16,23 @@
 
 package org.springframework.http.converter.protobuf;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
-
 import com.google.protobuf.ExtensionRegistry;
 import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.MediaType;
 import org.springframework.http.MockHttpInputMessage;
 import org.springframework.http.MockHttpOutputMessage;
 import org.springframework.protobuf.Msg;
 import org.springframework.protobuf.SecondMsg;
 
+import java.io.IOException;
+import java.nio.charset.Charset;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Test suite for {@link ProtobufHttpMessageConverter}.

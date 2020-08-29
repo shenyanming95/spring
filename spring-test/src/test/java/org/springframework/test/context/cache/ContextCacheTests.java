@@ -18,17 +18,10 @@ package org.springframework.test.context.cache;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.annotation.DirtiesContext.HierarchyMode;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ActiveProfilesResolver;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.ContextHierarchy;
-import org.springframework.test.context.MergedContextConfiguration;
-import org.springframework.test.context.TestContext;
-import org.springframework.test.context.TestContextTestUtils;
+import org.springframework.test.context.*;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.test.util.ReflectionTestUtils;
 

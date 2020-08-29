@@ -16,9 +16,9 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.annotation.Annotation;
-
 import org.springframework.lang.Nullable;
+
+import java.lang.annotation.Annotation;
 
 /**
  * Callback interface used to process annotations.

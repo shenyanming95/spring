@@ -16,12 +16,12 @@
 
 package org.springframework.web.client;
 
-import java.lang.reflect.Type;
-import java.nio.charset.StandardCharsets;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.lang.Nullable;
+
+import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Raised when no suitable

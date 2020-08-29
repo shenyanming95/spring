@@ -16,10 +16,10 @@
 
 package org.springframework.core;
 
-import java.util.function.Supplier;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.function.Supplier;
 
 /**
  * Describes the semantics of a reactive type including boolean checks for

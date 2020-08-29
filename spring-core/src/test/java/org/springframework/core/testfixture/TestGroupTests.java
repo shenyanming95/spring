@@ -16,19 +16,16 @@
 
 package org.springframework.core.testfixture;
 
-import java.util.Arrays;
-import java.util.Set;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.opentest4j.TestAbortedException;
 
+import java.util.Arrays;
+import java.util.Set;
+
 import static java.util.stream.Collectors.joining;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatCode;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.springframework.core.testfixture.TestGroup.LONG_RUNNING;
 import static org.springframework.core.testfixture.TestGroup.PERFORMANCE;

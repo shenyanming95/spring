@@ -16,6 +16,8 @@
 
 package org.springframework.core.annotation;
 
+import org.junit.jupiter.api.Test;
+
 import java.io.InputStream;
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;
@@ -23,8 +25,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

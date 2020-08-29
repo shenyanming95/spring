@@ -16,12 +16,12 @@
 
 package org.springframework.jdbc.core;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
 
 /**
  * Object to represent an SQL parameter definition.

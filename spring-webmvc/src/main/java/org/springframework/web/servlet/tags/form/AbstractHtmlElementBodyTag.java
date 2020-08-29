@@ -16,15 +16,14 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import java.io.IOException;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.BodyContent;
 import javax.servlet.jsp.tagext.BodyTag;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.util.StringUtils;
+import java.io.IOException;
 
 /**
  * Convenient super class for many html tags that render content using the databinding

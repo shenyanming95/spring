@@ -16,10 +16,6 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
@@ -34,6 +30,10 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver;
 import org.springframework.web.servlet.HandlerMapping;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Resolves arguments annotated with {@link MatrixVariable @MatrixVariable}.

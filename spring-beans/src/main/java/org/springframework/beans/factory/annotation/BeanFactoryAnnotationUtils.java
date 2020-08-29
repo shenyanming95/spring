@@ -16,17 +16,8 @@
 
 package org.springframework.beans.factory.annotation;
 
-import java.lang.reflect.Method;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.Predicate;
-
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.BeanFactoryUtils;
-import org.springframework.beans.factory.ListableBeanFactory;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
-import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
+import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
@@ -35,6 +26,11 @@ import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.lang.reflect.Method;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.Predicate;
 
 /**
  * Convenience methods performing bean lookups related to Spring-specific annotations,

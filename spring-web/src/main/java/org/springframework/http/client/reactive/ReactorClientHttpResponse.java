@@ -16,18 +16,9 @@
 
 package org.springframework.http.client.reactive;
 
-import java.util.Collection;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.BiFunction;
-
 import io.netty.buffer.ByteBufAllocator;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import reactor.core.publisher.Flux;
-import reactor.netty.Connection;
-import reactor.netty.NettyInbound;
-import reactor.netty.http.client.HttpClientResponse;
-
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.io.buffer.NettyDataBufferFactory;
 import org.springframework.http.HttpHeaders;
@@ -37,6 +28,14 @@ import org.springframework.http.ResponseCookie;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import reactor.core.publisher.Flux;
+import reactor.netty.Connection;
+import reactor.netty.NettyInbound;
+import reactor.netty.http.client.HttpClientResponse;
+
+import java.util.Collection;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiFunction;
 
 /**
  * {@link ClientHttpResponse} implementation for the Reactor-Netty HTTP client.

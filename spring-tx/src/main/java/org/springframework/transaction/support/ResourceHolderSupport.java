@@ -16,10 +16,10 @@
 
 package org.springframework.transaction.support;
 
-import java.util.Date;
-
 import org.springframework.lang.Nullable;
 import org.springframework.transaction.TransactionTimedOutException;
+
+import java.util.Date;
 
 /**
  * Convenient base class for resource holders.

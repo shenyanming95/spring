@@ -16,9 +16,9 @@
 
 package org.springframework.transaction.reactive;
 
-import java.util.Deque;
-
 import org.springframework.transaction.NoTransactionException;
+
+import java.util.Deque;
 
 /**
  * Mutable holder for reactive transaction {@link TransactionContext contexts}.

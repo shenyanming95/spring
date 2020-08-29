@@ -17,7 +17,6 @@
 package org.springframework.beans.testfixture.factory.xml;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.ListableBeanFactory;

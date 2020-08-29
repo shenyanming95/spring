@@ -16,22 +16,18 @@
 
 package org.springframework.jdbc.object;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.jdbc.core.SqlParameter;
+
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.PreparedStatement;
 import java.sql.Types;
 
-import javax.sql.DataSource;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.jdbc.core.SqlParameter;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * @author Juergen Hoeller

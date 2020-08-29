@@ -16,15 +16,7 @@
 
 package org.springframework.web.context;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.beans.factory.BeanDefinitionStoreException;
@@ -45,6 +37,12 @@ import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.SimpleWebApplicationContext;
 import org.springframework.web.testfixture.servlet.MockServletConfig;
 import org.springframework.web.testfixture.servlet.MockServletContext;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

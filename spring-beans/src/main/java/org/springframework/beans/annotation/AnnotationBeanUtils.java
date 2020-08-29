@@ -16,18 +16,18 @@
 
 package org.springframework.beans.annotation;
 
+import org.springframework.beans.BeanWrapper;
+import org.springframework.beans.PropertyAccessorFactory;
+import org.springframework.lang.Nullable;
+import org.springframework.util.ReflectionUtils;
+import org.springframework.util.StringValueResolver;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-
-import org.springframework.beans.BeanWrapper;
-import org.springframework.beans.PropertyAccessorFactory;
-import org.springframework.lang.Nullable;
-import org.springframework.util.ReflectionUtils;
-import org.springframework.util.StringValueResolver;
 
 /**
  * General utility methods for working with annotations in JavaBeans style.

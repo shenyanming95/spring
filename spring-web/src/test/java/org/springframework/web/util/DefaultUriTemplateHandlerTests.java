@@ -16,11 +16,11 @@
 
 package org.springframework.web.util;
 
+import org.junit.jupiter.api.Test;
+
 import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

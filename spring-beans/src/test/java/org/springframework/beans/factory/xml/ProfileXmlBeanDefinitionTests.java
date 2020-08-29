@@ -18,7 +18,6 @@ package org.springframework.beans.factory.xml;
 
 import org.assertj.core.api.Condition;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.core.env.ConfigurableEnvironment;

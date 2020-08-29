@@ -16,25 +16,20 @@
 
 package org.springframework.beans.factory;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.core.testfixture.EnabledForTestGroups;
 import org.springframework.core.testfixture.TestGroup;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.core.testfixture.io.ResourceTestUtils.qualifiedResource;

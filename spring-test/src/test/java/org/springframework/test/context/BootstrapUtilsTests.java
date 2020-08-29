@@ -16,14 +16,13 @@
 
 package org.springframework.test.context;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.test.context.support.DefaultTestContextBootstrapper;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.context.web.WebTestContextBootstrapper;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

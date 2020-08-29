@@ -16,21 +16,8 @@
 
 package org.springframework.http.converter.xml;
 
-import java.nio.charset.StandardCharsets;
-
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.adapters.XmlAdapter;
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.xmlunit.diff.DifferenceEvaluator;
-
 import org.springframework.aop.framework.AdvisedSupport;
 import org.springframework.aop.framework.AopProxy;
 import org.springframework.aop.framework.DefaultAopProxyFactory;
@@ -41,13 +28,22 @@ import org.springframework.http.MediaType;
 import org.springframework.http.MockHttpInputMessage;
 import org.springframework.http.MockHttpOutputMessage;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.xmlunit.diff.DifferenceEvaluator;
+
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.adapters.XmlAdapter;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.nio.charset.StandardCharsets;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.xmlunit.diff.ComparisonType.XML_STANDALONE;
-import static org.xmlunit.diff.DifferenceEvaluators.Default;
-import static org.xmlunit.diff.DifferenceEvaluators.chain;
-import static org.xmlunit.diff.DifferenceEvaluators.downgradeDifferencesToEqual;
+import static org.xmlunit.diff.DifferenceEvaluators.*;
 
 /**
  * Tests for {@link Jaxb2RootElementHttpMessageConverter}.

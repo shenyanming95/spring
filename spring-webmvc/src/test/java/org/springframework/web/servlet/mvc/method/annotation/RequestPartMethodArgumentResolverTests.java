@@ -16,20 +16,8 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.lang.reflect.Method;
-import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
-
-import javax.servlet.http.Part;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.SynthesizingMethodParameter;
@@ -51,11 +39,17 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import org.springframework.web.multipart.MultipartException;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.support.MissingServletRequestPartException;
-import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
-import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
-import org.springframework.web.testfixture.servlet.MockMultipartFile;
-import org.springframework.web.testfixture.servlet.MockMultipartHttpServletRequest;
-import org.springframework.web.testfixture.servlet.MockPart;
+import org.springframework.web.testfixture.servlet.*;
+
+import javax.servlet.http.Part;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
+import java.lang.reflect.Method;
+import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

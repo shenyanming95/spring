@@ -16,12 +16,11 @@
 
 package org.springframework.web;
 
-import java.util.Collections;
-import java.util.List;
+import org.springframework.http.MediaType;
 
 import javax.servlet.ServletException;
-
-import org.springframework.http.MediaType;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Abstract base for exceptions related to media types. Adds a list of supported {@link MediaType MediaTypes}.

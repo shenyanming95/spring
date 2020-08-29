@@ -16,15 +16,24 @@
 
 package org.springframework.oxm.xstream;
 
-import java.io.ByteArrayOutputStream;
-import java.io.Reader;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.IntStream;
+import com.thoughtworks.xstream.converters.extended.EncodedByteArrayConverter;
+import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
+import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
+import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
+import com.thoughtworks.xstream.io.json.JsonWriter;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InOrder;
+import org.springframework.core.testfixture.xml.XmlContent;
+import org.springframework.util.xml.StaxUtils;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.Text;
+import org.xml.sax.Attributes;
+import org.xml.sax.ContentHandler;
+import org.xmlunit.builder.Input;
+import org.xmlunit.xpath.JAXPXPathEngine;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -37,26 +46,11 @@ import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-
-import com.thoughtworks.xstream.converters.extended.EncodedByteArrayConverter;
-import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
-import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
-import com.thoughtworks.xstream.io.json.JsonHierarchicalStreamDriver;
-import com.thoughtworks.xstream.io.json.JsonWriter;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.InOrder;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.Text;
-import org.xml.sax.Attributes;
-import org.xml.sax.ContentHandler;
-import org.xmlunit.builder.Input;
-import org.xmlunit.xpath.JAXPXPathEngine;
-
-import org.springframework.core.testfixture.xml.XmlContent;
-import org.springframework.util.xml.StaxUtils;
+import java.io.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.eq;

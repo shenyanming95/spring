@@ -16,16 +16,15 @@
 
 package org.springframework.beans.factory.config;
 
-import java.util.LinkedList;
-import java.util.List;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.beans.testfixture.beans.TestBean;
+
+import java.util.LinkedList;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.core.testfixture.io.ResourceTestUtils.qualifiedResource;

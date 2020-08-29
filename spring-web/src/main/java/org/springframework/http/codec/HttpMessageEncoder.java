@@ -16,9 +16,6 @@
 
 package org.springframework.http.codec;
 
-import java.util.List;
-import java.util.Map;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.core.codec.Encoder;
 import org.springframework.core.codec.Hints;
@@ -26,6 +23,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.lang.Nullable;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Extension of {@code Encoder} exposing extra methods relevant in the context

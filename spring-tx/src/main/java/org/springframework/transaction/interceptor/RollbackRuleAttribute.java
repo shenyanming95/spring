@@ -16,10 +16,10 @@
 
 package org.springframework.transaction.interceptor;
 
-import java.io.Serializable;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.io.Serializable;
 
 /**
  * Rule determining whether or not a given exception (and any subclasses)

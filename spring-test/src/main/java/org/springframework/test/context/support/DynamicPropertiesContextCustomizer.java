@@ -16,14 +16,6 @@
 
 package org.springframework.test.context.support;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.function.Supplier;
-
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.MutablePropertySources;
 import org.springframework.test.context.ContextCustomizer;
@@ -32,6 +24,14 @@ import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.context.MergedContextConfiguration;
 import org.springframework.util.Assert;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Supplier;
 
 /**
  * {@link ContextCustomizer} to support

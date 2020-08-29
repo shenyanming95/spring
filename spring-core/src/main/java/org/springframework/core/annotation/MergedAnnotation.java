@@ -16,21 +16,16 @@
 
 package org.springframework.core.annotation;
 
+import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
+import org.springframework.lang.Nullable;
+
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Inherited;
 import java.lang.reflect.AnnotatedElement;
 import java.lang.reflect.Proxy;
-import java.util.EnumSet;
-import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
-
-import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
-import org.springframework.lang.Nullable;
 
 /**
  * A single merged annotation returned from a {@link MergedAnnotations}

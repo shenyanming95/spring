@@ -16,19 +16,17 @@
 
 package org.springframework.web.method.annotation;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.stereotype.Controller;
+import org.springframework.util.ClassUtils;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.BindException;
 import java.net.SocketException;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.util.ClassUtils;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

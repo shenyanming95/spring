@@ -16,52 +16,24 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Documented;
-import java.lang.annotation.Inherited;
-import java.lang.annotation.Repeatable;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
-import java.util.Set;
-
-import javax.annotation.Nonnull;
-import javax.annotation.ParametersAreNonnullByDefault;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.subpackage.NonPublicAnnotatedClass;
 import org.springframework.core.testfixture.stereotype.Component;
 import org.springframework.lang.NonNullApi;
 
+import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
+import java.lang.annotation.*;
+import java.lang.reflect.Method;
+import java.util.*;
+
 import static java.util.Arrays.asList;
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toList;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
-import static org.springframework.core.annotation.AnnotationUtils.VALUE;
-import static org.springframework.core.annotation.AnnotationUtils.findAnnotation;
-import static org.springframework.core.annotation.AnnotationUtils.findAnnotationDeclaringClass;
-import static org.springframework.core.annotation.AnnotationUtils.findAnnotationDeclaringClassForTypes;
-import static org.springframework.core.annotation.AnnotationUtils.getAnnotation;
-import static org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes;
-import static org.springframework.core.annotation.AnnotationUtils.getDeclaredRepeatableAnnotations;
-import static org.springframework.core.annotation.AnnotationUtils.getDefaultValue;
-import static org.springframework.core.annotation.AnnotationUtils.getRepeatableAnnotations;
-import static org.springframework.core.annotation.AnnotationUtils.getValue;
-import static org.springframework.core.annotation.AnnotationUtils.isAnnotationDeclaredLocally;
-import static org.springframework.core.annotation.AnnotationUtils.isAnnotationInherited;
-import static org.springframework.core.annotation.AnnotationUtils.isAnnotationMetaPresent;
-import static org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation;
+import static org.assertj.core.api.Assertions.*;
+import static org.springframework.core.annotation.AnnotationUtils.*;
 
 /**
  * Unit tests for {@link AnnotationUtils}.

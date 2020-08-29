@@ -16,12 +16,11 @@
 
 package org.springframework.mock.jndi;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import org.springframework.jndi.JndiTemplate;
 
 import javax.naming.NamingException;
-
-import org.springframework.jndi.JndiTemplate;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Simple extension of the JndiTemplate class that always returns a given object.

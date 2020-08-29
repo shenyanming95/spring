@@ -16,14 +16,9 @@
 
 package org.springframework.test.context.cache;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.testng.ITestNGListener;
-import org.testng.TestNG;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
@@ -35,6 +30,10 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 import org.springframework.test.context.support.DirtiesContextTestExecutionListener;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.context.testng.TrackingTestNGTestListener;
+import org.testng.ITestNGListener;
+import org.testng.TestNG;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.context.cache.ContextCacheTestUtils.assertContextCacheStatistics;

@@ -16,6 +16,8 @@
 
 package org.springframework.core;
 
+import org.junit.jupiter.api.Test;
+
 import java.io.Serializable;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
@@ -25,13 +27,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.springframework.core.GenericTypeResolver.getTypeVariableMap;
-import static org.springframework.core.GenericTypeResolver.resolveReturnTypeArgument;
-import static org.springframework.core.GenericTypeResolver.resolveType;
-import static org.springframework.core.GenericTypeResolver.resolveTypeArgument;
+import static org.springframework.core.GenericTypeResolver.*;
 import static org.springframework.util.ReflectionUtils.findMethod;
 
 /**

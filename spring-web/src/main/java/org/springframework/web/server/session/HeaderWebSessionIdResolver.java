@@ -16,12 +16,12 @@
 
 package org.springframework.web.server.session;
 
-import java.util.Collections;
-import java.util.List;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.Assert;
 import org.springframework.web.server.ServerWebExchange;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Request and response header-based {@link WebSessionIdResolver}.

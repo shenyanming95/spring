@@ -16,18 +16,17 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.PageContext;
-import javax.servlet.jsp.tagext.BodyTag;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ObjectUtils;
 import org.springframework.util.StringUtils;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.PageContext;
+import javax.servlet.jsp.tagext.BodyTag;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * The {@code <errors>} tag renders field errors in an HTML 'span' tag.

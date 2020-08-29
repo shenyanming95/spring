@@ -16,16 +16,15 @@
 
 package org.springframework.core.annotation;
 
+import org.assertj.core.api.ThrowableTypeAssert;
+import org.junit.jupiter.api.Test;
+import org.springframework.util.ConcurrentReferenceHashMap;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Collections;
 import java.util.Map;
 import java.util.NoSuchElementException;
-
-import org.assertj.core.api.ThrowableTypeAssert;
-import org.junit.jupiter.api.Test;
-
-import org.springframework.util.ConcurrentReferenceHashMap;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

@@ -16,14 +16,13 @@
 
 package org.springframework.orm.hibernate5;
 
-import javax.persistence.EntityManager;
-
 import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import org.springframework.lang.Nullable;
 import org.springframework.orm.jpa.EntityManagerHolder;
+
+import javax.persistence.EntityManager;
 
 /**
  * Resource holder wrapping a Hibernate {@link Session} (plus an optional {@link Transaction}).

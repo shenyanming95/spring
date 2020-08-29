@@ -16,15 +16,14 @@
 
 package org.springframework.web.servlet.tags;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.web.testfixture.servlet.MockServletContext;
+import org.springframework.web.util.WebUtils;
+
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.BodyTag;
 import javax.servlet.jsp.tagext.Tag;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.web.testfixture.servlet.MockServletContext;
-import org.springframework.web.util.WebUtils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

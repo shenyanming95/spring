@@ -16,6 +16,16 @@
 
 package org.springframework.util;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
+import org.springframework.tests.sample.objects.DerivedTestObject;
+import org.springframework.tests.sample.objects.ITestInterface;
+import org.springframework.tests.sample.objects.ITestObject;
+import org.springframework.tests.sample.objects.TestObject;
+
 import java.io.Externalizable;
 import java.io.Serializable;
 import java.lang.annotation.ElementType;
@@ -25,24 +35,7 @@ import java.lang.annotation.Target;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
-
-import org.springframework.tests.sample.objects.DerivedTestObject;
-import org.springframework.tests.sample.objects.ITestInterface;
-import org.springframework.tests.sample.objects.ITestObject;
-import org.springframework.tests.sample.objects.TestObject;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

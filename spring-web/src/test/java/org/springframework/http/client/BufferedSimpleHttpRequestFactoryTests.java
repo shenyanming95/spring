@@ -16,16 +16,15 @@
 
 package org.springframework.http.client;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpMethod;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.http.HttpMethod;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -16,18 +16,16 @@
 
 package org.springframework.web.servlet.view.document;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.util.Map;
+import com.lowagie.text.pdf.PdfReader;
+import com.lowagie.text.pdf.PdfStamper;
+import org.springframework.util.Assert;
+import org.springframework.web.servlet.view.AbstractUrlBasedView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStamper;
-
-import org.springframework.util.Assert;
-import org.springframework.web.servlet.view.AbstractUrlBasedView;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Map;
 
 /**
  * Abstract superclass for PDF views that operate on an existing

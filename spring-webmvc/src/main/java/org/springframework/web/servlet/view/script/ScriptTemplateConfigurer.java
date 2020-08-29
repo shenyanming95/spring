@@ -16,13 +16,12 @@
 
 package org.springframework.web.servlet.view.script;
 
-import java.nio.charset.Charset;
-import java.util.function.Supplier;
+import org.springframework.lang.Nullable;
 
 import javax.script.Bindings;
 import javax.script.ScriptEngine;
-
-import org.springframework.lang.Nullable;
+import java.nio.charset.Charset;
+import java.util.function.Supplier;
 
 /**
  * An implementation of Spring MVC's {@link ScriptTemplateConfig} for creating

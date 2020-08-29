@@ -16,25 +16,21 @@
 
 package org.springframework.test.web.servlet.result;
 
-import java.nio.charset.StandardCharsets;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletResponse;
-import javax.xml.transform.Source;
-import javax.xml.transform.dom.DOMSource;
-
 import org.hamcrest.Matcher;
-import org.w3c.dom.Node;
-
 import org.springframework.http.MediaType;
 import org.springframework.test.util.JsonExpectationsHelper;
 import org.springframework.test.util.XmlExpectationsHelper;
 import org.springframework.test.web.servlet.ResultMatcher;
+import org.w3c.dom.Node;
+
+import javax.servlet.http.HttpServletResponse;
+import javax.xml.transform.Source;
+import javax.xml.transform.dom.DOMSource;
+import java.nio.charset.StandardCharsets;
+import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.springframework.test.util.AssertionErrors.assertEquals;
-import static org.springframework.test.util.AssertionErrors.assertNotNull;
-import static org.springframework.test.util.AssertionErrors.assertTrue;
+import static org.springframework.test.util.AssertionErrors.*;
 
 /**
  * Factory for response content assertions.

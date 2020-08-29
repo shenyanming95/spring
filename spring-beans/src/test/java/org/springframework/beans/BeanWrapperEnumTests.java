@@ -16,14 +16,13 @@
 
 package org.springframework.beans;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.CustomEnum;
 import org.springframework.beans.testfixture.beans.GenericBean;
 import org.springframework.core.convert.support.DefaultConversionService;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -15,9 +15,9 @@
  */
 package org.springframework.http.server;
 
-import java.net.URI;
-
 import org.junit.jupiter.api.Test;
+
+import java.net.URI;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

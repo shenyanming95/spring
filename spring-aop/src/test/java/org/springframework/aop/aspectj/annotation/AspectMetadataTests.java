@@ -18,11 +18,10 @@ package org.springframework.aop.aspectj.annotation;
 
 import org.aspectj.lang.reflect.PerClauseKind;
 import org.junit.jupiter.api.Test;
-import test.aop.PerTargetAspect;
-
 import org.springframework.aop.Pointcut;
 import org.springframework.aop.aspectj.AspectJExpressionPointcut;
 import org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactoryTests.ExceptionThrowingAspect;
+import test.aop.PerTargetAspect;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

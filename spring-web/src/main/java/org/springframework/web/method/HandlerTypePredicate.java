@@ -16,18 +16,13 @@
 
 package org.springframework.web.method;
 
-import java.lang.annotation.Annotation;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.function.Predicate;
-
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
+
+import java.lang.annotation.Annotation;
+import java.util.*;
+import java.util.function.Predicate;
 
 /**
  * A {@code Predicate} to match request handling component types if

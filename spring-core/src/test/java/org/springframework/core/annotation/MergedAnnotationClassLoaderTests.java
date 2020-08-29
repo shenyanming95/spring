@@ -16,14 +16,13 @@
 
 package org.springframework.core.annotation;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.OverridingClassLoader;
+
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.OverridingClassLoader;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

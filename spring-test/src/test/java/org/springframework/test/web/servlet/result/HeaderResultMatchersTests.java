@@ -15,16 +15,15 @@
  */
 package org.springframework.test.web.servlet.result;
 
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.StubMvcResult;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 /**
  * Unit tests for {@link HeaderResultMatchers}.

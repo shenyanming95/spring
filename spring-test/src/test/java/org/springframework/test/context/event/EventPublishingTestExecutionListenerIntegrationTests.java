@@ -16,17 +16,9 @@
 
 package org.springframework.test.context.event;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
-import java.lang.reflect.Method;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Executor;
-import java.util.concurrent.TimeUnit;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-
 import org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,24 +31,22 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestContext;
 import org.springframework.test.context.TestContextManager;
 import org.springframework.test.context.TestExecutionListener;
-import org.springframework.test.context.event.annotation.AfterTestClass;
-import org.springframework.test.context.event.annotation.AfterTestExecution;
-import org.springframework.test.context.event.annotation.AfterTestMethod;
-import org.springframework.test.context.event.annotation.BeforeTestClass;
-import org.springframework.test.context.event.annotation.BeforeTestExecution;
-import org.springframework.test.context.event.annotation.BeforeTestMethod;
-import org.springframework.test.context.event.annotation.PrepareTestInstance;
+import org.springframework.test.context.event.annotation.*;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.util.ReflectionUtils;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+import java.lang.reflect.Method;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Executor;
+import java.util.concurrent.TimeUnit;
 
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.only;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Integration tests for {@link EventPublishingTestExecutionListener} and

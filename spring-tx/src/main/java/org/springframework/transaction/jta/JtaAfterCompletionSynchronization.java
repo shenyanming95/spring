@@ -16,13 +16,12 @@
 
 package org.springframework.transaction.jta;
 
-import java.util.List;
+import org.springframework.transaction.support.TransactionSynchronization;
+import org.springframework.transaction.support.TransactionSynchronizationUtils;
 
 import javax.transaction.Status;
 import javax.transaction.Synchronization;
-
-import org.springframework.transaction.support.TransactionSynchronization;
-import org.springframework.transaction.support.TransactionSynchronizationUtils;
+import java.util.List;
 
 /**
  * Adapter for a JTA Synchronization, invoking the {@code afterCommit} /

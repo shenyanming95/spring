@@ -16,11 +16,11 @@
 
 package org.springframework.core.testfixture;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.Set;
-
-import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

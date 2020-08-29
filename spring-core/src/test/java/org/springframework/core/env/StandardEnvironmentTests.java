@@ -16,22 +16,19 @@
 
 package org.springframework.core.env;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.SpringProperties;
+import org.springframework.core.testfixture.env.EnvironmentTestUtils;
+import org.springframework.core.testfixture.env.MockPropertySource;
+
 import java.security.AccessControlException;
 import java.security.Permission;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.SpringProperties;
-import org.springframework.core.testfixture.env.EnvironmentTestUtils;
-import org.springframework.core.testfixture.env.MockPropertySource;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.springframework.core.env.AbstractEnvironment.ACTIVE_PROFILES_PROPERTY_NAME;
-import static org.springframework.core.env.AbstractEnvironment.DEFAULT_PROFILES_PROPERTY_NAME;
-import static org.springframework.core.env.AbstractEnvironment.RESERVED_DEFAULT_PROFILE_NAME;
+import static org.springframework.core.env.AbstractEnvironment.*;
 
 /**
  * Unit tests for {@link StandardEnvironment}.

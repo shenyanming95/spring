@@ -16,19 +16,9 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.HttpStatus;
@@ -57,6 +47,10 @@ import org.springframework.web.servlet.FlashMap;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

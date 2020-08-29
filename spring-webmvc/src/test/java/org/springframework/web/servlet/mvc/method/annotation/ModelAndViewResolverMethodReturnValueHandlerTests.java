@@ -16,13 +16,8 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.core.MethodParameter;
 import org.springframework.ui.ExtendedModelMap;
@@ -32,6 +27,10 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.annotation.ModelAndViewResolver;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

@@ -17,13 +17,10 @@
 package org.springframework.util;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.util.StopWatch.TaskInfo;
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Unit tests for {@link StopWatch}.

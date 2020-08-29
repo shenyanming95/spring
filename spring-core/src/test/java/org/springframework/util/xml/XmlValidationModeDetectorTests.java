@@ -16,10 +16,10 @@
 
 package org.springframework.util.xml;
 
-import java.io.InputStream;
-
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+
+import java.io.InputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.util.xml.XmlValidationModeDetector.VALIDATION_DTD;

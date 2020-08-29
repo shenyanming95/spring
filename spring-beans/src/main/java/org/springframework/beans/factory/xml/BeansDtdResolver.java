@@ -16,17 +16,16 @@
 
 package org.springframework.beans.factory.xml;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.xml.sax.EntityResolver;
-import org.xml.sax.InputSource;
-
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.lang.Nullable;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.InputSource;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  * {@link EntityResolver} implementation for the Spring beans DTD,

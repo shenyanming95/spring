@@ -16,10 +16,10 @@
 
 package org.springframework.core.log;
 
-import java.util.function.Supplier;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
+import java.util.function.Supplier;
 
 /**
  * A convenient accessor for Commons Logging, providing not only

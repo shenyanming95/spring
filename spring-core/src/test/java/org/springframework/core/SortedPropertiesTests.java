@@ -16,14 +16,14 @@
 
 package org.springframework.core;
 
+import org.junit.jupiter.api.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Properties;
-
-import org.junit.jupiter.api.Test;
 
 import static java.util.Arrays.stream;
 import static org.assertj.core.api.Assertions.assertThat;

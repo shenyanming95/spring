@@ -16,17 +16,16 @@
 
 package org.springframework.http.client;
 
-import java.util.Collections;
-
 import okhttp3.mockwebserver.Dispatcher;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-
 import org.springframework.http.MediaType;
 import org.springframework.util.StringUtils;
+
+import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

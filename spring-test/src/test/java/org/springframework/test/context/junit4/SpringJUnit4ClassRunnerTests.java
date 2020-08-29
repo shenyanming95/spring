@@ -16,14 +16,13 @@
 
 package org.springframework.test.context.junit4;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 import org.junit.Test;
 import org.junit.runners.model.FrameworkMethod;
-
 import org.springframework.test.annotation.Timed;
 import org.springframework.test.context.TestContextManager;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

@@ -16,21 +16,7 @@
 
 package org.springframework.beans;
 
-import java.net.MalformedURLException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.propertyeditors.CustomNumberEditor;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.beans.testfixture.beans.GenericBean;
@@ -38,6 +24,9 @@ import org.springframework.beans.testfixture.beans.GenericIntegerBean;
 import org.springframework.beans.testfixture.beans.GenericSetOfIntegerBean;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.core.io.UrlResource;
+
+import java.net.MalformedURLException;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

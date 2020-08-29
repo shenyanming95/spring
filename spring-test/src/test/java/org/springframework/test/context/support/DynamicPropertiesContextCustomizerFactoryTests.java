@@ -16,15 +16,14 @@
 
 package org.springframework.test.context.support;
 
-import java.lang.reflect.Method;
-import java.util.Collections;
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.test.context.ContextConfigurationAttributes;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
+
+import java.lang.reflect.Method;
+import java.util.Collections;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

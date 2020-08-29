@@ -16,21 +16,12 @@
 
 package org.springframework.util;
 
+import org.springframework.lang.Nullable;
+
 import java.io.Serializable;
-import java.util.AbstractCollection;
-import java.util.AbstractSet;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-import java.util.Spliterator;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
-
-import org.springframework.lang.Nullable;
 
 /**
  * {@link LinkedHashMap} variant that stores String keys in a case-insensitive

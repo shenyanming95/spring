@@ -16,12 +16,9 @@
 
 package org.springframework.web.method.annotation;
 
-import java.lang.reflect.Method;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.MethodParameter;
 import org.springframework.web.context.request.NativeWebRequest;
@@ -30,6 +27,8 @@ import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.support.GenericWebApplicationContext;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import java.lang.reflect.Method;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

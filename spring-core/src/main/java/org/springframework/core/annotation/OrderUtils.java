@@ -16,12 +16,12 @@
 
 package org.springframework.core.annotation;
 
-import java.lang.reflect.AnnotatedElement;
-import java.util.Map;
-
 import org.springframework.core.annotation.MergedAnnotations.SearchStrategy;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ConcurrentReferenceHashMap;
+
+import java.lang.reflect.AnnotatedElement;
+import java.util.Map;
 
 /**
  * General utility for determining the order of an object based on its type declaration.

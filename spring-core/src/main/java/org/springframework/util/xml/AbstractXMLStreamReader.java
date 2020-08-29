@@ -16,12 +16,12 @@
 
 package org.springframework.util.xml;
 
+import org.springframework.lang.Nullable;
+
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Abstract base class for {@code XMLStreamReader}s.

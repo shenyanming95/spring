@@ -19,7 +19,6 @@ package org.springframework.test.context.web;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
@@ -32,9 +31,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.context.web.ServletTestExecutionListener.POPULATED_REQUEST_CONTEXT_HOLDER_ATTRIBUTE;
 import static org.springframework.test.context.web.ServletTestExecutionListener.RESET_REQUEST_CONTEXT_HOLDER_ATTRIBUTE;
 

@@ -16,11 +16,11 @@
 
 package org.springframework.web.servlet.function;
 
+import org.springframework.util.Assert;
+
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
-
-import org.springframework.util.Assert;
 
 /**
  * Represents a function that filters a {@linkplain HandlerFunction handler function}.

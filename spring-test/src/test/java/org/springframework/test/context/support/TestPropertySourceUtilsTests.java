@@ -16,12 +16,7 @@
 
 package org.springframework.test.context.support;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.annotation.AnnotationConfigurationException;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -32,17 +27,15 @@ import org.springframework.mock.env.MockEnvironment;
 import org.springframework.mock.env.MockPropertySource;
 import org.springframework.test.context.TestPropertySource;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.util.Map;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
-import static org.springframework.test.context.support.TestPropertySourceUtils.addInlinedPropertiesToEnvironment;
-import static org.springframework.test.context.support.TestPropertySourceUtils.addPropertiesFilesToEnvironment;
-import static org.springframework.test.context.support.TestPropertySourceUtils.buildMergedTestPropertySources;
-import static org.springframework.test.context.support.TestPropertySourceUtils.convertInlinedPropertiesToMap;
+import static org.springframework.test.context.support.TestPropertySourceUtils.*;
 
 /**
  * Unit tests for {@link TestPropertySourceUtils}.

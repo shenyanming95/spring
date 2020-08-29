@@ -16,11 +16,8 @@
 
 package org.springframework.web.method.support;
 
-import java.lang.reflect.Method;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
@@ -29,10 +26,9 @@ import org.springframework.web.testfixture.method.ResolvableMethod;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import java.lang.reflect.Method;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Unit tests for {@link InvocableHandlerMethod}.

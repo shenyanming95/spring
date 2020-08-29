@@ -16,23 +16,7 @@
 
 package org.springframework.orm.jpa.support;
 
-import java.io.Serializable;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceContextType;
-import javax.persistence.PersistenceProperty;
-import javax.persistence.PersistenceUnit;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.RootBeanDefinition;
@@ -48,12 +32,19 @@ import org.springframework.orm.jpa.EntityManagerHolder;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.withSettings;
+import static org.mockito.Mockito.*;
 
 /**
  * Unit tests for persistence context and persistence unit injection.

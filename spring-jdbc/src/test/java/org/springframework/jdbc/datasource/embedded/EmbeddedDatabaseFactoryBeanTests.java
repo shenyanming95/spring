@@ -16,14 +16,13 @@
 
 package org.springframework.jdbc.datasource.embedded;
 
-import javax.sql.DataSource;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.io.ClassRelativeResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
+
+import javax.sql.DataSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

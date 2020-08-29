@@ -16,10 +16,10 @@
 
 package org.springframework.core.env;
 
-import java.util.List;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 /**
  * {@link CommandLinePropertySource} implementation backed by a simple String array.

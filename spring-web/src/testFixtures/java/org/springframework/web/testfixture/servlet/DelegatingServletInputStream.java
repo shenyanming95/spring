@@ -16,13 +16,12 @@
 
 package org.springframework.web.testfixture.servlet;
 
-import java.io.IOException;
-import java.io.InputStream;
+import org.springframework.util.Assert;
 
 import javax.servlet.ReadListener;
 import javax.servlet.ServletInputStream;
-
-import org.springframework.util.Assert;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Delegating implementation of {@link javax.servlet.ServletInputStream}.

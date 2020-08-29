@@ -16,15 +16,15 @@
 
 package org.springframework.http.client;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URI;
-import java.net.URISyntaxException;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.util.StringUtils;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * {@link ClientHttpRequest} implementation that uses standard JDK facilities to

@@ -16,13 +16,6 @@
 
 package org.springframework.web.util.pattern;
 
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.StringJoiner;
-
 import org.springframework.http.server.PathContainer;
 import org.springframework.http.server.PathContainer.Element;
 import org.springframework.http.server.PathContainer.Separator;
@@ -30,6 +23,8 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
+
+import java.util.*;
 
 /**
  * Representation of a parsed path pattern. Includes a chain of path elements

@@ -16,9 +16,6 @@
 
 package org.springframework.test.context.jdbc;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.core.annotation.AnnotationUtils;
@@ -28,6 +25,9 @@ import org.springframework.lang.Nullable;
 import org.springframework.test.context.jdbc.SqlConfig.ErrorMode;
 import org.springframework.test.context.jdbc.SqlConfig.TransactionMode;
 import org.springframework.util.Assert;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 /**
  * {@code MergedSqlConfig} encapsulates the <em>merged</em> {@link SqlConfig @SqlConfig}

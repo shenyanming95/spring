@@ -16,18 +16,17 @@
 
 package org.springframework.web.servlet.view.groovy;
 
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.util.Locale;
-
 import groovy.text.TemplateEngine;
 import groovy.text.markup.MarkupTemplateEngine;
 import groovy.text.markup.TemplateConfiguration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.context.support.StaticApplicationContext;
+
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.util.Locale;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIOException;

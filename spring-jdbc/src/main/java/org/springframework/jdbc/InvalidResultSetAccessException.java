@@ -16,10 +16,10 @@
 
 package org.springframework.jdbc;
 
-import java.sql.SQLException;
-
 import org.springframework.dao.InvalidDataAccessResourceUsageException;
 import org.springframework.lang.Nullable;
+
+import java.sql.SQLException;
 
 /**
  * Exception thrown when a ResultSet has been accessed in an invalid fashion.

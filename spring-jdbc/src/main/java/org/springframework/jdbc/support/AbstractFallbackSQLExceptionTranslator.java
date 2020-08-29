@@ -16,16 +16,15 @@
 
 package org.springframework.jdbc.support;
 
-import java.sql.SQLException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.UncategorizedSQLException;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.sql.SQLException;
 
 /**
  * Base class for {@link SQLExceptionTranslator} implementations that allow for

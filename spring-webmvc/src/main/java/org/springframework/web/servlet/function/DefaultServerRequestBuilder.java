@@ -16,28 +16,6 @@
 
 package org.springframework.web.servlet.function;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.Type;
-import java.net.InetSocketAddress;
-import java.net.URI;
-import java.nio.charset.StandardCharsets;
-import java.security.Principal;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.function.Consumer;
-
-import javax.servlet.ReadListener;
-import javax.servlet.ServletException;
-import javax.servlet.ServletInputStream;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpInputMessage;
@@ -51,6 +29,23 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.HttpMediaTypeNotSupportedException;
 import org.springframework.web.util.UriBuilder;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import javax.servlet.ReadListener;
+import javax.servlet.ServletException;
+import javax.servlet.ServletInputStream;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Type;
+import java.net.InetSocketAddress;
+import java.net.URI;
+import java.nio.charset.StandardCharsets;
+import java.security.Principal;
+import java.util.*;
+import java.util.function.Consumer;
 
 /**
  * Default {@link ServerRequest.Builder} implementation.

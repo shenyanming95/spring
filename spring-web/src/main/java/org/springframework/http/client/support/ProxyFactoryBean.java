@@ -16,14 +16,14 @@
 
 package org.springframework.http.client.support;
 
-import java.net.InetSocketAddress;
-import java.net.Proxy;
-import java.net.SocketAddress;
-
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.net.SocketAddress;
 
 /**
  * {@link FactoryBean} that creates a {@link Proxy java.net.Proxy}.

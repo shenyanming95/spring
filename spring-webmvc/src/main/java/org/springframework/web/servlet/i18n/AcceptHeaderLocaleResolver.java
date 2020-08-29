@@ -16,17 +16,16 @@
 
 package org.springframework.web.servlet.i18n;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.StringUtils;
+import org.springframework.web.servlet.LocaleResolver;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.Locale;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.StringUtils;
-import org.springframework.web.servlet.LocaleResolver;
 
 /**
  * {@link LocaleResolver} implementation that simply uses the primary locale

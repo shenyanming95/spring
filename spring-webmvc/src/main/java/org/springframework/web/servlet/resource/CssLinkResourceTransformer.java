@@ -16,6 +16,14 @@
 
 package org.springframework.web.servlet.resource;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.core.io.Resource;
+import org.springframework.lang.Nullable;
+import org.springframework.util.FileCopyUtils;
+import org.springframework.util.StringUtils;
+
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.nio.charset.Charset;
@@ -24,16 +32,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import org.springframework.core.io.Resource;
-import org.springframework.lang.Nullable;
-import org.springframework.util.FileCopyUtils;
-import org.springframework.util.StringUtils;
 
 /**
  * A {@link ResourceTransformer} implementation that modifies links in a CSS

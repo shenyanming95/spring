@@ -16,20 +16,18 @@
 
 package org.springframework.jdbc.object;
 
-import java.sql.Types;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.sql.DataSource;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.dao.InvalidDataAccessApiUsageException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.SqlInOutParameter;
 import org.springframework.jdbc.core.SqlOutParameter;
 import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+import javax.sql.DataSource;
+import java.sql.Types;
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

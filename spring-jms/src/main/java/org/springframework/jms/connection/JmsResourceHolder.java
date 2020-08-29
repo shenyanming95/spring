@@ -16,26 +16,20 @@
 
 package org.springframework.jms.connection;
 
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
-
-import javax.jms.Connection;
-import javax.jms.ConnectionFactory;
-import javax.jms.JMSException;
-import javax.jms.Session;
-import javax.jms.TransactionInProgressException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.lang.Nullable;
 import org.springframework.transaction.support.ResourceHolderSupport;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ReflectionUtils;
+
+import javax.jms.*;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
 
 /**
  * Resource holder wrapping a JMS {@link Connection} and a JMS {@link Session}.

@@ -16,16 +16,15 @@
 
 package org.springframework.test.web.servlet.result;
 
-import java.util.Date;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.StubMvcResult;
 import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Date;
 
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.hamcrest.Matchers.is;

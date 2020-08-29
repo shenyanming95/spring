@@ -16,20 +16,16 @@
 
 package org.springframework.test.web.servlet.result;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.hamcrest.Matcher;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.web.servlet.ResultMatcher;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.springframework.test.util.AssertionErrors.assertEquals;
-import static org.springframework.test.util.AssertionErrors.assertFalse;
-import static org.springframework.test.util.AssertionErrors.assertNotNull;
-import static org.springframework.test.util.AssertionErrors.assertTrue;
+import static org.springframework.test.util.AssertionErrors.*;
 
 /**
  * Factory for response header assertions.

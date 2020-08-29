@@ -16,14 +16,13 @@
 
 package org.springframework.jms.listener.endpoint;
 
-import javax.jms.Destination;
-import javax.jms.Session;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.jca.StubResourceAdapter;
 import org.springframework.jms.StubQueue;
 import org.springframework.jms.support.destination.DestinationResolver;
+
+import javax.jms.Destination;
+import javax.jms.Session;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;

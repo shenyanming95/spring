@@ -16,12 +16,11 @@
 
 package org.springframework.jdbc.datasource.init;
 
-import java.sql.SQLException;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
+
+import java.sql.SQLException;
 
 import static org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript;
 

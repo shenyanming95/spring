@@ -16,17 +16,16 @@
 
 package org.springframework.web.context.request.async;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+import org.springframework.web.context.request.NativeWebRequest;
+
 import java.util.PriorityQueue;
 import java.util.concurrent.Callable;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
-import org.springframework.web.context.request.NativeWebRequest;
 
 /**
  * {@code DeferredResult} provides an alternative to using a {@link Callable} for

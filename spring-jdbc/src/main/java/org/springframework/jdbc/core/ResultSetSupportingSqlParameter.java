@@ -16,9 +16,9 @@
 
 package org.springframework.jdbc.core;
 
-import java.sql.ResultSet;
-
 import org.springframework.lang.Nullable;
+
+import java.sql.ResultSet;
 
 /**
  * Common base class for ResultSet-supporting SqlParameters like

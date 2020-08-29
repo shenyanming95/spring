@@ -16,14 +16,14 @@
 
 package org.springframework.web.server;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.util.CollectionUtils;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Exception for errors that fit response status 406 (not acceptable).

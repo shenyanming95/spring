@@ -16,12 +16,12 @@
 
 package org.springframework.jdbc.core;
 
+import org.springframework.jdbc.support.JdbcUtils;
+import org.springframework.lang.Nullable;
+
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-
-import org.springframework.jdbc.support.JdbcUtils;
-import org.springframework.lang.Nullable;
 
 /**
  * Implementation of RowCallbackHandler. Convenient superclass for callback handlers.

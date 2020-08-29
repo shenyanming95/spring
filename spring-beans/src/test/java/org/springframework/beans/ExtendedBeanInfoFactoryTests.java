@@ -16,9 +16,9 @@
 
 package org.springframework.beans;
 
-import java.beans.IntrospectionException;
-
 import org.junit.jupiter.api.Test;
+
+import java.beans.IntrospectionException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

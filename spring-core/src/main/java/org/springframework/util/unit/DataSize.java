@@ -16,12 +16,12 @@
 
 package org.springframework.util.unit;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * A data size, such as '12MB'.

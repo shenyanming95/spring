@@ -16,13 +16,6 @@
 
 package org.springframework.web.method.annotation;
 
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.Part;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
@@ -37,6 +30,12 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartRequest;
 import org.springframework.web.multipart.support.MultipartResolutionDelegate;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.Part;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * Resolves {@link Map} method arguments annotated with an @{@link RequestParam}

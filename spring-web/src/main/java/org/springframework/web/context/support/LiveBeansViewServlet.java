@@ -16,16 +16,15 @@
 
 package org.springframework.web.context.support;
 
-import java.io.IOException;
+import org.springframework.context.support.LiveBeansView;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.context.support.LiveBeansView;
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
+import java.io.IOException;
 
 /**
  * Servlet variant of {@link LiveBeansView}'s MBean exposure.

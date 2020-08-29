@@ -16,21 +16,12 @@
 
 package org.springframework.core;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.nio.charset.StandardCharsets;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Enumeration;
-import java.util.Map.Entry;
-import java.util.Properties;
-import java.util.Set;
-import java.util.TreeSet;
-
 import org.springframework.lang.Nullable;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
+import java.util.Map.Entry;
 
 /**
  * Specialization of {@link Properties} that sorts properties alphanumerically

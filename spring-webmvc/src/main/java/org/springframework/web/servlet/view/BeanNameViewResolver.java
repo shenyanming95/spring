@@ -16,8 +16,6 @@
 
 package org.springframework.web.servlet.view;
 
-import java.util.Locale;
-
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.Ordered;
@@ -25,6 +23,8 @@ import org.springframework.lang.Nullable;
 import org.springframework.web.context.support.WebApplicationObjectSupport;
 import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.ViewResolver;
+
+import java.util.Locale;
 
 /**
  * A simple implementation of {@link org.springframework.web.servlet.ViewResolver}

@@ -16,24 +16,11 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import java.beans.PropertyEditor;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.jsp.tagext.BodyTag;
-import javax.servlet.jsp.tagext.Tag;
-
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.validation.BeanPropertyBindingResult;
 import org.springframework.validation.BindingResult;
@@ -43,6 +30,13 @@ import org.springframework.web.servlet.support.RequestContext;
 import org.springframework.web.servlet.tags.RequestContextAwareTag;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockPageContext;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.jsp.tagext.BodyTag;
+import javax.servlet.jsp.tagext.Tag;
+import java.beans.PropertyEditor;
+import java.io.StringReader;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

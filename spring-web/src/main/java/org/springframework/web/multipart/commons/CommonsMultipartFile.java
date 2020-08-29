@@ -16,23 +16,22 @@
 
 package org.springframework.web.multipart.commons;
 
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItem;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.core.log.LogFormatUtils;
+import org.springframework.util.FileCopyUtils;
+import org.springframework.util.StreamUtils;
+import org.springframework.web.multipart.MultipartFile;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Path;
-
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.FileUploadException;
-import org.apache.commons.fileupload.disk.DiskFileItem;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import org.springframework.core.log.LogFormatUtils;
-import org.springframework.util.FileCopyUtils;
-import org.springframework.util.StreamUtils;
-import org.springframework.web.multipart.MultipartFile;
 
 /**
  * {@link MultipartFile} implementation for Apache Commons FileUpload.

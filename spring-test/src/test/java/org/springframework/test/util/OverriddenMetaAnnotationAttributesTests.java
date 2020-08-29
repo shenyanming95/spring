@@ -16,14 +16,13 @@
 
 package org.springframework.test.util;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.util.MetaAnnotationUtils.AnnotationDescriptor;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.util.MetaAnnotationUtils.findAnnotationDescriptor;

@@ -16,14 +16,13 @@
 
 package org.springframework.core.annotation;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.annotation.AnnotationUtilsTests.ImplicitAliasesContextConfig;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
 import java.util.List;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.annotation.AnnotationUtilsTests.ImplicitAliasesContextConfig;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

@@ -16,16 +16,14 @@
 
 package org.springframework.test.web.servlet.result;
 
-import java.util.Map;
-
-import javax.xml.xpath.XPathExpressionException;
-
 import org.hamcrest.Matcher;
-
 import org.springframework.lang.Nullable;
 import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import javax.xml.xpath.XPathExpressionException;
+import java.util.Map;
 
 import static org.springframework.test.util.AssertionErrors.assertEquals;
 import static org.springframework.test.util.AssertionErrors.assertTrue;

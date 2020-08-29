@@ -16,6 +16,10 @@
 
 package org.springframework.core.annotation;
 
+import org.springframework.core.annotation.MergedAnnotation.Adapt;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -25,10 +29,6 @@ import java.util.function.Function;
 import java.util.function.IntFunction;
 import java.util.stream.Collector;
 import java.util.stream.Collector.Characteristics;
-
-import org.springframework.core.annotation.MergedAnnotation.Adapt;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 
 /**
  * Collector implementations that provide various reduction operations for

@@ -16,13 +16,13 @@
 
 package org.springframework.beans.factory.config;
 
-import java.io.IOException;
-import java.util.Properties;
-
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.core.io.support.PropertiesLoaderSupport;
 import org.springframework.lang.Nullable;
+
+import java.io.IOException;
+import java.util.Properties;
 
 /**
  * Allows for making a properties file from a classpath location available

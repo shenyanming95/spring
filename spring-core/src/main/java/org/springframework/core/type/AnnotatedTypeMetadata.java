@@ -16,17 +16,13 @@
 
 package org.springframework.core.type;
 
-import java.lang.annotation.Annotation;
-import java.util.Map;
-
-import org.springframework.core.annotation.MergedAnnotation;
+import org.springframework.core.annotation.*;
 import org.springframework.core.annotation.MergedAnnotation.Adapt;
-import org.springframework.core.annotation.MergedAnnotationCollectors;
-import org.springframework.core.annotation.MergedAnnotationPredicates;
-import org.springframework.core.annotation.MergedAnnotationSelectors;
-import org.springframework.core.annotation.MergedAnnotations;
 import org.springframework.lang.Nullable;
 import org.springframework.util.MultiValueMap;
+
+import java.lang.annotation.Annotation;
+import java.util.Map;
 
 /**
  * Defines access to the annotations of a specific type ({@link AnnotationMetadata class}

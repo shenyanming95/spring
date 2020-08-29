@@ -16,14 +16,13 @@
 
 package org.springframework.web.context.support;
 
-import javax.servlet.ServletContextEvent;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.testfixture.servlet.MockServletContext;
+
+import javax.servlet.ServletContextEvent;
 
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 

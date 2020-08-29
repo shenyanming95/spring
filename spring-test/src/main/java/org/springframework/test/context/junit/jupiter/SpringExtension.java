@@ -16,24 +16,9 @@
 
 package org.springframework.test.context.junit.jupiter;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Executable;
-import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
-
-import org.junit.jupiter.api.extension.AfterAllCallback;
-import org.junit.jupiter.api.extension.AfterEachCallback;
-import org.junit.jupiter.api.extension.AfterTestExecutionCallback;
-import org.junit.jupiter.api.extension.BeforeAllCallback;
-import org.junit.jupiter.api.extension.BeforeEachCallback;
-import org.junit.jupiter.api.extension.BeforeTestExecutionCallback;
-import org.junit.jupiter.api.extension.ExtensionContext;
+import org.junit.jupiter.api.extension.*;
 import org.junit.jupiter.api.extension.ExtensionContext.Namespace;
 import org.junit.jupiter.api.extension.ExtensionContext.Store;
-import org.junit.jupiter.api.extension.ParameterContext;
-import org.junit.jupiter.api.extension.ParameterResolver;
-import org.junit.jupiter.api.extension.TestInstancePostProcessor;
-
 import org.springframework.beans.factory.annotation.ParameterResolutionDelegate;
 import org.springframework.context.ApplicationContext;
 import org.springframework.lang.Nullable;
@@ -41,6 +26,11 @@ import org.springframework.test.context.TestConstructor;
 import org.springframework.test.context.TestContextManager;
 import org.springframework.test.context.support.TestConstructorUtils;
 import org.springframework.util.Assert;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Executable;
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 
 /**
  * {@code SpringExtension} integrates the <em>Spring TestContext Framework</em>

@@ -16,24 +16,9 @@
 
 package org.springframework.jms.config;
 
-import java.io.Serializable;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.jms.Destination;
-import javax.jms.InvalidDestinationException;
-import javax.jms.JMSException;
-import javax.jms.ObjectMessage;
-import javax.jms.QueueSender;
-import javax.jms.Session;
-import javax.jms.TextMessage;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
-
 import org.springframework.beans.DirectFieldAccessor;
 import org.springframework.beans.factory.support.StaticListableBeanFactory;
 import org.springframework.jms.StubTextMessage;
@@ -62,12 +47,19 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 import org.springframework.validation.annotation.Validated;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import javax.jms.*;
+import java.io.Serializable;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
+
+import java.lang.IllegalStateException;
 
 /**
  * @author Stephane Nicoll

@@ -16,12 +16,7 @@
 
 package org.springframework.jdbc.config;
 
-import java.util.function.Predicate;
-
-import javax.sql.DataSource;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.PropertyValue;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
@@ -35,6 +30,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.AbstractDriverBasedDataSource;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactoryBean;
 import org.springframework.jdbc.datasource.init.DataSourceInitializer;
+
+import javax.sql.DataSource;
+import java.util.function.Predicate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

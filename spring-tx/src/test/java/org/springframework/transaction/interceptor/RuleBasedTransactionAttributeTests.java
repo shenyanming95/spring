@@ -16,15 +16,14 @@
 
 package org.springframework.transaction.interceptor;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.transaction.TransactionDefinition;
+
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.transaction.TransactionDefinition;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

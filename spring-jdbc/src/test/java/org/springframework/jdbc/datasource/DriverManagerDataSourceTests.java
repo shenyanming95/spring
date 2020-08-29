@@ -16,10 +16,10 @@
 
 package org.springframework.jdbc.datasource;
 
+import org.junit.jupiter.api.Test;
+
 import java.sql.Connection;
 import java.util.Properties;
-
-import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

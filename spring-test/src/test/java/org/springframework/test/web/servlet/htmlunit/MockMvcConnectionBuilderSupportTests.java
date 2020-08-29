@@ -16,11 +16,6 @@
 
 package org.springframework.test.web.servlet.htmlunit;
 
-import java.io.IOException;
-import java.net.URL;
-
-import javax.servlet.http.HttpServletRequest;
-
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.WebConnection;
 import com.gargoylesoftware.htmlunit.WebRequest;
@@ -28,7 +23,6 @@ import com.gargoylesoftware.htmlunit.WebResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
@@ -40,6 +34,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+import java.net.URL;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

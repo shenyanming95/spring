@@ -16,10 +16,10 @@
 
 package org.springframework.web.servlet.mvc.condition;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.ObjectUtils;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Supports "name=value" style expressions as described in:

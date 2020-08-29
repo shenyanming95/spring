@@ -16,35 +16,12 @@
 
 package org.springframework.web.multipart.commons;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.FileItemHeaders;
 import org.apache.commons.fileupload.FileUpload;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.ServletRequestDataBinder;
@@ -55,12 +32,17 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.support.ByteArrayMultipartFileEditor;
 import org.springframework.web.multipart.support.MultipartFilter;
 import org.springframework.web.multipart.support.StringMultipartFileEditor;
-import org.springframework.web.testfixture.servlet.MockFilterConfig;
-import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
-import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
-import org.springframework.web.testfixture.servlet.MockServletContext;
-import org.springframework.web.testfixture.servlet.PassThroughFilterChain;
+import org.springframework.web.testfixture.servlet.*;
 import org.springframework.web.util.WebUtils;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

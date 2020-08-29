@@ -16,15 +16,14 @@
 
 package org.springframework.http.client.support;
 
-import java.net.URI;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.DirectFieldAccessor;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.ClientHttpRequest;
 import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
+
+import java.net.URI;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

@@ -16,20 +16,15 @@
 
 package org.springframework.test.context.support;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.test.context.*;
+import org.springframework.test.context.web.WebDelegatingSmartContextLoader;
+import org.springframework.test.context.web.WebMergedContextConfiguration;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.test.context.BootstrapTestUtils;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.ContextLoader;
-import org.springframework.test.context.MergedContextConfiguration;
-import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.context.web.WebDelegatingSmartContextLoader;
-import org.springframework.test.context.web.WebMergedContextConfiguration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

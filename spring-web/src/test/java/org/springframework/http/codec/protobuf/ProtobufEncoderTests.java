@@ -16,15 +16,8 @@
 
 package org.springframework.http.codec.protobuf;
 
-import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.util.function.Consumer;
-
 import com.google.protobuf.Message;
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.io.buffer.DataBufferUtils;
 import org.springframework.core.testfixture.codec.AbstractEncoderTests;
@@ -32,6 +25,12 @@ import org.springframework.http.MediaType;
 import org.springframework.protobuf.Msg;
 import org.springframework.protobuf.SecondMsg;
 import org.springframework.util.MimeType;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+import java.io.IOException;
+import java.io.UncheckedIOException;
+import java.util.function.Consumer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.core.ResolvableType.forClass;

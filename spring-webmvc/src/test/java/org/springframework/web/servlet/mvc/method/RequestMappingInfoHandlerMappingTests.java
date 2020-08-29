@@ -16,18 +16,8 @@
 
 package org.springframework.web.servlet.mvc.method;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -50,14 +40,13 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.springframework.web.servlet.handler.MappedInterceptor;
-import org.springframework.web.servlet.mvc.condition.ConsumesRequestCondition;
-import org.springframework.web.servlet.mvc.condition.HeadersRequestCondition;
-import org.springframework.web.servlet.mvc.condition.ParamsRequestCondition;
-import org.springframework.web.servlet.mvc.condition.PatternsRequestCondition;
-import org.springframework.web.servlet.mvc.condition.ProducesRequestCondition;
-import org.springframework.web.servlet.mvc.condition.RequestMethodsRequestCondition;
+import org.springframework.web.servlet.mvc.condition.*;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.util.UrlPathHelper;
+
+import javax.servlet.http.HttpServletRequest;
+import java.lang.reflect.Method;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

@@ -16,6 +16,14 @@
 
 package org.springframework.http.converter.json;
 
+import org.junit.jupiter.api.Test;
+import org.skyscreamer.jsonassert.JSONAssert;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.MediaType;
+import org.springframework.http.MockHttpInputMessage;
+import org.springframework.http.MockHttpOutputMessage;
+import org.springframework.http.converter.HttpMessageNotReadableException;
+
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
@@ -26,18 +34,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
-import org.skyscreamer.jsonassert.JSONAssert;
-
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.MediaType;
-import org.springframework.http.MockHttpInputMessage;
-import org.springframework.http.MockHttpOutputMessage;
-import org.springframework.http.converter.HttpMessageNotReadableException;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.within;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Gson 2.x converter tests.

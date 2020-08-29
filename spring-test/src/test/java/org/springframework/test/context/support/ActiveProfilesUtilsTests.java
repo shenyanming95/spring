@@ -16,6 +16,12 @@
 
 package org.springframework.test.context.support;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.core.annotation.AnnotationConfigurationException;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ActiveProfilesResolver;
+import org.springframework.util.StringUtils;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -24,16 +30,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-
-import org.springframework.core.annotation.AnnotationConfigurationException;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ActiveProfilesResolver;
-import org.springframework.util.StringUtils;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import static org.assertj.core.api.Assertions.*;
 import static org.springframework.test.context.support.ActiveProfilesUtils.resolveActiveProfiles;
 
 /**

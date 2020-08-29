@@ -16,19 +16,7 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-import javax.servlet.FilterChain;
-import javax.servlet.http.HttpServletResponse;
-
 import org.junit.jupiter.api.Test;
-import reactor.core.publisher.Flux;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.core.ResolvableType;
 import org.springframework.core.annotation.AliasFor;
@@ -55,6 +43,16 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import org.springframework.web.servlet.view.RedirectView;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+import reactor.core.publisher.Flux;
+
+import javax.servlet.FilterChain;
+import javax.servlet.http.HttpServletResponse;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

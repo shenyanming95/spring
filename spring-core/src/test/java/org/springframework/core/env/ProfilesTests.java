@@ -16,14 +16,13 @@
 
 package org.springframework.core.env;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.util.StringUtils;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.util.StringUtils;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

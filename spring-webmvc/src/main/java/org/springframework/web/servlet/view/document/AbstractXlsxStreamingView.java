@@ -16,14 +16,13 @@
 
 package org.springframework.web.servlet.view.document;
 
-import java.io.IOException;
-import java.util.Map;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import java.io.IOException;
+import java.util.Map;
 
 /**
  * Convenient superclass for Excel document views in the Office 2007 XLSX format,

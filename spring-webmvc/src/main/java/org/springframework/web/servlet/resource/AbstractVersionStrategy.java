@@ -16,15 +16,14 @@
 
 package org.springframework.web.servlet.resource;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Abstract base class for {@link VersionStrategy} implementations.

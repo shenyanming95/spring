@@ -16,19 +16,18 @@
 
 package org.springframework.jca.endpoint;
 
-import javax.resource.ResourceException;
-import javax.resource.spi.UnavailableException;
-import javax.resource.spi.endpoint.MessageEndpoint;
-import javax.transaction.xa.XAResource;
-
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
-
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.aop.support.DelegatingIntroductionInterceptor;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ReflectionUtils;
+
+import javax.resource.ResourceException;
+import javax.resource.spi.UnavailableException;
+import javax.resource.spi.endpoint.MessageEndpoint;
+import javax.transaction.xa.XAResource;
 
 /**
  * Generic implementation of the JCA 1.7

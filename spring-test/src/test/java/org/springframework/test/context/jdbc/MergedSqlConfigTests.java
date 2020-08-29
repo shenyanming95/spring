@@ -16,20 +16,15 @@
 
 package org.springframework.test.context.jdbc;
 
-import java.lang.reflect.Method;
-
 import org.junit.jupiter.api.Test;
+
+import java.lang.reflect.Method;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
-import static org.springframework.jdbc.datasource.init.ScriptUtils.DEFAULT_BLOCK_COMMENT_END_DELIMITER;
-import static org.springframework.jdbc.datasource.init.ScriptUtils.DEFAULT_BLOCK_COMMENT_START_DELIMITER;
-import static org.springframework.jdbc.datasource.init.ScriptUtils.DEFAULT_COMMENT_PREFIXES;
-import static org.springframework.jdbc.datasource.init.ScriptUtils.DEFAULT_STATEMENT_SEPARATOR;
-import static org.springframework.test.context.jdbc.SqlConfig.ErrorMode.CONTINUE_ON_ERROR;
-import static org.springframework.test.context.jdbc.SqlConfig.ErrorMode.FAIL_ON_ERROR;
-import static org.springframework.test.context.jdbc.SqlConfig.ErrorMode.IGNORE_FAILED_DROPS;
+import static org.springframework.jdbc.datasource.init.ScriptUtils.*;
+import static org.springframework.test.context.jdbc.SqlConfig.ErrorMode.*;
 import static org.springframework.test.context.jdbc.SqlConfig.TransactionMode.INFERRED;
 import static org.springframework.test.context.jdbc.SqlConfig.TransactionMode.ISOLATED;
 

@@ -16,13 +16,9 @@
 
 package org.springframework.test.context.transaction;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
-
 import org.springframework.beans.BeanUtils;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.test.annotation.Commit;
@@ -33,6 +29,9 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.SimpleTransactionStatus;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

@@ -17,7 +17,6 @@
 package org.springframework.test.web.servlet.setup;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.DirectFieldAccessor;
 import org.springframework.context.support.StaticApplicationContext;
 import org.springframework.mock.web.MockServletContext;

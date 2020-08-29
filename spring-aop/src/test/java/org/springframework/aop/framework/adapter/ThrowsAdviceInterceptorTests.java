@@ -16,18 +16,15 @@
 
 package org.springframework.aop.framework.adapter;
 
+import org.aopalliance.intercept.MethodInvocation;
+import org.junit.jupiter.api.Test;
+import org.springframework.aop.testfixture.advice.MyThrowsHandler;
+
 import java.io.FileNotFoundException;
 import java.rmi.ConnectException;
 import java.rmi.RemoteException;
 
-import org.aopalliance.intercept.MethodInvocation;
-import org.junit.jupiter.api.Test;
-
-import org.springframework.aop.testfixture.advice.MyThrowsHandler;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 

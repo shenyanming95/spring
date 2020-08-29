@@ -16,27 +16,20 @@
 
 package org.springframework.beans.testfixture.factory.xml;
 
-import java.beans.PropertyEditorSupport;
-import java.util.StringTokenizer;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.BeansException;
 import org.springframework.beans.TypeMismatchException;
-import org.springframework.beans.factory.BeanCreationException;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.BeanIsNotAFactoryException;
-import org.springframework.beans.factory.BeanNotOfRequiredTypeException;
-import org.springframework.beans.factory.NoSuchBeanDefinitionException;
+import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.beans.testfixture.beans.LifecycleBean;
 import org.springframework.beans.testfixture.beans.MustBeInitialized;
 import org.springframework.beans.testfixture.beans.TestBean;
 import org.springframework.beans.testfixture.beans.factory.DummyFactory;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import java.beans.PropertyEditorSupport;
+import java.util.StringTokenizer;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Subclasses must initialize the bean factory and any other variables they need.

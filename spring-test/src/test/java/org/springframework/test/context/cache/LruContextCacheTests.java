@@ -16,24 +16,20 @@
 
 package org.springframework.test.context.cache;
 
-import java.util.List;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.test.context.MergedContextConfiguration;
 import org.springframework.test.util.ReflectionTestUtils;
 
+import java.util.List;
+import java.util.Map;
+
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Unit tests for the LRU eviction policy in {@link DefaultContextCache}.

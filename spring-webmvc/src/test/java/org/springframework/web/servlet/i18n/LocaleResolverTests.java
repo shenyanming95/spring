@@ -16,11 +16,7 @@
 
 package org.springframework.web.servlet.i18n;
 
-import java.util.Locale;
-import java.util.TimeZone;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.context.i18n.LocaleContext;
 import org.springframework.context.i18n.SimpleLocaleContext;
 import org.springframework.context.i18n.SimpleTimeZoneAwareLocaleContext;
@@ -30,6 +26,9 @@ import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
 import org.springframework.web.testfixture.servlet.MockServletContext;
+
+import java.util.Locale;
+import java.util.TimeZone;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;

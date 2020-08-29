@@ -16,17 +16,8 @@
 
 package org.springframework.web.servlet.mvc.method.annotation;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Properties;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.DirectFieldAccessor;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.annotation.AnnotatedElementUtils;
@@ -35,23 +26,22 @@ import org.springframework.core.env.PropertiesPropertySource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.support.StaticWebApplicationContext;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.servlet.HandlerExecutionChain;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.mvc.condition.ConsumesRequestCondition;
-import org.springframework.web.servlet.mvc.condition.HeadersRequestCondition;
-import org.springframework.web.servlet.mvc.condition.ParamsRequestCondition;
-import org.springframework.web.servlet.mvc.condition.PatternsRequestCondition;
-import org.springframework.web.servlet.mvc.condition.ProducesRequestCondition;
-import org.springframework.web.servlet.mvc.condition.RequestMethodsRequestCondition;
+import org.springframework.web.servlet.mvc.condition.*;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.Properties;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

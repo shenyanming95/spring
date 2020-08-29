@@ -16,15 +16,14 @@
 
 package org.springframework.http.client.support;
 
-import java.io.IOException;
-import java.net.URI;
-
 import org.apache.commons.logging.Log;
-
 import org.springframework.http.HttpLogging;
 import org.springframework.http.HttpMethod;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.io.IOException;
+import java.net.URI;
 
 /**
  * Base class for {@link org.springframework.web.client.AsyncRestTemplate}

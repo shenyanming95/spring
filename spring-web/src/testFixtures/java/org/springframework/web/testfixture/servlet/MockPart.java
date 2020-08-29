@@ -16,18 +16,17 @@
 
 package org.springframework.web.testfixture.servlet;
 
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.lang.Nullable;
+import org.springframework.util.Assert;
+
+import javax.servlet.http.Part;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collection;
 import java.util.Collections;
-
-import javax.servlet.http.Part;
-
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.lang.Nullable;
-import org.springframework.util.Assert;
 
 /**
  * Mock implementation of {@code javax.servlet.http.Part}.

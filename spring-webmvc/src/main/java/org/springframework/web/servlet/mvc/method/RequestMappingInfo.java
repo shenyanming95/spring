@@ -16,11 +16,6 @@
 
 package org.springframework.web.servlet.mvc.method;
 
-import java.util.List;
-import java.util.Set;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ObjectUtils;
@@ -28,16 +23,13 @@ import org.springframework.util.PathMatcher;
 import org.springframework.util.StringUtils;
 import org.springframework.web.accept.ContentNegotiationManager;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.mvc.condition.ConsumesRequestCondition;
-import org.springframework.web.servlet.mvc.condition.HeadersRequestCondition;
-import org.springframework.web.servlet.mvc.condition.ParamsRequestCondition;
-import org.springframework.web.servlet.mvc.condition.PatternsRequestCondition;
-import org.springframework.web.servlet.mvc.condition.ProducesRequestCondition;
-import org.springframework.web.servlet.mvc.condition.RequestCondition;
-import org.springframework.web.servlet.mvc.condition.RequestConditionHolder;
-import org.springframework.web.servlet.mvc.condition.RequestMethodsRequestCondition;
+import org.springframework.web.servlet.mvc.condition.*;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 import org.springframework.web.util.UrlPathHelper;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Request mapping information. Encapsulates the following request mapping conditions:

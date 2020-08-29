@@ -16,18 +16,13 @@
 
 package org.springframework.web.servlet.function;
 
-import java.util.Optional;
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.core.io.Resource;
 import org.springframework.util.Assert;
+
+import java.util.Optional;
+import java.util.function.*;
 
 /**
  * <strong>Central entry point to Spring's functional web framework.</strong>

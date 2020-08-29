@@ -16,32 +16,21 @@
 
 package org.springframework.jdbc.support;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.math.BigDecimal;
-import java.sql.Blob;
-import java.sql.Clob;
-import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.SQLFeatureNotSupportedException;
-import java.sql.Statement;
-import java.sql.Types;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.sql.DataSource;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.jdbc.CannotGetJdbcConnectionException;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.util.NumberUtils;
 import org.springframework.util.StringUtils;
+
+import javax.sql.DataSource;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.math.BigDecimal;
+import java.sql.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Generic utility methods for working with JDBC. Mainly for internal use

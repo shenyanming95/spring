@@ -16,13 +16,12 @@
 
 package org.springframework.core;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.tests.sample.objects.TestObject;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.util.Arrays;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.tests.sample.objects.TestObject;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

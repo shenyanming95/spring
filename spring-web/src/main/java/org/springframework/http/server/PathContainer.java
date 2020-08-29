@@ -16,9 +16,9 @@
 
 package org.springframework.http.server;
 
-import java.util.List;
-
 import org.springframework.util.MultiValueMap;
+
+import java.util.List;
 
 /**
  * Structured representation of a URI path parsed via {@link #parsePath(String)}

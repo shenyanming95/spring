@@ -16,10 +16,10 @@
 
 package org.springframework.jdbc;
 
-import java.sql.SQLException;
-
 import org.springframework.dao.UncategorizedDataAccessException;
 import org.springframework.lang.Nullable;
+
+import java.sql.SQLException;
 
 /**
  * Exception thrown when we can't classify an SQLException into

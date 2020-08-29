@@ -18,7 +18,6 @@ package org.springframework.web.util.pattern;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.http.server.PathContainer;
 
 /**

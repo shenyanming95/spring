@@ -16,15 +16,15 @@
 
 package org.springframework.web.server;
 
-import java.util.Collections;
-import java.util.Map;
-
 import org.springframework.core.NestedExceptionUtils;
 import org.springframework.core.NestedRuntimeException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
+
+import java.util.Collections;
+import java.util.Map;
 
 /**
  * Base class for exceptions associated with specific HTTP response status codes.

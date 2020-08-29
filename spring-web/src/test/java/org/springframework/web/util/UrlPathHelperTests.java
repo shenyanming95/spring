@@ -16,12 +16,11 @@
 
 package org.springframework.web.util;
 
-import java.io.UnsupportedEncodingException;
-
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
+
+import java.io.UnsupportedEncodingException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

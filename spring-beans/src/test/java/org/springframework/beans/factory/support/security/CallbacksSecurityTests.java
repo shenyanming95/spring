@@ -16,35 +16,10 @@
 
 package org.springframework.beans.factory.support.security;
 
-import java.lang.reflect.Method;
-import java.net.URL;
-import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.Permissions;
-import java.security.Policy;
-import java.security.Principal;
-import java.security.PrivilegedAction;
-import java.security.PrivilegedExceptionAction;
-import java.security.ProtectionDomain;
-import java.util.PropertyPermission;
-import java.util.Set;
-import java.util.function.Consumer;
-
-import javax.security.auth.AuthPermission;
-import javax.security.auth.Subject;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanClassLoaderAware;
-import org.springframework.beans.factory.BeanCreationException;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.BeanFactoryAware;
-import org.springframework.beans.factory.BeanNameAware;
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.SmartFactoryBean;
+import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
@@ -56,6 +31,15 @@ import org.springframework.core.NestedRuntimeException;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.testfixture.security.TestPrincipal;
+
+import javax.security.auth.AuthPermission;
+import javax.security.auth.Subject;
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.security.*;
+import java.util.PropertyPermission;
+import java.util.Set;
+import java.util.function.Consumer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;

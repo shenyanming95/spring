@@ -16,6 +16,10 @@
 
 package org.springframework.beans.propertyeditors;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.*;
+import org.springframework.beans.testfixture.beans.*;
+
 import java.beans.PropertyEditor;
 import java.beans.PropertyEditorSupport;
 import java.beans.PropertyVetoException;
@@ -25,34 +29,10 @@ import java.math.BigInteger;
 import java.nio.charset.Charset;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.Vector;
+import java.util.*;
 import java.util.regex.Pattern;
 
-import org.junit.jupiter.api.Test;
-
-import org.springframework.beans.BeanWrapper;
-import org.springframework.beans.BeanWrapperImpl;
-import org.springframework.beans.BeansException;
-import org.springframework.beans.MutablePropertyValues;
-import org.springframework.beans.PropertyValue;
-import org.springframework.beans.testfixture.beans.BooleanTestBean;
-import org.springframework.beans.testfixture.beans.ITestBean;
-import org.springframework.beans.testfixture.beans.IndexedTestBean;
-import org.springframework.beans.testfixture.beans.NumberTestBean;
-import org.springframework.beans.testfixture.beans.TestBean;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.within;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Unit tests for the various PropertyEditors in Spring.

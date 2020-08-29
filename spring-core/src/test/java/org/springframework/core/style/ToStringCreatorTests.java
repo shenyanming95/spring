@@ -16,17 +16,11 @@
 
 package org.springframework.core.style;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.util.ObjectUtils;
+
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

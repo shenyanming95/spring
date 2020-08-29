@@ -16,9 +16,6 @@
 
 package org.springframework.http.client.support;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.core.annotation.AnnotationAwareOrderComparator;
 import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
@@ -26,6 +23,9 @@ import org.springframework.http.client.InterceptingClientHttpRequestFactory;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Base class for {@link org.springframework.web.client.RestTemplate}

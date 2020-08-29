@@ -16,6 +16,9 @@
 
 package org.springframework.core.io;
 
+import org.springframework.lang.Nullable;
+import org.springframework.util.ResourceUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -25,9 +28,6 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.WritableByteChannel;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
-
-import org.springframework.lang.Nullable;
-import org.springframework.util.ResourceUtils;
 
 /**
  * Subclass of {@link UrlResource} which assumes file resolution, to the degree

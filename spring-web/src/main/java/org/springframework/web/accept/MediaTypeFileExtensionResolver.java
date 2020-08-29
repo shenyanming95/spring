@@ -16,9 +16,9 @@
 
 package org.springframework.web.accept;
 
-import java.util.List;
-
 import org.springframework.http.MediaType;
+
+import java.util.List;
 
 /**
  * Strategy to resolve a {@link MediaType} to a list of file extensions &mdash;

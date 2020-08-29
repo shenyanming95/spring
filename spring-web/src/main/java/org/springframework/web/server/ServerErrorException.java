@@ -16,11 +16,11 @@
 
 package org.springframework.web.server;
 
-import java.lang.reflect.Method;
-
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpStatus;
 import org.springframework.lang.Nullable;
+
+import java.lang.reflect.Method;
 
 /**
  * Exception for an {@link HttpStatus#INTERNAL_SERVER_ERROR} that exposes extra

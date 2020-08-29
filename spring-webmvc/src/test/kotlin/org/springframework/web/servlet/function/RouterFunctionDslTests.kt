@@ -20,8 +20,9 @@ import org.assertj.core.api.Assertions.assertThat
 import org.assertj.core.api.Assertions.assertThatExceptionOfType
 import org.junit.jupiter.api.Test
 import org.springframework.core.io.ClassPathResource
-import org.springframework.http.HttpHeaders.*
-import org.springframework.http.HttpMethod.*
+import org.springframework.http.HttpHeaders.ACCEPT
+import org.springframework.http.HttpHeaders.CONTENT_TYPE
+import org.springframework.http.HttpMethod.PATCH
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType.*
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest

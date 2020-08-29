@@ -16,14 +16,10 @@
 
 package org.springframework.test.web;
 
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.*;
 
 import static org.springframework.test.util.AssertionErrors.assertTrue;
 import static org.springframework.test.util.AssertionErrors.fail;

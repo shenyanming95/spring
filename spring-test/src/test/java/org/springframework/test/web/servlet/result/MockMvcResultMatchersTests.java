@@ -17,18 +17,12 @@
 package org.springframework.test.web.servlet.result;
 
 import org.junit.jupiter.api.Test;
-
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.web.servlet.StubMvcResult;
 
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrl;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrlPattern;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.forwardedUrlTemplate;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrlPattern;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrlTemplate;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
  * Unit tests for {@link MockMvcResultMatchers}.

@@ -16,15 +16,12 @@
 
 package org.springframework.core.env;
 
-import java.util.Iterator;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.testfixture.env.MockPropertySource;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import java.util.Iterator;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * @author Chris Beams

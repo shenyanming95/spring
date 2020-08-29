@@ -16,13 +16,13 @@
 
 package org.springframework.web.util.pattern;
 
-import java.util.List;
-
 import org.springframework.http.server.PathContainer.Element;
 import org.springframework.http.server.PathContainer.PathSegment;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.util.pattern.PathPattern.MatchingContext;
+
+import java.util.List;
 
 /**
  * A path element representing capturing the rest of a path. In the pattern

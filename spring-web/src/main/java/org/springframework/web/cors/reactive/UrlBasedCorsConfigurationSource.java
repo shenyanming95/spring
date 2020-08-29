@@ -16,15 +16,15 @@
 
 package org.springframework.web.cors.reactive;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.springframework.http.server.PathContainer;
 import org.springframework.lang.Nullable;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.util.pattern.PathPattern;
 import org.springframework.web.util.pattern.PathPatternParser;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * Provide a per reactive request {@link CorsConfiguration} instance based on a

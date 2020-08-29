@@ -16,9 +16,9 @@
 
 package org.springframework.jdbc.core;
 
-import java.sql.ResultSet;
-
 import org.springframework.lang.Nullable;
+
+import java.sql.ResultSet;
 
 /**
  * Subclass of {@link SqlParameter} to represent an output parameter.

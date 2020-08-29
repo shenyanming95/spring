@@ -16,20 +16,19 @@
 
 package org.springframework.test.context.junit4.rules;
 
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
-
 import org.springframework.test.context.TestContextManager;
 import org.springframework.test.context.junit4.statements.ProfileValueChecker;
 import org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks;
 import org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks;
 import org.springframework.util.Assert;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * {@code SpringClassRule} is a custom JUnit {@link TestRule} that supports

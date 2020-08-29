@@ -16,21 +16,17 @@
 
 package org.springframework.test.web.client;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpMethod;
 import org.springframework.http.client.ClientHttpRequest;
+
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.springframework.http.HttpMethod.GET;
-import static org.springframework.test.web.client.ExpectedCount.max;
-import static org.springframework.test.web.client.ExpectedCount.min;
-import static org.springframework.test.web.client.ExpectedCount.once;
-import static org.springframework.test.web.client.ExpectedCount.twice;
+import static org.springframework.test.web.client.ExpectedCount.*;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.method;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;

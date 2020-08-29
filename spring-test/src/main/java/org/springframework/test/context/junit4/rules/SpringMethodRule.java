@@ -16,21 +16,15 @@
 
 package org.springframework.test.context.junit4.rules;
 
-import java.lang.reflect.Method;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.rules.MethodRule;
 import org.junit.runners.model.FrameworkMethod;
 import org.junit.runners.model.Statement;
-
 import org.springframework.test.context.TestContextManager;
-import org.springframework.test.context.junit4.statements.ProfileValueChecker;
-import org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks;
-import org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks;
-import org.springframework.test.context.junit4.statements.RunPrepareTestInstanceCallbacks;
-import org.springframework.test.context.junit4.statements.SpringFailOnTimeout;
-import org.springframework.test.context.junit4.statements.SpringRepeat;
+import org.springframework.test.context.junit4.statements.*;
+
+import java.lang.reflect.Method;
 
 /**
  * {@code SpringMethodRule} is a custom JUnit 4 {@link MethodRule} that

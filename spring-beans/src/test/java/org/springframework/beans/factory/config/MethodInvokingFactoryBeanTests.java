@@ -16,19 +16,16 @@
 
 package org.springframework.beans.factory.config;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.beans.support.ArgumentConvertingMethodInvoker;
 import org.springframework.util.MethodInvoker;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Unit tests for {@link MethodInvokingFactoryBean} and {@link MethodInvokingBean}.

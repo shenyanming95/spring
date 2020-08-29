@@ -16,14 +16,13 @@
 
 package org.springframework.test.context.support;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.Configuration;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
-import org.junit.jupiter.api.Test;
-
-import org.springframework.context.annotation.Configuration;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

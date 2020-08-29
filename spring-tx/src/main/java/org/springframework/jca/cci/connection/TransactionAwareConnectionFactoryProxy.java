@@ -16,16 +16,15 @@
 
 package org.springframework.jca.cci.connection;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
+import org.springframework.lang.Nullable;
 
 import javax.resource.ResourceException;
 import javax.resource.cci.Connection;
 import javax.resource.cci.ConnectionFactory;
-
-import org.springframework.lang.Nullable;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
 /**
  * Proxy for a target CCI {@link javax.resource.cci.ConnectionFactory}, adding

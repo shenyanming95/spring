@@ -16,14 +16,13 @@
 
 package org.springframework.web.servlet.mvc.condition;
 
-import java.util.Collection;
-import java.util.Collections;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.servlet.mvc.condition.ConsumesRequestCondition.ConsumeMediaTypeExpression;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
+
+import java.util.Collection;
+import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

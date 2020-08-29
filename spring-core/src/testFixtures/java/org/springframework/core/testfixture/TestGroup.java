@@ -16,12 +16,12 @@
 
 package org.springframework.core.testfixture;
 
+import org.springframework.util.StringUtils;
+
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Set;
-
-import org.springframework.util.StringUtils;
 
 import static java.lang.String.format;
 

@@ -16,15 +16,15 @@
 
 package org.springframework.core.type.classreading;
 
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.Set;
-
 import org.springframework.asm.Opcodes;
 import org.springframework.core.annotation.MergedAnnotations;
 import org.springframework.core.type.AnnotationMetadata;
 import org.springframework.core.type.MethodMetadata;
 import org.springframework.lang.Nullable;
+
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * {@link AnnotationMetadata} created from a

@@ -16,16 +16,13 @@
 
 package org.springframework.beans.factory.config;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import org.junit.jupiter.api.Test;
-
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
 /**

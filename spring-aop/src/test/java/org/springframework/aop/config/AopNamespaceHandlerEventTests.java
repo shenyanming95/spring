@@ -16,12 +16,8 @@
 
 package org.springframework.aop.config;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanReference;
 import org.springframework.beans.factory.parsing.BeanComponentDefinition;
@@ -31,6 +27,9 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.beans.testfixture.beans.CollectingReaderEventListener;
 import org.springframework.core.io.Resource;
+
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.core.testfixture.io.ResourceTestUtils.qualifiedResource;

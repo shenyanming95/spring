@@ -16,18 +16,17 @@
 
 package org.springframework.web.servlet.tags.form;
 
-import java.beans.PropertyEditor;
-import java.util.Collection;
-import java.util.Map;
-
-import javax.servlet.jsp.JspException;
-
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.PropertyAccessorFactory;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.servlet.support.BindStatus;
+
+import javax.servlet.jsp.JspException;
+import java.beans.PropertyEditor;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * Provides supporting functionality to render a list of '{@code option}'

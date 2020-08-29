@@ -16,17 +16,12 @@
 
 package org.springframework.http;
 
-import java.util.AbstractMap.SimpleImmutableEntry;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.MultiValueMap;
+
+import java.util.AbstractMap.SimpleImmutableEntry;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * {@code HttpHeaders} object that can only be read, not written to.

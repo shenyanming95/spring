@@ -16,19 +16,15 @@
 
 package org.springframework.web.util.pattern;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.http.server.PathContainer;
+import org.springframework.web.util.pattern.PatternParseException.PatternMessage;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-
-import org.springframework.http.server.PathContainer;
-import org.springframework.web.util.pattern.PatternParseException.PatternMessage;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.fail;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Exercise the {@link PathPatternParser}.

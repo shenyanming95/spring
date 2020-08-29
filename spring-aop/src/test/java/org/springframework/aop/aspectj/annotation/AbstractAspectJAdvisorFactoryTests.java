@@ -16,35 +16,12 @@
 
 package org.springframework.aop.aspectj.annotation;
 
-import java.io.FileNotFoundException;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.reflect.Method;
-import java.lang.reflect.UndeclaredThrowableException;
-import java.rmi.RemoteException;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.DeclareParents;
-import org.aspectj.lang.annotation.DeclarePrecedence;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import test.aop.DefaultLockable;
-import test.aop.Lockable;
-import test.aop.PerTargetAspect;
-import test.aop.TwoAdviceAspect;
-
 import org.springframework.aop.Advisor;
 import org.springframework.aop.framework.Advised;
 import org.springframework.aop.framework.AopConfigException;
@@ -57,11 +34,22 @@ import org.springframework.core.OrderComparator;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.util.ObjectUtils;
+import test.aop.DefaultLockable;
+import test.aop.Lockable;
+import test.aop.PerTargetAspect;
+import test.aop.TwoAdviceAspect;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.assertThatIllegalStateException;
+import java.io.FileNotFoundException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.reflect.Method;
+import java.lang.reflect.UndeclaredThrowableException;
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Abstract tests for {@link AspectJAdvisorFactory} implementations.

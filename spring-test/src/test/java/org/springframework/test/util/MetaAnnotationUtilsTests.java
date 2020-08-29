@@ -16,15 +16,7 @@
 
 package org.springframework.test.util;
 
-import java.lang.annotation.Annotation;
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -33,6 +25,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.util.MetaAnnotationUtils.AnnotationDescriptor;
 import org.springframework.test.util.MetaAnnotationUtils.UntypedAnnotationDescriptor;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.lang.annotation.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.util.MetaAnnotationUtils.findAnnotationDescriptor;

@@ -16,13 +16,12 @@
 
 package org.springframework.core.codec;
 
+import org.apache.commons.logging.Log;
+import org.springframework.lang.Nullable;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.commons.logging.Log;
-
-import org.springframework.lang.Nullable;
 
 /**
  * Constants and convenience methods for working with hints.

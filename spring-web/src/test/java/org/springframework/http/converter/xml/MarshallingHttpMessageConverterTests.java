@@ -16,11 +16,7 @@
 
 package org.springframework.http.converter.xml;
 
-import javax.xml.transform.Result;
-import javax.xml.transform.stream.StreamSource;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.MediaType;
 import org.springframework.http.MockHttpInputMessage;
@@ -32,13 +28,14 @@ import org.springframework.oxm.MarshallingFailureException;
 import org.springframework.oxm.Unmarshaller;
 import org.springframework.oxm.UnmarshallingFailureException;
 
+import javax.xml.transform.Result;
+import javax.xml.transform.stream.StreamSource;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.ArgumentMatchers.isA;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.BDDMockito.willDoNothing;
-import static org.mockito.BDDMockito.willThrow;
+import static org.mockito.BDDMockito.*;
 import static org.mockito.Mockito.mock;
 
 /**

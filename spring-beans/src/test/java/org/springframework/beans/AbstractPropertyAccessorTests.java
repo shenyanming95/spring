@@ -16,38 +16,14 @@
 
 package org.springframework.beans;
 
-import java.beans.PropertyEditorSupport;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.SortedSet;
-import java.util.TreeMap;
-import java.util.TreeSet;
-
 import org.apache.commons.logging.LogFactory;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.propertyeditors.CustomNumberEditor;
 import org.springframework.beans.propertyeditors.StringArrayPropertyEditor;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.beans.support.DerivedFromProtectedBaseBean;
-import org.springframework.beans.testfixture.beans.BooleanTestBean;
-import org.springframework.beans.testfixture.beans.ITestBean;
-import org.springframework.beans.testfixture.beans.IndexedTestBean;
-import org.springframework.beans.testfixture.beans.NumberTestBean;
-import org.springframework.beans.testfixture.beans.TestBean;
+import org.springframework.beans.testfixture.beans.*;
 import org.springframework.core.convert.ConversionFailedException;
 import org.springframework.core.convert.TypeDescriptor;
 import org.springframework.core.convert.support.DefaultConversionService;
@@ -58,10 +34,12 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.StopWatch;
 import org.springframework.util.StringUtils;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
-import static org.assertj.core.api.Assertions.within;
+import java.beans.PropertyEditorSupport;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.*;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.springframework.core.testfixture.TestGroup.PERFORMANCE;
 
 /**

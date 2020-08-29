@@ -16,13 +16,13 @@
 
 package org.springframework.test.context.event.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
-
 import org.springframework.context.event.EventListener;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.test.context.event.BeforeTestClassEvent;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.METHOD;

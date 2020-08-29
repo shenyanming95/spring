@@ -16,11 +16,11 @@
 
 package org.springframework.http.converter.json;
 
-import java.util.Calendar;
-import java.util.Date;
-
 import com.google.gson.Gson;
 import org.junit.jupiter.api.Test;
+
+import java.util.Calendar;
+import java.util.Date;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

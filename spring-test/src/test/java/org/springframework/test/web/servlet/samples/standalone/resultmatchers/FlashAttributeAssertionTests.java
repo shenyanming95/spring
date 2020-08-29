@@ -16,20 +16,16 @@
 
 package org.springframework.test.web.servlet.samples.standalone.resultmatchers;
 
-import java.net.URL;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.net.URL;
+
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.hamcrest.Matchers.closeTo;
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.flash;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

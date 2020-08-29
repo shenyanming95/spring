@@ -16,11 +16,10 @@
 
 package org.springframework.core.log;
 
-import java.util.function.Function;
-
 import org.apache.commons.logging.Log;
-
 import org.springframework.lang.Nullable;
+
+import java.util.function.Function;
 
 /**
  * Utility methods for formatting and logging messages.

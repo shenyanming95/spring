@@ -16,8 +16,6 @@
 
 package org.springframework.test.context.junit4;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -26,7 +24,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.testfixture.beans.Employee;
 import org.springframework.beans.testfixture.beans.Pet;
@@ -35,6 +32,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestContextManager;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -16,16 +16,12 @@
 
 package org.springframework.test.context.junit4.spr4868;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,6 +29,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

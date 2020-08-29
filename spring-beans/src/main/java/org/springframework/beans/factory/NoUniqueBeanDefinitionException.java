@@ -16,12 +16,12 @@
 
 package org.springframework.beans.factory;
 
-import java.util.Arrays;
-import java.util.Collection;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 /**
  * Exception thrown when a {@code BeanFactory} is asked for a bean instance for which

@@ -16,8 +16,6 @@
 
 package org.springframework.http.codec;
 
-import java.util.Map;
-
 import org.springframework.core.ResolvableType;
 import org.springframework.core.codec.Hints;
 import org.springframework.core.codec.ResourceDecoder;
@@ -25,6 +23,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.util.StringUtils;
+
+import java.util.Map;
 
 /**
  * {@code HttpMessageReader} that wraps and delegates to a {@link ResourceDecoder}

@@ -16,23 +16,9 @@
 
 package org.springframework.jms.listener.adapter;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.jms.DeliveryMode;
-import javax.jms.Destination;
-import javax.jms.JMSException;
-import javax.jms.MessageProducer;
-import javax.jms.Queue;
-import javax.jms.Session;
-import javax.jms.TextMessage;
-import javax.jms.Topic;
-
 import com.fasterxml.jackson.annotation.JsonView;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.beans.factory.support.StaticListableBeanFactory;
 import org.springframework.jms.StubTextMessage;
 import org.springframework.jms.support.JmsHeaders;
@@ -46,15 +32,15 @@ import org.springframework.messaging.handler.annotation.support.DefaultMessageHa
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.util.ReflectionUtils;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
+import javax.jms.*;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * @author Stephane Nicoll

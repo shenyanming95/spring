@@ -16,15 +16,14 @@
 
 package org.springframework.core.type;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-
 import org.junit.jupiter.api.Test;
-
 import org.springframework.core.annotation.MergedAnnotation;
 import org.springframework.core.type.AbstractAnnotationMetadataTests.TestMemberClass.TestMemberClassInnerClass;
 import org.springframework.core.type.AbstractAnnotationMetadataTests.TestMemberClass.TestMemberClassInnerInterface;
 import org.springframework.util.MultiValueMap;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.entry;

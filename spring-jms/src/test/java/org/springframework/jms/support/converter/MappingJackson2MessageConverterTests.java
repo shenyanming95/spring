@@ -16,25 +16,23 @@
 
 package org.springframework.jms.support.converter;
 
+import com.fasterxml.jackson.annotation.JsonView;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+import org.springframework.core.MethodParameter;
+
+import javax.jms.BytesMessage;
+import javax.jms.JMSException;
+import javax.jms.Session;
+import javax.jms.TextMessage;
 import java.io.ByteArrayInputStream;
 import java.lang.reflect.Method;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.jms.BytesMessage;
-import javax.jms.JMSException;
-import javax.jms.Session;
-import javax.jms.TextMessage;
-
-import com.fasterxml.jackson.annotation.JsonView;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.invocation.InvocationOnMock;
-import org.mockito.stubbing.Answer;
-
-import org.springframework.core.MethodParameter;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;

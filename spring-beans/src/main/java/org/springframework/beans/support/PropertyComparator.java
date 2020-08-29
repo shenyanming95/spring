@@ -16,17 +16,16 @@
 
 package org.springframework.beans.support;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
 import org.springframework.beans.BeanWrapperImpl;
 import org.springframework.beans.BeansException;
 import org.springframework.lang.Nullable;
 import org.springframework.util.StringUtils;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * PropertyComparator performs a comparison of two beans,

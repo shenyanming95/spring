@@ -16,16 +16,14 @@
 
 package org.springframework.web.context.request.async;
 
-import java.util.function.Consumer;
-
-import javax.servlet.AsyncEvent;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.web.testfixture.servlet.MockAsyncContext;
 import org.springframework.web.testfixture.servlet.MockHttpServletRequest;
 import org.springframework.web.testfixture.servlet.MockHttpServletResponse;
+
+import javax.servlet.AsyncEvent;
+import java.util.function.Consumer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatIllegalStateException;

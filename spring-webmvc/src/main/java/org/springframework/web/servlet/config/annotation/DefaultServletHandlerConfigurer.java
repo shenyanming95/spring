@@ -16,16 +16,15 @@
 
 package org.springframework.web.servlet.config.annotation;
 
-import java.util.Collections;
-
-import javax.servlet.ServletContext;
-
 import org.springframework.core.Ordered;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
 import org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler;
+
+import javax.servlet.ServletContext;
+import java.util.Collections;
 
 /**
  * Configures a request handler for serving static resources by forwarding

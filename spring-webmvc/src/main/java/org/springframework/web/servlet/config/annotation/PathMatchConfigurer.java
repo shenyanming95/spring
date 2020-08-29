@@ -16,14 +16,14 @@
 
 package org.springframework.web.servlet.config.annotation;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.Predicate;
-
 import org.springframework.lang.Nullable;
 import org.springframework.util.PathMatcher;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 import org.springframework.web.util.UrlPathHelper;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.Predicate;
 
 /**
  * Helps with configuring HandlerMappings path matching options such as trailing

@@ -18,7 +18,6 @@ package org.springframework.aop.framework;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.junit.jupiter.api.Test;
-
 import org.springframework.aop.AopInvocationException;
 
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
